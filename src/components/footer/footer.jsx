@@ -4,26 +4,26 @@ import React, { useEffect } from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+//import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FaSkype } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaTwitterSquare,
   FaYoutubeSquare,
-  FaVimeoSquare,
+ // FaVimeoSquare,
   FaImdb,
-  BsFacebook,
-  FaViber,
-  FaWhatsapp,
+  // BsFacebook,
+  // FaViber,
+  // FaWhatsapp,
 
 
 } from "react-icons/fa";
 
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+// import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 import footerLogo from "../../assets/brand/logo-banner-white.png";
 

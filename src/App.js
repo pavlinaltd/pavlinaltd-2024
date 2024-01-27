@@ -26,8 +26,8 @@ import Between from './components/projects/films/between';
 // import Location from './components/projects/films/location';
 
 //import web icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 

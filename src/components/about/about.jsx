@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./about.css";
 
-import CarouselItem from "./carousel";
+// import CarouselItem from "./carousel";
 
 import ellis from "../../assets/bio/ellis.jpg";
 import cbsnews from "../../assets/bio/cbsnews.jpg";

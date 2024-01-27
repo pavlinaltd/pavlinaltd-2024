@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import "./contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {FaSkype} from "react-icons/fa";
 import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,7 @@ import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 // import SimpleMap from "./map";
 import {
   FaViber,
-  FaWhatsapp,
+ // FaWhatsapp,
 } from "react-icons/fa";
 
 const Contact = () => {

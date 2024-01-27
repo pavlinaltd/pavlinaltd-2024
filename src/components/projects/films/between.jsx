@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/between-two-worlds.png";
+//import Poster from "../../../assets/films/posters/between-two-worlds.png";
 import Poem from "../../../assets/films/between-poem.png";
 import Review from "../../../assets/films/between-review.png";
 import BetweenTwoWorlds from "../../../assets/books/between-two-worlds-new.png";
