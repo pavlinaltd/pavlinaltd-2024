@@ -1,8 +1,8 @@
 const CarouselItem = (props) => {
   return (
-    <div class={`carousel-item ${props.active}`}>
+    <div className={`carousel-item ${props.active}`}>
       <img
-        class="d-block w-100"
+        className="d-block w-100"
         src={props.image}
         alt={props.alt}
       />

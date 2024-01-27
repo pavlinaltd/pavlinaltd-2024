@@ -15,15 +15,15 @@ const NavBar = () => {
   }
 
   return (
-    <nav class="navbar navbar-expand-lg p-3 py-4 p-md-5 w-100">
-      <div class=" container-fluid px-3 px-xl-5 py-xl-4">
-        <Link class="navbar-brand m-0 ps-xl-5 flex-grow-1" to="/home">
+    <nav className="navbar navbar-expand-lg p-3 py-4 p-md-5 w-100">
+      <div className=" container-fluid px-3 px-xl-5 py-xl-4">
+        <Link className="navbar-brand m-0 ps-xl-5 flex-grow-1" to="/home">
           <img src={logo} alt="Pavlina Ltd. Logo"/>
           
         </Link>
         <button
           id="mobileNavbarToggle"
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mobileNavbar"
@@ -35,45 +35,45 @@ const NavBar = () => {
           <BsJustify />
         </button>
         <div
-          class="collapse navbar-collapse pe-xl-5 d-lg-flex justify-content-lg-end"
+          className="collapse navbar-collapse pe-xl-5 d-lg-flex justify-content-lg-end"
           id="mobileNavbar"
         >
-          <ul class="navbar-nav text-center text-uppercase w-100 justify-content-lg-end">
-            <li class="nav-item">
+          <ul className="navbar-nav text-center text-uppercase w-100 justify-content-lg-end">
+            <li className="nav-item">
               <Link
-                class="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
+                className="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
                 to="/home"
               >
                 Home
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link 
-                class="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
+                className="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
                 to="/about"
               >
                 About Us
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
+                className="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
                 to="/the-films"
               >
                 Filmography
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
+                className="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
                 to="/gallery/"
               >
                 Gallery
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
-                class="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
+                className="nav-link py-4 py-lg-2 px-lg-2 ms-lg-5"
                 to="/contact/"
               >
                 Contact
