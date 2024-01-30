@@ -5,8 +5,9 @@ import "./home.css";
 import TheMagicSnowmanRedux from "../../assets/films/posters/the-magic-snowman-redux.png";
 import MyHeartIsNoLongerAnOrphan from "../../assets/films/posters/my-heart-is-no-longer-an-orphan.png";
 import GustellaDances from "../../assets/films/posters/gustella-dances.png";
-import BetweenTwoWorlds from "../../assets/books/between-two-worlds-new.png";
-import TheMagicSnowmanAudiobook from "../../assets/films/posters/the-magic-snowman-audiobook.png";
+import BetweenTwoWorlds from "../../assets/books/BetweenTwoWorlds.png";
+// import TheMagicSnowmanAudiobook from "../../assets/films/posters/the-magic-snowman-audiobook.png";
+import TheMagicSnowmanAudiobook from "../../assets/books/magicSnowman.jpg";
 import BordersInHeaven from "../../assets/films/posters/borders in heaven.jpg";
 import Keratza from "../../assets/films/posters/keratza-poster.jpeg";
 import TheMagicSnowmanReturns from "../../assets/films/posters/The-Magic-Snowman-Returns.JPG";
@@ -14,14 +15,11 @@ import RiceMilk from "../../assets/films/R_M_Stilettos.jpg";
 
 
 
-import header from "../../assets/brand/homepage-header.jpg";
+import header from "../../assets/brand/banner.jpg";
 
 const Home = () => {
   useEffect(() => window.scrollTo(0, 0));
 
-
-
-  
   return (
     <main>
       <div className="container-fluid">
@@ -130,14 +128,14 @@ const Home = () => {
         </section> */}
         <section className="films container px-md-0 m-0 p-3 py-4 p-lg-0 px-lg-1">
           <div className="row">
-          
-              <div
+
+            <div
               className="col-12 d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
               style={{ backgroundColor: "#f0f0f0", minHeight: "50px" }}
             >
               <h2 className="my-0 ">Active Productions</h2>
             </div>
-          
+
           </div>
 
           <div className="w-100 p-0 p-xl-0 py-xl-3">
@@ -174,93 +172,98 @@ const Home = () => {
 
 
 
-          <div className="w-100 p-0 p-xl-0 py-xl-3">
-            <div className="row book-row p-0 pb-md-4 p-xl-5 py-xl-3 px-xl-0 justify-content-center">
-            <div className="col"></div>
-                <div
-                  className="col-8  d-none d-lg-block d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
-                  style={{ backgroundColor: "#f0f0f0", minHeight: "50px" }}
-                >
-                  <h2 className="my-0">Media Projects</h2>
-                </div>
-              <div className="col-2"></div>
-              <div className="film-poster row py-2 ps-md-4 py-md-2 pe-lg-4 col-2 col-lg-6 text-center">
-  
-              </div>
-
-              
-              <div className="film-poster row py-3 ps-md-4 py-md-2 ps-lg-4 col-2 col-lg-6">
-     
-              </div>
-
-             
+          <div>
+            <div
+              className="col-8  d-none d-lg-block d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
+              style={{ width : "100%", backgroundColor: "#f0f0f0", minHeight: "50px" }}
+            >
+              <h2 className="my-0">Media Projects</h2>
             </div>
-
-
-          
-          
-
-          
-            <div className="row two-book-boxes"> 
-              <div className=" col-6  d-none d-lg-block book-box-item-left">
-                 
-                <div className="row align-items-center">
-                  <div className="col-6 mt-3">
-                  <Link to="/between-two-worlds" className="book">
-                      <img
-                        src={BetweenTwoWorlds}
-                        className=""
-                        alt="Between Two Worlds"
-                        width="95%"
-                        height= "100%"
-                      />
-                   </Link>
-                 
-                  </div>
-                  <div className="col-6" id='book-box-text'>
-                    <h3>Poetry read by Lily Talevski</h3>
-                    <br></br>
-                    <h3>Tori Naumovski</h3>
-                    <br></br>
-                    <h3>Francis Dumaurier</h3>
-                  </div>
-                </div>
-              </div>
-
-         
+            <div className="two-book-boxes" style={{ textAlign : "center" }}>
+            <div>
+            <div>
               
-              <div className="col  d-none d-lg-block book-box-item-right" >
-                <div className="row align-items-center">
-                  <div className="col-6 mt-3">
-                    <Link to="/the-magic-snowman-book" className="book">
-                        <img
-                          src={TheMagicSnowmanAudiobook}
-                          className=""
-                          alt="Between Two Worlds"
-                          width="95%"
-                          height= "100%"
-                        />
-                    </Link>
+            </div>
+            </div>
+              <div className="two-book-boxes-item container-caption" style={{ backgroundColor : "#0dcaf0" }} >
                   
+                <div style={{ textAlign : "center", display : "flex" }}>
+                  <div>
+                  <div className="book-title">Between Two Worlds</div>
+                    <p style={{ color: "white"}}>Written by Мишeko</p>
+                    <div className="two-book-boxes-item-img">
+                  <Link to="/between-two-worlds">
+          
+                    <img
+                      src={BetweenTwoWorlds}
+                      className="ro"
+                      alt="Between Two Worlds"
+                      width="50%"
+                      
+                    />
+                    
+                  </Link>
                   </div>
-                  <div className="col-6" id='book-box-text'>
-                 
-                      <h3 >With Sir Roger Moore as the voice of The Magic Snowman</h3>
-                      <br></br>
-                      <h3>Narrated by Lilly Talevski</h3>
-                      <br></br>
-                      <h3>Music by ben Boian B. Goss</h3>
-                      <br></br>
-                      <h3>Sound Design by Mason Ryan</h3>
                   </div>
                 </div>
+                {/* <div>
+                    <h3 className="pb-md-2 pb-2 mt-lg-2" style={{ fontWeight : "bold"}}>Between Two Worlds</h3>
+                    <p>Written by Мишeko</p>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <p class="text-center my-2">Poetry read by Lily Talevski</p>
+                      <p class="text-center my-2">Tori Naumovski</p>
+                      <p class="text-center my-2">Francis Dumaurier</p>
+                </div> */}
+                  <div class="caption">       
+                  <p class="text-center my-2">Poetry read by Lily Talevski, Tori Naumovski, Francis Dumaurier</p>
+                      {/* <p class="text-center my-2">Tori Naumovski</p>
+                      <p class="text-center my-2">Francis Dumaurier</p> */}
+                  </div>
               </div>
+              <div className="two-book-boxes-item container-caption" style={{ backgroundColor : "#ffc107" }} >
+      
+                  <Link to="/between-two-worlds">
+                 
+             
+                    <img
+                      src={TheMagicSnowmanAudiobook}
+                      className=""
+                      alt="Between Two Worlds"
+                      width="100%"
+                   
+                    />
+
+                  </Link>
+                  <div class="caption"> Distributed by Authors Republic</div>
+              </div>
+            
+
+
             </div>
           </div>
 
 
 
-
+          {/* 
           <div className=" d-sm-none small-screen-media-projects">
            <div className="row mb-4">
           
@@ -288,13 +291,13 @@ const Home = () => {
                   </Link>
                 
                 </div>
-                <div className="col-6 mt-3 " id="book-box-text-small">
+                <div className="col-6 mt-3 " id="book-box-text-smallest">
                   <div className="col" >
-                    <h3 id='book-box-text-small'>Poetry read by Lily Talevski</h3>
+                    <h3>Poetry read by Lily Talevski</h3>
                     <br></br>
-                    <h3 id='book-box-text-small'>Tori Naumovski</h3>
+                    <h3>Tori Naumovski</h3>
                     <br></br>
-                    <h3 id='book-box-text-small'>Francis Dumaurier</h3>
+                    <h3>Francis Dumaurier</h3>
                   </div>
                 </div>
 
@@ -330,30 +333,30 @@ const Home = () => {
 
               
             </div>
-          </div>
-    
-    
-    
+          </div> */}
+
+
+
 
 
 
           <div className="col-12 m-0 p-0 p-xl-0 py-xl-3">
-          
+
           </div>
           <div className="row">
-        
+
             <div
               className="col-12 d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
               style={{ backgroundColor: "#f0f0f0", minHeight: "50px" }}
             >
               <h2 className="my-0">In Development</h2>
             </div>
-          
+
 
           </div>
 
           <div className="w-100 p-0 p-xl-0 py-xl-3 d-flex justify-content-center mt-2">
-              <div className="film-poster row mt-lg-0 h-100">
+            <div className="film-poster row mt-lg-0 h-100">
               <div className="col-6 col-md-3">
                 <Link to="/in-development#borders-in-heaven">
                   <img
@@ -362,8 +365,8 @@ const Home = () => {
                     alt="In Development"
                   />
                 </Link>
-                  </div>
-                  <div className="col-6 col-md-3">
+              </div>
+              <div className="col-6 col-md-3">
                 <Link to="/in-development#keratza">
                   <img
                     src={Keratza}
@@ -371,8 +374,8 @@ const Home = () => {
                     alt="In Development"
                   />
                 </Link>
-                </div>
-                <div className="col-6 col-md-3">
+              </div>
+              <div className="col-6 col-md-3">
                 <Link exact to="/in-development#the-magic-snowman-returns">
                   <img
                     src={TheMagicSnowmanReturns}
@@ -380,8 +383,8 @@ const Home = () => {
                     alt="In Development"
                   />
                 </Link>
-                </div>
-                <div className="col-6 col-md-3">
+              </div>
+              <div className="col-6 col-md-3">
                 <Link to="/in-development#rice">
                   <img
                     src={RiceMilk}
@@ -389,7 +392,7 @@ const Home = () => {
                     alt="In Development"
                   />
                 </Link>
-                </div>
+              </div>
             </div>
           </div>
         </section>

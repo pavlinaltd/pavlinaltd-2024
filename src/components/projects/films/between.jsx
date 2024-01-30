@@ -4,7 +4,7 @@ import "./films.css";
 //import Poster from "../../../assets/films/posters/between-two-worlds.png";
 import Poem from "../../../assets/films/between-poem.png";
 import Review from "../../../assets/films/between-review.png";
-import BetweenTwoWorlds from "../../../assets/books/between-two-worlds-new.png";
+import BetweenTwoWorlds from "../../../assets/books/BetweenTwoWorlds.png";
 import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
 import FrenchPoem from "../../../assets/audio/Sun_French_Mastered.wav";
 import SerbianPoem from "../../../assets/audio/Sun_Serbian_Mastered.wav";
