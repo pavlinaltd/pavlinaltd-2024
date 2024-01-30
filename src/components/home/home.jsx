@@ -138,13 +138,43 @@ const Home = () => {
 
           </div>
 
-          <div className="w-100 p-0 p-xl-0 py-xl-3">
+          <div class="book-image-row">
+  <div class="book-image">
+  <Link to="/the-magic-snowman-redux">
+                  <img
+                    src={TheMagicSnowmanRedux}
+                    className="img-fluid rounded-3"
+                    alt="The Magic Snowman Redux"
+                  />
+                </Link>
+  </div>
+  <div class="book-image">
+  <Link to="/my-heart-is-no-longer-an-orphan">
+                  <img
+                    src={MyHeartIsNoLongerAnOrphan}
+                    className="img-fluid rounded-3"
+                    alt="My Heart Is No Longer An Orphan"
+                  />
+                </Link>
+  </div>
+  <div class="book-image">
+  <Link to="/gustella-dances">
+                  <img
+                    src={GustellaDances}
+                    className="img-fluid rounded-3"
+                    alt="Gustella Dances"
+                  />
+                </Link>
+  </div>
+</div>
+
+          {/* <div className="w-100 p-0 p-xl-0 py-xl-3">
             <div className="row p-0 pb-4 p-xl-0 py-xl-3">
               <div className="film-poster py-3 py-md-2 col col-md-4 col-6 pt-lg-4 mt-lg-0">
                 <Link to="/the-magic-snowman-redux">
                   <img
                     src={TheMagicSnowmanRedux}
-                    className="img-fluid rounded-3 indev"
+                    className="img-fluid rounded-3"
                     alt="The Magic Snowman Redux"
                   />
                 </Link>
@@ -168,11 +198,11 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
 
-          <div>
+          <div style={{marginTop : "50px"}}>
             <div
               className="col-8  d-none d-lg-block d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
               style={{ width : "100%", backgroundColor: "#f0f0f0", minHeight: "50px" }}
@@ -355,13 +385,53 @@ const Home = () => {
 
           </div>
 
-          <div className="w-100 p-0 p-xl-0 py-xl-3 d-flex justify-content-center mt-2">
+                  <div class="book-image-row">
+          <div class="book-image">
+          <Link to="/in-development#borders-in-heaven">
+                  <img
+                    src={BordersInHeaven}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+          </div>
+          <div class="book-image">
+          <Link to="/in-development#keratza">
+                  <img
+                    src={Keratza}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+          </div>
+          <div class="book-image">
+          <Link exact to="/in-development#the-magic-snowman-returns">
+                  <img
+                    src={TheMagicSnowmanReturns}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+          </div>
+          <div class="book-image">
+          <Link to="/in-development#rice">
+                  <img
+                    src={RiceMilk}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+          </div>
+        </div>
+
+
+          {/* <div className="w-100 p-0 p-xl-0 py-xl-3 d-flex justify-content-center mt-2">
             <div className="film-poster row mt-lg-0 h-100">
               <div className="col-6 col-md-3">
                 <Link to="/in-development#borders-in-heaven">
                   <img
                     src={BordersInHeaven}
-                    className="img-fluid rounded-3 indev"
+                    className="img-fluid rounded-3"
                     alt="In Development"
                   />
                 </Link>
@@ -370,7 +440,7 @@ const Home = () => {
                 <Link to="/in-development#keratza">
                   <img
                     src={Keratza}
-                    className="img-fluid rounded-3 indev"
+                    className="img-fluid rounded-3"
                     alt="In Development"
                   />
                 </Link>
@@ -379,7 +449,7 @@ const Home = () => {
                 <Link exact to="/in-development#the-magic-snowman-returns">
                   <img
                     src={TheMagicSnowmanReturns}
-                    className="img-fluid rounded-3 indev"
+                    className="img-fluid rounded-3"
                     alt="In Development"
                   />
                 </Link>
@@ -388,13 +458,13 @@ const Home = () => {
                 <Link to="/in-development#rice">
                   <img
                     src={RiceMilk}
-                    className="img-fluid rounded-3 indev"
+                    className="img-fluid rounded-3"
                     alt="In Development"
                   />
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         <section
           id="intro-container"

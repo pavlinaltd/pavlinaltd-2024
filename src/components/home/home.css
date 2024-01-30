@@ -93,6 +93,23 @@ main section#quote-container p::before {
    color: white;
 }
 
+.book-image-row {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for spacing between images */
+}
+
+.book-image {
+  flex: 1; /* Distribute available space equally among images */
+  margin : 10px;
+}
+
+.book-image img {
+  width: 100%; /* Set the image width to 100% of the div's width */
+  height: 100%; /* Set the image height to 100% of the div's height */
+  /* object-fit: cover;  */
+}
+
+
 .book-box-item-right{
   text-align: center;
   background-color: #FFC72C;
