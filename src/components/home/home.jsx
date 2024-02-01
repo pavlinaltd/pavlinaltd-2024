@@ -209,10 +209,10 @@ const Home = () => {
               <h2 className="book-title">Media Projects</h2>
             </div>
             <div className="two-book-boxes">
-              <div className="two-book-boxes-item" style={{ backgroundColor : "#FFC72C" }} >
+              <div className="two-book-boxes-item-left" style={{ backgroundColor : "#FFC72C" }} >
                   
           
-                  <div> 
+                  <div style={{flex : 1}}> 
                   <Link to="/between-two-worlds">
           
                     <img
@@ -226,7 +226,7 @@ const Home = () => {
           
          
                 </div>
-                <div>
+                <div style={{flex : 1}}>
                     <h3 className="pb-md-2 pb-2 mt-lg-2" style={{ fontWeight : "bold"}}>Between Two Worlds</h3>
                     <p>Written by Мишeko</p>
                       <br></br>
@@ -245,30 +245,28 @@ const Home = () => {
                       <br></br>
                       <br></br>
                       <br></br>
-                      <br></br>
-                      <br></br>
-                      <br></br>
+                    
                       <br></br>
                       <p class="text-center my-2">Poetry read by Lily Talevski</p>
                       <p class="text-center my-2">Tori Naumovski</p>
                       <p class="text-center my-2">Francis Dumaurier</p>
                 </div>
               </div>
-              <div className="two-book-boxes-item container-caption">
+              <div className="two-book-boxes-item" style={{ backgroundColor : "#33C9FF" }} >
       
+                  <div>
                   <Link to="/between-two-worlds">
-                 
-             
+                
                     <img
                       src={TheMagicSnowmanAudiobook}
                       className=""
-                      alt="Between Two Worlds"
+                      alt="TheMagic Snowman Audiobook"
                       width="100%"
                    
                     />
-
                   </Link>
-                  <div class="caption"> Distributed by Authors Republic</div>
+                  <p className="caption">  distributed by  <span style={{fontStyle: "italic"}}> Authors Republic</span></p>
+                  </div>
               </div>
             
 

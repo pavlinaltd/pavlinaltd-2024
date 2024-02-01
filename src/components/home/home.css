@@ -80,26 +80,33 @@ main section#quote-container p::before {
 
 .two-book-boxes {
   display: flex;
-  justify-content: space-between; /* Space items evenly in the container */
+  justify-content: space-evenly; /* Space items evenly in the container */
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
 
-
-.two-book-boxes-item > div {
-  flex: 1; /* Allow each child div to take equal space */
-  padding: 20px; /* Add spacing between the image and text */
-  text-align: center; /* Center the text within the div */
-    width: 70%;
-}
-
-.two-book-boxes-item{
+.two-book-boxes-item-left{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px;
-  flex: 1;
+ /* Allow each child div to take equal space */
+  padding: 10px; /* Add spacing between the image and text */
+  text-align: center; /* Center the text within the div */
+  width: 35%; /* Set the width for each item to 70% of the container width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 20px; /* Add margin to create spacing between items */
 }
+
+
+
+.two-book-boxes-item {
+/* Allow each child div to take equal space */
+  padding: 10px; /* Add spacing between the image and text */
+  text-align: center; /* Center the text within the div */
+  width: 35%; /* Set the width for each item to 70% of the container width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 20px; /* Add margin to create spacing between items */
+}
+
 
 .two-book-boxes-item-img {
   /* width: 100%; */
@@ -236,14 +243,10 @@ figcaption {
 }
 
 .caption {
-  position: absolute;
-  bottom: 0; /* Position the caption at the bottom */
-  left: 0; /* Adjust left position as needed */
-  right: 0; /* Adjust right position as needed */
-  background: linear-gradient(#00000016, #000000a5);
+  /* background: linear-gradient(#00000016, #000000a5); */
   color: white; /* Text color for the caption */
+  text-align: start !important;
   padding: 8px; /* Adjust padding as needed */
-  text-align: center; /* Center the caption text */
   /* border-bottom-left-radius : 12px;
   border-bottom-right-radius : 12px; */
 }
