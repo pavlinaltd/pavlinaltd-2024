@@ -33,10 +33,10 @@ const Home = () => {
         <section id="quote-container" className="row p-3 py-4 p-lg-0 px-lg-3">
           <div className="intro col-12 p-3 py-md-4 p-xl-5 px-xl-0 m-0">
             <h3 className="p-0 px-xl-0">
-              Press on. Nothing in the world can take the place of persistence.
+              “Press on. Nothing in the world can take the place of persistence.
               Talent will not: nothing is more common than unrewarded talent.
               Education alone will not: the world is full of educated failures.
-              Persistence alone is omnipotent.{" "}
+              Persistence alone is omnipotent.”{" "}
               <span className="float-end">Calvin Coolidge</span>
             </h3>
             {/* <p className="p-0 px-xl-5 text-end">Calvin Coolidge</p> */}
@@ -126,14 +126,13 @@ const Home = () => {
             />
           </div>
         </section> */}
-        <section className="films container px-md-0 m-0 p-3 py-4 p-lg-0 px-lg-1">
-          <div className="row">
+        <section>
+          <div>
 
             <div
-              className="col-12 d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
-              style={{ backgroundColor: "#f0f0f0", minHeight: "50px" }}
+              className="book-centered-div"
             >
-              <h2 className="my-0 ">Active Productions</h2>
+              <h2 className="book-title">Active Productions</h2>
             </div>
 
           </div>
@@ -167,6 +166,7 @@ const Home = () => {
                 </Link>
   </div>
 </div>
+</section>
 
           {/* <div className="w-100 p-0 p-xl-0 py-xl-3">
             <div className="row p-0 pb-4 p-xl-0 py-xl-3">
@@ -200,43 +200,33 @@ const Home = () => {
             </div>
           </div> */}
 
+<section>
 
-
-          <div style={{marginTop : "50px"}}>
+          <div style={{marginTop : "80px"}}>
             <div
-              className="col-8  d-none d-lg-block d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
-              style={{ width : "100%", backgroundColor: "#f0f0f0", minHeight: "50px" }}
+              className="book-centered-div"
             >
-              <h2 className="my-0">Media Projects</h2>
+              <h2 className="book-title">Media Projects</h2>
             </div>
-            <div className="two-book-boxes" style={{ textAlign : "center" }}>
-            <div>
-            <div>
-              
-            </div>
-            </div>
-              <div className="two-book-boxes-item container-caption" style={{ backgroundColor : "#0dcaf0" }} >
+            <div className="two-book-boxes">
+              <div className="two-book-boxes-item" style={{ backgroundColor : "#FFC72C" }} >
                   
-                <div style={{ textAlign : "center", display : "flex" }}>
-                  <div>
-                  <div className="book-title">Between Two Worlds</div>
-                    <p style={{ color: "white"}}>Written by Мишeko</p>
-                    <div className="two-book-boxes-item-img">
+          
+                  <div> 
                   <Link to="/between-two-worlds">
           
                     <img
                       src={BetweenTwoWorlds}
-                      className="ro"
                       alt="Between Two Worlds"
-                      width="50%"
+                      width="100%"
                       
                     />
                     
                   </Link>
-                  </div>
-                  </div>
+          
+         
                 </div>
-                {/* <div>
+                <div>
                     <h3 className="pb-md-2 pb-2 mt-lg-2" style={{ fontWeight : "bold"}}>Between Two Worlds</h3>
                     <p>Written by Мишeko</p>
                       <br></br>
@@ -262,14 +252,9 @@ const Home = () => {
                       <p class="text-center my-2">Poetry read by Lily Talevski</p>
                       <p class="text-center my-2">Tori Naumovski</p>
                       <p class="text-center my-2">Francis Dumaurier</p>
-                </div> */}
-                  <div class="caption">       
-                  <p class="text-center my-2">Poetry read by Lily Talevski, Tori Naumovski, Francis Dumaurier</p>
-                      {/* <p class="text-center my-2">Tori Naumovski</p>
-                      <p class="text-center my-2">Francis Dumaurier</p> */}
-                  </div>
+                </div>
               </div>
-              <div className="two-book-boxes-item container-caption" style={{ backgroundColor : "#ffc107" }} >
+              <div className="two-book-boxes-item container-caption">
       
                   <Link to="/between-two-worlds">
                  
@@ -290,9 +275,9 @@ const Home = () => {
 
             </div>
           </div>
+          </section>
 
-
-
+          <section>
           {/* 
           <div className=" d-sm-none small-screen-media-projects">
            <div className="row mb-4">
@@ -370,22 +355,19 @@ const Home = () => {
 
 
 
-          <div className="col-12 m-0 p-0 p-xl-0 py-xl-3">
-
-          </div>
-          <div className="row">
+  
+          <div style={{ marginTop : "60px"}}>
 
             <div
-              className="col-12 d-flex align-items-center justify-content-center p-3 py-md-4 p-xl-5 pb-xl-0 px-xl-0 m-0 rounded text-center"
-              style={{ backgroundColor: "#f0f0f0", minHeight: "50px" }}
+              className="book-centered-div"
             >
-              <h2 className="my-0">In Development</h2>
+              <h2 className="book-title">In Development</h2>
             </div>
 
 
           </div>
 
-                  <div class="book-image-row">
+          <div class="book-image-row">
           <div class="book-image">
           <Link to="/in-development#borders-in-heaven">
                   <img

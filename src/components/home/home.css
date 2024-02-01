@@ -21,8 +21,10 @@ main section.films h2 {
   color: #94211d;
   font-size: 1.7rem;
   font-weight: 600;
-  padding-bottom: 30px ;
+  padding: 15px;
 }
+
+
 
 .indev {
 
@@ -58,15 +60,36 @@ main section#quote-container p::before {
 
 }
 
+.book-centered-div {
+  display: flex;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
 .banner-stretch{
   
 }
 
-.two-book-boxes{
+/* .two-book-boxes{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px;
+} */
+
+.two-book-boxes {
+  display: flex;
+  justify-content: space-between; /* Space items evenly in the container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+
+.two-book-boxes-item > div {
+  flex: 1; /* Allow each child div to take equal space */
+  padding: 20px; /* Add spacing between the image and text */
+  text-align: center; /* Center the text within the div */
+    width: 70%;
 }
 
 .two-book-boxes-item{
@@ -75,9 +98,7 @@ main section#quote-container p::before {
   justify-content: space-around;
   align-items: center;
   margin: 20px;
-  /* padding: 20px; */
-  /* border-radius: 12px; */
-  flex : 1;
+  flex: 1;
 }
 
 .two-book-boxes-item-img {
@@ -88,19 +109,28 @@ main section#quote-container p::before {
 }
 
 .book-title {
-   font-weight : bold;
-   font-size : 30px;
-   color: white;
+  color: #94211d;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 15px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
 }
 
 .book-image-row {
-  display: flex;
-  justify-content: space-between; /* Adjust as needed for spacing between images */
+  margin-top: 20px;
+  display: flex; /* Display the images in a row */
+  justify-content: flex-start; /* Align the images to the left edge */
+  gap: 20px; /* Adjust the gap between images as needed */
 }
 
 .book-image {
   flex: 1; /* Distribute available space equally among images */
-  margin : 10px;
+  /* padding : 10px; */
 }
 
 .book-image img {
@@ -142,7 +172,12 @@ main section#quote-container p::before {
   
 } 
 
-
+.book-headers {
+  line-height: 1.2rem ; 
+  font-family: serif !important;
+  font-weight: bold;
+  font-size: 1rem;
+}
 
 #book-box-text-small h3{
   line-height: 1.5rem ; 
