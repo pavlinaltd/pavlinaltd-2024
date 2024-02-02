@@ -99,14 +99,14 @@
 
 hr { 
   display: block;
-  color: #94211d;
-  /* margin-top: 3em; */
-  margin-bottom: 0.5em;
-  margin-left: 30%;
-  margin-right: 30%;
-  border-style: inset;
-  border-width: 2px;
-  background-color: #94211d;
+  width: 70%;
+  margin: 0 auto; 
+  align-self: center;
+  border-style: solid;
+  margin-top: 2em;
+  border-radius: 50%;
+  border-width: 2px; /* Increase border width for thickness */
+  border-color: #120101; /* Set border color to a darker color */
 } 
 
 

@@ -18,10 +18,10 @@ const Future = () => {
       }
     }
   }, [location]);
-  
+
 
   return (
-    <main className="film">
+    <main className="film" id="borders-in-heaven">
       <div className="container p-0">
         <section
           id="previous-films"
@@ -29,20 +29,35 @@ const Future = () => {
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3 " >
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6" id="borders-in-heaven">
+              <div className="col-12 col-md-6" >
                 <h1>Borders in Heaven</h1>
               </div>
               <section className="synopsis container p-3 py-4 py-md-0 m-0">
-                <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 m-0">
-                  <div className="col">
-                    <p className="mb-3 mb-lg-4">
+                <div className="future-film-section-col" style={{ marginTop: "40px", textAlign: "center" }}>
+                  <div>
+                    <div className="flexbox ratio ratio-16x9" id="test" style={{ width: "80%", textAlign: "center", margin: "0 auto" }}>
+                      <iframe
+                        src="https://www.youtube.com/embed/1HGMugATEMw"
+                        title="YouTube video player"
+
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+
+                      ></iframe>
+                    </div>
+                  </div>
+
+
+                  <div style={{ marginTop: "40px" }}>
+                    <p className="future-film-desc">
                       Borders in Heaven is a fish-out-of-water romantic comedy
                       that takes place in a small village in Macedonia called
                       Heaven. The main protagonist, Donna Lee, is a native New
                       Yorker who is sent there to investigate an insurance
                       scheme perpetrated by the locals.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <br></br>
+                    <p className="future-film-desc">
                       The tranquil Macedonian countryside is a dramatic change
                       from Donna Lee's fast-paced life in New York. The medieval
                       village is a perfect setting for a clash of two very
@@ -58,32 +73,21 @@ const Future = () => {
                       story are reminiscent of notable classics like Cinema
                       Paradiso, Local Hero and Il Postino.
                     </p>
-                    <p>Slated for spring 2022</p>
+                    <br></br>
+                    <p className="future-film-desc">Slated for spring 2022</p>
                   </div>
-              
-                    <div className="col ">
-                      <div className="flexbox ratio ratio-16x9" id="test">
-                        <iframe
-                          src="https://www.youtube.com/embed/1HGMugATEMw"
-                          title="YouTube video player"
-                          
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowfullscreen
-                          
-                        ></iframe>
-                      </div>
-                    </div>
-                  
+
+
                 </div>
-
-
-                <div className="col-12" id="the-magic-snowman-returns">
-                  <hr className="w-100 mb-5" />
+              </section>
+              <hr className="future-separator" id="the-magic-snowman-returns"></hr>
+              <section>
+                <div className="col-12">
                   <h1>The Magic Snowman Returns</h1>
                 </div>
-                <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 m-0">
-                  <div className="col">
-                    <p className="mb-3 mb-lg-4">
+                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                    <p className="future-film-desc">
                       In a snow covered field somewhere in the world, Lumiukko,
                       the magic snowman, is witnessing spring. All around him
                       are the sounds and signs of the approaching season. His
@@ -93,7 +97,7 @@ const Future = () => {
                       friends fly... looking for another part of the world where
                       winter is in the air.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       A continent away in the quaint little town of Jensenville,
                       New England is the home of three inseparable friends:
                       Steven Fried and Kim and Tommy Wilson. In this part of the
@@ -106,44 +110,48 @@ const Future = () => {
                       father, a local owner of a music store.
                     </p>
                   </div>
-                  <div className="col">
-                    <img
+                  <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
+                  <img
                       src={SMR}
                       alt="The Magic Snowman Returns"
-                      className="img-fluid"
+                      className="future-film-img"
                     />
                   </div>
                 </div>
-                <div className="col-12" id="keratza">
-                  <hr className="w-100 mb-5" />
-                  <h1>Keratza</h1>
+              </section>
+
+
+              <hr className="future-separator" id="keratza"/>
+              <section>
+                <div className="col-12">
+                  <h1 style={{ fontStyle: "italic" }}>Keratza</h1>
                 </div>
-                <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 m-0 justify-content-between">
-                  <div className="col-12 col-md-6 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0">
-                    <p className="mb-3 mb-lg-4">
+                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                    <p className="future-film-desc">
                       ...It is 1995 and a truck filled with her paintings stops
                       at the Bulgarian-Macedonian Border. It is 2 am on a cold
                       October night...
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       Often referred as the Frieda Kahlo of the Balkans, Keratza
                       Visulcheva was born in 1910 in a village called Nesram, in
                       the Aegean part of Macedonia, today part of Greece.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       Her story begins as a three-year old when she flees the
                       terror of the Ottoman Turks and with her parents settles
                       in nearby Bulgaria where she will spend most of her adult
                       life.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       But while her travels take her all over Europe and her
                       work is recognized by the European artistic community, she
                       will never rest trying to keep the connection with her
                       homeland open. Through her paintings, during happy times,
                       and when in the midst of a depression.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       “The depression threatened to destroy me. I simply didn't
                       want to paint any more. I started cutting my paintings.
                       Fortunately, on one occasion, a doctor who was also an
@@ -151,22 +159,26 @@ const Future = () => {
                       resumed my work. I swore that I will never again reach for
                       the paintings and that I would continue."
                     </p>
-                    <p>
+                    <p className="future-film-desc">
                       At the age of 85, Keratza Visulcheva bequeathed her entire
                       artistic opus to Macedonia.
                     </p>
                   </div>
                   <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
-                    <img src={Keratza} alt="Keratza" className="img-fluid" />
+                    <img src={Keratza} alt="Keratza" className="future-film-img" />
                   </div>
                 </div>
-                <div className="col-12" id="rice">
-                  <hr className="w-100 mb-5" />
+              </section>
+
+              <hr className="future-separator" id="rice"/>
+
+              <section>
+                <div className="col-12" >
                   <h1>Rice, Milk and Stilettos</h1>
                 </div>
-                <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 m-0 justify-content-between">
-                  <div className="col-12 col-md-6 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0">
-                    <p className="mb-3 mb-lg-4">
+                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                    <p className="future-film-desc">
                       RICE...This short film explores the traumatic effects of
                       the Cultural Revolution on Lee Chen, who in 1951
                       unknowingly participated in mass murder. Chairman Mao's
@@ -180,7 +192,7 @@ const Future = () => {
                       a period and contemporary tale that shows the degrading
                       nature of fascism on the human spirit.
                     </p>
-                    <p className="mb-3 mb-lg-4">
+                    <p className="future-film-desc">
                       MILK...It is the time of the goats when Marshal Tito
                       creates Yugoslavia, on the onset of World War II. It is a
                       country of a handful of intellectuals enamored with
@@ -194,7 +206,7 @@ const Future = () => {
                       the animals are destroying the forests. Those who don’t
                       kill the animals will serve jail time…
                     </p>
-                    <p>
+                    <p className="future-film-desc">
                       STILETOS...The Taliban prohibits women from wearing
                       high-heeled shoes because “they attract a man’s attention”
                       which is shameful, and a woman is stoned to death. Her
@@ -204,15 +216,18 @@ const Future = () => {
                       political asylum in the USA…
                     </p>
                   </div>
-                  <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-center">
+                  <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
                     <img
                       src={RMS}
                       alt="Rice, Milk and Stilettos"
-                      className="img-fluid"
+                      className="future-film-img"
                     />
                   </div>
                 </div>
               </section>
+
+
+
             </div>
           </div>
         </section>

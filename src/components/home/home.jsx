@@ -255,7 +255,7 @@ const Home = () => {
               <div className="two-book-boxes-item" style={{ backgroundColor : "#33C9FF" }} >
       
                   <div>
-                  <Link to="/between-two-worlds">
+                  <Link to="/the-magic-snowman-book">
                 
                     <img
                       src={TheMagicSnowmanAudiobook}

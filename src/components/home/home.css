@@ -238,6 +238,32 @@ figcaption {
   
 }
 
+
+
+.future-film-desc {
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: justify;
+}
+
+.future-film-section {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.future-film-img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.future-separator {
+  width: 80%;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
 .container-caption {
   position: relative; /* Make the container a positioning context */
 }
@@ -251,6 +277,53 @@ figcaption {
   border-bottom-right-radius : 12px; */
 }
 
+
+.future-film-section {
+  display: flex; /* Use Flexbox to align items side by side */
+  align-items: flex-start; /* Align items at the top of the container */
+}
+
+.future-film-text {
+  flex: 1; /* Allow text to grow and take available space */
+}
+
+.future-film-section-col
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.future-film-image {
+  flex: 1; /* Allow image to grow and take available space */
+  display: flex;
+  align-items: center; /* Vertically center the image within its container */
+}
+
+.future-film-img {
+  max-height: 100%; /* Ensure image height matches its container height */
+  width: auto; /* Allow image width to adjust proportionally */
+}
+
+.future-film-section {
+  display: flex; /* Use Flexbox to align items side by side */
+  align-items: stretch; /* Stretch both divs to the same height */
+}
+
+.future-film-text {
+  flex: 1; /* Allow text div to grow and take available space */
+}
+
+.future-film-image {
+  flex: 1; /* Allow image div to grow and take available space */
+  display: flex;
+  align-items: center; /* Vertically center the image within its container */
+}
+
+.future-film-img {
+  max-height: 100%; /* Ensure image height matches its container height */
+  width: auto; /* Allow image width to adjust proportionally */
+}
 
 @media (min-width: 992px) {
   main section.films div.book-row {
