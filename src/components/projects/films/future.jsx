@@ -24,8 +24,7 @@ const Future = () => {
     <main className="film" id="borders-in-heaven">
       <div className="container p-0">
         <section
-          id="previous-films"
-          className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
+          style={{ width : "85%", margin: '0px auto' }}
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3 " >
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
@@ -35,7 +34,7 @@ const Future = () => {
               <section className="synopsis container p-3 py-4 py-md-0 m-0">
                 <div className="future-film-section-col" style={{ marginTop: "40px", textAlign: "center" }}>
                   <div>
-                    <div className="flexbox ratio ratio-16x9" id="test" style={{ width: "80%", textAlign: "center", margin: "0 auto" }}>
+                    <div className="flexbox ratio ratio-16x9" id="test" style={{ width: "100%", textAlign: "center", margin: "0 auto" }}>
                       <iframe
                         src="https://www.youtube.com/embed/1HGMugATEMw"
                         title="YouTube video player"
@@ -74,7 +73,7 @@ const Future = () => {
                       Paradiso, Local Hero and Il Postino.
                     </p>
                     <br></br>
-                    <p className="future-film-desc">Slated for spring 2022</p>
+                    <p className="future-film-desc">In development</p>
                   </div>
 
 
@@ -85,7 +84,7 @@ const Future = () => {
                 <div className="col-12">
                   <h1>The Magic Snowman Returns</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                <div className="future-film-section" style={{ marginTop: "30px" }}>
                   <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
                     <p className="future-film-desc">
                       In a snow covered field somewhere in the world, Lumiukko,
@@ -97,6 +96,7 @@ const Future = () => {
                       friends fly... looking for another part of the world where
                       winter is in the air.
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       A continent away in the quaint little town of Jensenville,
                       New England is the home of three inseparable friends:
@@ -126,7 +126,7 @@ const Future = () => {
                 <div className="col-12">
                   <h1 style={{ fontStyle: "italic" }}>Keratza</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                <div className="future-film-section" style={{ marginTop: "30px" }}>
                   <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
                     <p className="future-film-desc">
                       ...It is 1995 and a truck filled with her paintings stops
@@ -176,7 +176,7 @@ const Future = () => {
                 <div className="col-12" >
                   <h1>Rice, Milk and Stilettos</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "40px" }}>
+                <div className="future-film-section" style={{ marginTop: "30px" }}>
                   <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
                     <p className="future-film-desc">
                       RICE...This short film explores the traumatic effects of
@@ -192,6 +192,7 @@ const Future = () => {
                       a period and contemporary tale that shows the degrading
                       nature of fascism on the human spirit.
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       MILK...It is the time of the goats when Marshal Tito
                       creates Yugoslavia, on the onset of World War II. It is a
@@ -206,6 +207,7 @@ const Future = () => {
                       the animals are destroying the forests. Those who don’t
                       kill the animals will serve jail time…
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       STILETOS...The Taliban prohibits women from wearing
                       high-heeled shoes because “they attract a man’s attention”

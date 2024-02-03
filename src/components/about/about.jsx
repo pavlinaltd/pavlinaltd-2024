@@ -86,8 +86,9 @@ const About = () => {
           <hr></hr>
         <div className="row">
           <div className="mt-5">
-            <h1 id="heading" >"Production a combination of persistence ... and blind faith."</h1>  
+            <h1 id="heading" >"Production - a combination of persistence and blind faith."</h1>  
           </div>
+              <hr style={{ width : "70%", marginTop : "40px"}}></hr>
           <section className="mt-5">
         
           <div className='carousel'> 

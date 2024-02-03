@@ -64,8 +64,9 @@ main section#quote-container p::before {
   display: flex;
   background-color: #f0f0f0;
   border-radius: 12px;
+  width: 100%;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  align-content: center; /* Center vertically */
 }
 
 .banner-stretch{
@@ -93,7 +94,7 @@ main section#quote-container p::before {
   text-align: center; /* Center the text within the div */
   width: 35%; /* Set the width for each item to 70% of the container width */
   box-sizing: border-box; /* Include padding in the width calculation */
-  margin: 20px; /* Add margin to create spacing between items */
+  margin: 30px; /* Add margin to create spacing between items */
 }
 
 
@@ -104,7 +105,7 @@ main section#quote-container p::before {
   text-align: center; /* Center the text within the div */
   width: 35%; /* Set the width for each item to 70% of the container width */
   box-sizing: border-box; /* Include padding in the width calculation */
-  margin: 20px; /* Add margin to create spacing between items */
+  margin: 20px; 
 }
 
 
@@ -120,6 +121,7 @@ main section#quote-container p::before {
   font-size: 1.7rem;
   font-weight: 600;
   padding: 15px;
+  height: 100%;
 }
 
 section {
@@ -133,6 +135,7 @@ section {
   display: flex; /* Display the images in a row */
   justify-content: flex-start; /* Align the images to the left edge */
   gap: 20px; /* Adjust the gap between images as needed */
+
 }
 
 .book-image {
@@ -145,6 +148,7 @@ section {
   height: 100%; /* Set the image height to 100% of the div's height */
   /* object-fit: cover;  */
 }
+
 
 
 .book-box-item-right{
@@ -269,12 +273,13 @@ figcaption {
 }
 
 .caption {
-  /* background: linear-gradient(#00000016, #000000a5); */
-  color: white; /* Text color for the caption */
-  text-align: start !important;
-  padding: 8px; /* Adjust padding as needed */
-  /* border-bottom-left-radius : 12px;
-  border-bottom-right-radius : 12px; */
+  position: absolute;
+  bottom : 0; /* Adjust the top position to vertically center the caption */
+  left: 0; /* Adjust the left position to horizontally center the caption */ /* Center the caption perfectly */
+  background-color: rgba(0, 0, 0, 0.252); /* Add a background color for readability */
+  color: white; /* Set the text color */
+  padding: 5px; /* Add padding for better appearance */
+
 }
 
 
