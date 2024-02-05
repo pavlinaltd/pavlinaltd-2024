@@ -44,12 +44,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          </section>
 
-          <div className="col-12 m-0 p-0 px-3 py-0">
-            <hr className="mx-xl-5" />
-          </div>
 
-          <div className="col-12 p-3 py-4 p-xl-0 pb-xl-0 m-0">
+            <hr />
+        <section style={{ marginTop : "60px"}}>
+          <div className="col-12 p-3 py-4 p-xl-0 pb-xl-0 m-0" >
             <h2 className="p-0">Completed Documentaries and Short Films</h2>
           </div>
           <div className="w-100 p-0 p-xl-0 py-xl-3">

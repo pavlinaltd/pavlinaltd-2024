@@ -105,18 +105,18 @@ const Home = () => {
                     <img
                       src={BetweenTwoWorlds}
                       alt="Between Two Worlds"
-                      width="100%"
-                      style={{padding : "10px"}}
+                      width="120%"
+                      style={{}}
                     />
                     
                   </Link>
           
          
                 </div>
-                <div style={{flex : 1 , display : "flex", flexDirection : "column", justifyContent : "space-between", height: "100%"}}>
-                    <div>
+                <div style={{flex : 1 , display : "flex", flexDirection : "column", justifyContent : "end", marginTop : "50%", marginBottom : "30px"}}>
+                    {/* <div>
                     <h3 className="pb-md-2 pb-2 mt-lg-2" style={{ fontWeight : "bold"}}>Between Two Worlds</h3>
-                    </div>
+                    </div> */}
                    
           
       
