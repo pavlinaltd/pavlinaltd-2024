@@ -32,57 +32,66 @@ const About = () => {
 
           {/* <div className = "row "> */}
             <section style={{marginLeft: "30px", marginRight : "30px"}}>
-              <img className="headshot"
+              <div style={{ display : "flex"}}>
+              <img
                   src={pavlina}
                   alt="Pavlina Proevska"
-                 
+                  className="headshot"
+
                 />
       
-          
-            <p id="about-career">
+            <div style={{ marginLeft : "30px", fontSize : "16px", textAlign :"justify", lineHeight : "1.2em"}}>
+            <p>
               Native of Macedonia,{" "}
               <span style={{fontWeight : "bold"}}>Pavlina Proevska</span> studied Public Relations in Paris and worked
 in the news department at With the CBS News 1984' Summer Olympics Team as well
 as in the field, for USA Cable Networks.
+</p>
               <br></br>
-              <br></br>
+   <p>
               The highlights of her tenure at With the CBS News 1984' Summer Olympics Team
 was as part of the team covering the Regan-Gorbachev Summit in Geneva, in 1986.
 For the USA Cable Network, she was part of the team working on the promotion of
 the thriller Death Train, in Slovenia in 1993 where she was introduced to Irish
 drinking by the star of the film, Pierce Brosnan.
+</p>
               <br></br>
-              <br></br>
+   <p>
               Ms. Proevska is currently working on the REDUX of{" "}
               <span style={{ fontStyle : "italic"}}>The Magic Snowman</span>{" "}
                for release
 on DVD/Blu-Ray and VOD plaXorms in 2024. She is also in pre-production of a short
 docu-drama, <span style={{ fontStyle : "italic"}}>My Heart Is No Longer an Orphan</span>
 , and she will be directing it late this summer in Montenegro, Macedonia.
+</p>
               <br></br>
-              <br></br>
+       <p>
               She has recently completed two documentary films, 
               <span style={{ fontStyle : "italic"}}>The Promise of Perfume</span>, and the
 biopic  <span style={{ fontStyle : "italic"}}>My American Pilgrimage</span>. The making of  <span style={{ fontStyle : "italic"}}>The Promise of Perfume</span> had taken
 her to the Jungle of French Guayana, Bulgaria, France, Tunisia and Macedonia.
+</p>
               <br></br>
-              <br></br>
-       
+           
+       <p>
               She is especially proud of a special recognition she received recently as her second
 feature film, Happy Hell Night was admitted for permanent curating, at {" "}
 <span style={{ fontStyle : "italic"}}>The Archives
 of Moving Images</span>{" "} of the United States <span style={{ fontStyle : "italic"}}>Libarary of Congress</span>.
+</p>
               <br></br>
-              <br></br>
+             <p>
               Ms. Proevska is active in the promotion of Macedonia's cultural heritage as the
 founder and Executive Director of the Macedonian Arts Council. She is fluent in five
 languages and lives and works in New York City.
             
             </p>
+            </div>
+            </div>
             </section>
           
    
-          <hr></hr>
+          <hr style={{ marginTop : "50px"}}></hr>
         <div className="row">
           <div className="mt-5">
             <h1 id="heading" >"Production - a combination of persistence and blind faith."</h1>  
@@ -157,7 +166,7 @@ languages and lives and works in New York City.
           </Carousel>
           
           </div>
-          <div style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", alignContent : "center", marginLeft : "20px", fontSize : "17px", textAlign :"justify", lineHeight : "1.2em"}}>
+          <div style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", alignContent : "center", marginLeft : "20px", fontSize : "16px", textAlign :"justify", lineHeight : "1.2em"}}>
             <p>
               <strong style={{ fontWeight : "bold"}}>PAVLINA Ltd.</strong> is an independent production company engaged in the development and production of feature films and documentaries. It was incorporated in 1986 by Pavlina Proevska, President and General Partner. The co-producing partner of Pavlina Ltd., FilmsZaNas d.o.o.e.l. is based in Macedonia.
               </p>

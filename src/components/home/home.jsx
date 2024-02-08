@@ -131,7 +131,7 @@ const Home = () => {
               </div>
               <div className="two-book-boxes-item ">
       
-                  <div  className="container-caption">
+                  <div >
                   <Link to="/the-magic-snowman-book">
                 
                     <img
@@ -143,7 +143,11 @@ const Home = () => {
                     />
                    
                   </Link>
-                  <div className="caption">distributed by  <span style={{fontStyle: "italic"}}> Authors Republic</span></div>
+                  <div className="snowman-dist">
+                    <div style={{}}>distributed by  <span style={{fontStyle: "italic"}}> Authors Republic</span></div>
+                    <div> <a href="www.google.com" target="_blank">Audio Link</a></div>
+                  </div>
+                  
                   </div>
                   
               </div>

@@ -33,21 +33,21 @@ const Future = () => {
               </div>
               <section className="synopsis container p-3 py-4 py-md-0 m-0">
                 <div className="future-film-section-col" style={{ marginTop: "40px", textAlign: "center" }}>
-                  <div>
-                    <div className="flexbox ratio ratio-16x9" id="test" style={{ width: "100%", textAlign: "center", margin: "0 auto" }}>
+     
+                   
                       <iframe
                         src="https://www.youtube.com/embed/1HGMugATEMw"
                         title="YouTube video player"
 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen
-
+                        style={{flex : 1, border: "none" }}
                       ></iframe>
-                    </div>
-                  </div>
+                    
+            
 
 
-                  <div style={{ marginTop: "40px" }}>
+                  <div style={{flex : 1 , marginLeft : "40px"}}>
                     <p className="future-film-desc">
                       Borders in Heaven is a fish-out-of-water romantic comedy
                       that takes place in a small village in Macedonia called

@@ -282,6 +282,14 @@ figcaption {
 
 }
 
+.snowman-dist {
+  display : flex;
+  justify-content : space-between;
+  background-color: rgba(0, 0, 0, 0.252);
+  color: white;
+  padding: 5px;
+}
+
 
 .future-film-section {
   display: flex; /* Use Flexbox to align items side by side */
@@ -295,8 +303,8 @@ figcaption {
 .future-film-section-col
 {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .future-film-image {

@@ -1,11 +1,10 @@
 
 .headshot{
-  height: 300px;
-  width: 300px;
-  float: left;
-  margin-bottom : 10px;
-  margin-right : 30px;
+  
+  width: 35%;
+  height: auto;
 }
+
 #about-career{
   line-height: 1.45rem;
   font-family: serif !important;
@@ -38,7 +37,7 @@
   height: 500px;
   width: 500px;
   float : left;
-  margin-right : 20px;
+  margin-right : 10px;
   margin-left : 20px;
 }
 

@@ -9,7 +9,7 @@ main.film h2 {
 }
 main.film section.synopsis p {
   text-align: justify;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 main.film section.synopsis .quote p {
   color: #94211d;
