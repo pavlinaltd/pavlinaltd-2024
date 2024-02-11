@@ -7,7 +7,6 @@ import RMS from "../../../assets/films/R_M_Stilettos.jpg";
 import SMR from "../../../assets/films/snowmanreturns.jpg";
 
 // import { Lightbox } from "react-modal-image";
-import ModalImage from "react-modal-image";
 
 const Future = () => {
 
