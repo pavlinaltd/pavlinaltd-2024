@@ -41,7 +41,7 @@ const Orphan = () => {
                     src="https://www.youtube.com/embed/q4R1JfTIOpQ"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                   
                 </div>

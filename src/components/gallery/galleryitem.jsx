@@ -4,7 +4,7 @@ const GalleryItem = (props) => {
       <img
         src={props.image}
         alt={props.alt}
-        className="img-fluid"
+        className="img-fluid rounded-lg"
         data-bs-target={props.target}
         data-bs-slide-to={props.slide}
       />

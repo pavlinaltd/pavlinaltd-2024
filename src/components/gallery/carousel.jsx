@@ -5,6 +5,7 @@ const CarouselItem = (props) => {
         className="d-block w-100"
         src={props.image}
         alt={props.alt}
+        style={{ borderBottomLeftRadius : "6px" , borderBottomRightRadius : "6px" }}
       />
     </div>
   );

@@ -312,8 +312,8 @@ const Gallery = () => {
         className="modal fade"
         id="GalleryModal"
         role="dialog"
-        tabindex="-1"
-        aria-hidden="true"
+        tabIndex="-1"
+        aria-hidden="false"
       >
         <div
           className="modal-dialog modal-dialog-centered modal-lg"
@@ -331,6 +331,7 @@ const Gallery = () => {
               id="indicators"
               className="carousel slide"
               data-bs-interval="false"
+              style={{ width : "100%" , height : "100%" , marginLeft : "0px"}}
             >
               <div className="carousel-inner">
                 <CarouselItem

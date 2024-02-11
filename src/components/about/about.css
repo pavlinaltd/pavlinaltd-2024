@@ -32,6 +32,16 @@
   text-align: center;
 }
 
+.carousel-gallery {
+  z-index: 10;
+  height: 500px;
+  width: 500px;
+  float : left;
+  margin-right : 10px;
+  margin-left : 20px;
+}
+
+
 .carousel {
   z-index: 10;
   height: 500px;

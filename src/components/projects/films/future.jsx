@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./films.css";
 import { useLocation } from 'react-router-dom';
 
@@ -6,9 +6,23 @@ import Keratza from "../../../assets/films/keraca-visuleva.webp";
 import RMS from "../../../assets/films/R_M_Stilettos.jpg";
 import SMR from "../../../assets/films/snowmanreturns.jpg";
 
+// import { Lightbox } from "react-modal-image";
+import ModalImage from "react-modal-image";
+
 const Future = () => {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
   const location = useLocation();
+
+  const openModal = (imageSrc) => {
+    setModalImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     if (location.hash) {
@@ -40,7 +54,7 @@ const Future = () => {
                         title="YouTube video player"
 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
+                        allowFullScreen
                         style={{flex : 1, border: "none" }}
                       ></iframe>
                     
@@ -110,11 +124,13 @@ const Future = () => {
                       father, a local owner of a music store.
                     </p>
                   </div>
-                  <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
+                  <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end image-container">
                   <img
                       src={SMR}
                       alt="The Magic Snowman Returns"
                       className="future-film-img"
+                      onClick={() => openModal(SMR)}
+                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 </div>
@@ -165,7 +181,10 @@ const Future = () => {
                     </p>
                   </div>
                   <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
-                    <img src={Keratza} alt="Keratza" className="future-film-img" />
+                    <img src={Keratza} alt="Keratza" className="future-film-img" 
+                     onClick={() => openModal(Keratza)}
+                     style={{ cursor: "pointer" }}
+                    />
                   </div>
                 </div>
               </section>
@@ -223,6 +242,8 @@ const Future = () => {
                       src={RMS}
                       alt="Rice, Milk and Stilettos"
                       className="future-film-img"
+                      onClick={() => openModal(RMS)}
+                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 </div>
@@ -234,6 +255,21 @@ const Future = () => {
           </div>
         </section>
       </div>
+      {/* Modal */}
+      {isModalOpen && (
+         <div className="modals-im">
+         <span className="close" onClick={closeModal}>
+           &times;
+         </span>
+         <div className="modal-content-img">
+           <div className="modal-img-container">
+             <img src={modalImage} alt="asda" className="modal-img" />
+           </div>
+         </div>
+       </div>
+      
+      )}
+
     </main>
   );
 };
