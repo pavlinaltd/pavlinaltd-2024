@@ -8,14 +8,14 @@ const Orphan = () => {
 
   return (
     <main className="film">
-      <div className="container p-0">
+      <div className="container p-0" style={{ marginBottom : "60px"}}>
         <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
+              {/* <div className="col-12 col-md-6">
                 <h1 className="mb-5">My Heart is No Longer an Orphan</h1>
                 <h2>Screenplay by</h2>
                 <p className="mb-3 mb-lg-4">Pavlina Proevska</p>
@@ -34,7 +34,7 @@ const Orphan = () => {
                 <p className="mb-3 mb-lg-4">Roundabout d.o.o.e.l.</p>
                 <h2>Screenplay by</h2>
                 <p className="mb-3 mb-lg-4">Pavlina Proevska</p>
-              </div>
+              </div> */}
               <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
@@ -52,20 +52,21 @@ const Orphan = () => {
         </section>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
+            <div style={{ display : "flex"}}>
               
               <div className="col-12 col-md-4 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex" id='myHeart'> 
                 <img src={Poster} alt="" className="img-fluid rounded-4" />
               </div>
 
 
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5">
-                <p className="mb-3 mb-lg-4">
+              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5" style={{ fontSize : "18px", display :"flex", flexDirection : "column", justifyContent :"space-between"}}>
+                <p >
                   In March of 1969, she was seventeen and he twenty years old,
                   when they met at a poetry read in a city in Macedonia, then
                   part of a country known as the jewel of the Balkans.
                 </p>
-                <p className="mb-3 mb-lg-4">
+                <br></br>
+                <p>
                   He was more of a poet than she was, always brooding and sad
                   even when he was happy. She was a bubbly tomboy who liked his
                   attention and was tickled by the nickname he gave her, Paola.
@@ -79,9 +80,9 @@ const Orphan = () => {
                   he said, and she was the one.
                 </p>
 
+                <br></br>
 
-
-                <p className="mb-3 mb-lg-4">
+                <p>
                   That August, they would miss each other, at yet another poetry
                   festival, in the world famous city of Struga, in Macedonia.
                   She arrives two hours after he leaves to go back to his native

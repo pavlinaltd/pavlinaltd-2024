@@ -5,23 +5,194 @@ import { useLocation } from 'react-router-dom';
 import Keratza from "../../../assets/films/keraca-visuleva.webp";
 import RMS from "../../../assets/films/R_M_Stilettos.jpg";
 import SMR from "../../../assets/films/snowmanreturns.jpg";
+import Modal from "react-bootstrap/Modal";
+
+
+const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
+  return (
+    <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-xl">
+      <Modal.Header closeButton>
+        <Modal.Title>Rice, Milk and Stilettos</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+          <div
+            style={{width : "60%", display: "flex", alignSelf: "flex-start", justifyContent : "space-between", flexDirection : "column", marginRight : "60px" }}
+          >
+           <p className="future-film-desc">
+                      RICE...This short film explores the traumatic effects of
+                      the Cultural Revolution on Lee Chen, who in 1951
+                      unknowingly participated in mass murder. Chairman Mao's
+                      decrees to kill off the birds in order to increase crop
+                      yield is at first amusing to a little seven-year old girl
+                      who uses pots and pans to scare off the birds to the point
+                      that they wall dead to the ground, from the aimless
+                      exhausting flutter in the air. In 1951 there were no
+                      sparrows left in China, only mosquitoes that brought
+                      malaria and death to millions of people. The film is both
+                      a period and contemporary tale that shows the degrading
+                      nature of fascism on the human spirit.
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      MILK...It is the time of the goats when Marshal Tito
+                      creates Yugoslavia, on the onset of World War II. It is a
+                      country of a handful of intellectuals enamored with
+                      communism, and millions of peasants whose meager existence
+                      depends on the few farm animals they own, the most popular
+                      of them, the goat. But the communist leaders of the
+                      Eastern block, namely Stalin and Tito, need workers in the
+                      newly formed cooperatives that can be indoctrinated to
+                      become the new class. In 1949 a law is passed that calls
+                      for the annihilation of the goats under the pretext that
+                      the animals are destroying the forests. Those who don’t
+                      kill the animals will serve jail time…
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      STILETOS...The Taliban prohibits women from wearing
+                      high-heeled shoes because “they attract a man’s attention”
+                      which is shameful, and a woman is stoned to death. Her
+                      nine-year old daughter watches the men, including her own
+                      father, kill her mother. Soon after, an international
+                      lawyer rescues her from Afghanistan and helps her get
+                      political asylum in the USA…
+                    </p>
+          </div>
+          <div style={{ flex: "1", textAlign : "center" }}>
+            <img src={RMS} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+          </div>
+        </section>
+      </Modal.Body>
+    </Modal>
+  );
+};
+
+
+
+const FutureFilmSnowModal = ({ isOpen, closeModal}) => {
+  return (
+    <Modal show={isOpen} onHide={closeModal} centered dialogClassName="modal-xl">
+      <Modal.Header closeButton>
+        <Modal.Title>The Magic Snowman Returns</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+          <div
+            style={{width : "30%",display: "flex", alignSelf: "flex-start", justifyContent : "space-between" , flexDirection : "column" }}
+          >
+           <p className="future-film-desc">
+                      In a snow covered field somewhere in the world, Lumiukko,
+                      the magic snowman, is witnessing spring. All around him
+                      are the sounds and signs of the approaching season. His
+                      friend Gustella, the Winter Wind, arrives to wake him. "He
+                      is cutting it close," says Gustella, "he cannot be here
+                      when Siroc, the Summer Wind, arrives." Away the two
+                      friends fly... looking for another part of the world where
+                      winter is in the air.
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      A continent away in the quaint little town of Jensenville,
+                      New England is the home of three inseparable friends:
+                      Steven Fried and Kim and Tommy Wilson. In this part of the
+                      country, Jensenville is famous for the annual Winter
+                      Festival and a big ski jumping contest held at the start
+                      of the school winter break. Unfortunately, this year the
+                      town folks are having a hard time focusing on the Winter
+                      Festival, preoccupied by the tricks of the recently
+                      arrived Serena Queen who is soon to be married to Steven's
+                      father, a local owner of a music store.
+                    </p>
+          </div>
+          <div style={{ flex: "1", textAlign : "center" }}>
+            <img src={SMR} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+          </div>
+        </section>
+      </Modal.Body>
+    </Modal>
+  );
+};
+
+const FutureFilmKeratzaModal = ({ isOpen, closeModal }) => {
+  return (
+    <Modal show={isOpen} onHide={closeModal} centered dialogClassName="modal-xl">
+      <Modal.Header closeButton>
+        <Modal.Title>Keratza</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+          <div
+            style={{width : "44%", display: "flex", alignSelf: "flex-start", justifyContent : "space-between" , flexDirection : "column" , height : "100%" }}
+          >
+           <p className="future-film-desc">
+                      ...It is 1995 and a truck filled with her paintings stops
+                      at the Bulgarian-Macedonian Border. It is 2 am on a cold
+                      October night...
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      Often referred as the Frieda Kahlo of the Balkans, Keratza
+                      Visulcheva was born in 1910 in a village called Nesram, in
+                      the Aegean part of Macedonia, today part of Greece.
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      Her story begins as a three-year old when she flees the
+                      terror of the Ottoman Turks and with her parents settles
+                      in nearby Bulgaria where she will spend most of her adult
+                      life.
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      But while her travels take her all over Europe and her
+                      work is recognized by the European artistic community, she
+                      will never rest trying to keep the connection with her
+                      homeland open. Through her paintings, during happy times,
+                      and when in the midst of a depression.
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      “The depression threatened to destroy me. I simply didn't
+                      want to paint any more. I started cutting my paintings.
+                      Fortunately, on one occasion, a doctor who was also an
+                      amateur painter saw my paintings and he encouraged me. I
+                      resumed my work. I swore that I will never again reach for
+                      the paintings and that I would continue."
+                    </p>
+                    <br></br>
+                    <p className="future-film-desc">
+                      At the age of 85, Keratza Visulcheva bequeathed her entire
+                      artistic opus to Macedonia.
+                    </p>
+          </div >
+          <div style={{ flex: "1", textAlign: "center", display: "flex", justifyContent: "center" }}>
+            <img src={Keratza} alt="The Magic Snowman Returns" className="future-film-img" style={{ maxWidth: "100%", height: "auto" }} />
+          </div>
+        </section>
+      </Modal.Body>
+    </Modal>
+  );
+};
+
+
 
 // import { Lightbox } from "react-modal-image";
 
 const Future = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState("");
+  const [isSnow, setIsSnow] = useState(false);
+  const [isKeratza, setIsKeratza] = useState(false);
+  const [isMRS, setIsMRS] = useState(false);
   const location = useLocation();
 
-  const openModal = (imageSrc) => {
-    setModalImage(imageSrc);
-    setIsModalOpen(true);
-  };
+  // const openModal = (imageSrc) => {
+  //   setIsModalOpen(true);
+  // };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   useEffect(() => {
     if (location.hash) {
@@ -128,7 +299,7 @@ const Future = () => {
                       src={SMR}
                       alt="The Magic Snowman Returns"
                       className="future-film-img"
-                      onClick={() => openModal(SMR)}
+                      onClick={() => setIsSnow(true)}
                       style={{ cursor: "pointer" }}
                     />
                   </div>
@@ -181,7 +352,7 @@ const Future = () => {
                   </div>
                   <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
                     <img src={Keratza} alt="Keratza" className="future-film-img" 
-                     onClick={() => openModal(Keratza)}
+                     onClick={() => setIsKeratza(true)}
                      style={{ cursor: "pointer" }}
                     />
                   </div>
@@ -241,7 +412,7 @@ const Future = () => {
                       src={RMS}
                       alt="Rice, Milk and Stilettos"
                       className="future-film-img"
-                      onClick={() => openModal(RMS)}
+                      onClick={() => setIsMRS(true)}
                       style={{ cursor: "pointer" }}
                     />
                   </div>
@@ -255,19 +426,39 @@ const Future = () => {
         </section>
       </div>
       {/* Modal */}
-      {isModalOpen && (
-         <div className="modals-im">
-         <span className="close" onClick={closeModal}>
-           &times;
-         </span>
-         <div className="modal-content-img">
-           <div className="modal-img-container">
-             <img src={modalImage} alt="asda" className="modal-img" />
-           </div>
+      {isSnow && (
+        
+         <div>
+    
+              <FutureFilmSnowModal
+        isOpen={isSnow}
+        closeModal={() => setIsSnow(false)}
+      />
          </div>
-       </div>
-      
       )}
+
+{isKeratza && (
+        
+        <div>
+   
+             <FutureFilmKeratzaModal
+       isOpen={isKeratza}
+       closeModal={() => setIsKeratza(false)}
+     />
+        </div>
+     )}
+
+
+{isMRS && (
+        
+        <div>
+   
+             <FutureFilmRiceModal
+       isOpen={isMRS}
+       closeModal={() => setIsMRS(false)}
+     />
+        </div>
+     )}
 
     </main>
   );
