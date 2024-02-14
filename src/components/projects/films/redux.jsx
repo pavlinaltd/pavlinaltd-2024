@@ -52,7 +52,7 @@ const Redux = () => {
               <div style={{ width : "75%"}}> 
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{objectFit : "fill" }}/>
               </div>
-              <div style={{ display : "flex" , flexDirection : "column", justifyContent : "space-between", paddingLeft : "20px", paddingRight : "20px" , fontSize : "10px"}}>
+              <div style={{ display : "flex" , flexDirection : "column", justifyContent : "space-between", paddingLeft : "20px", paddingRight : "20px" , fontSize : "17px"}}>
               <p >
                   THEN: Lumiukko, the magic snowman was the voice of Roger Moore
                   and adored by children worldwide. But he did not smile, wink
