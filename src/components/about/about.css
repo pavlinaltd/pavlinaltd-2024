@@ -62,6 +62,15 @@
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.6666666667) 0%, transparent 100%); */
 }
 
+.hoverable-img {
+  transition: transform 0.3s;
+}
+
+/* Define the hover effect */
+.hoverable-img:hover {
+  transform: scale(1.1);
+}
+
 .carousel img{
   height: 100%;
   width: 100%;

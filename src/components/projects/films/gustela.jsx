@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/gustella-dances.png";
+import Poster from "../../../assets/films/posters/gustella.JPG";
 import Image from "../../../assets/films/gustella-castle.webp";
+import ImdbIcon from "../../../assets/common/imdb.png";
 
 const Gustella = () => {
   useEffect(() => window.scrollTo(0, 0));
   return (
     <main className="film">
       <div className="container p-0">
-        <section
+        {/* <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
         >
@@ -28,14 +29,42 @@ const Gustella = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+         <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
+            <div style={{ width : "100%"}}>
+            <div className="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div> 
+            </div>
+            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600", background : "black" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "white"}}>
+                Read more at  
+                </div>
+                <a href="https://www.imdb.com/title/tt12183014/?ref_=nm_knf_t_3" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img rounded-4 hoverable-img" style={{objectFit : "fill"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
+           
+        </div>
+        <br></br>
+        <br></br>
+     
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div style={{ display : "flex"}}>
-              <div className="col-12 col-md-4 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
+              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit : "fill"}} />
               </div>
-              <div style={{ display : "flex", flexDirection : "column", fontSize : "18px"}}>
+              <div style={{ display : "flex", flexDirection : "column", fontSize : "16px"}}>
                 <p className="mb-3 mb-lg-4">
                 A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA. 
                 </p>
@@ -44,12 +73,12 @@ const Gustella = () => {
                 <p className="mb-3 mb-lg-4">
                 GUSTELLA is the ageless wind, the travel companion who carries him from place to place.  She is made of streaks of loosely joined snowflakes that can only be held together by transparent patches of ice that joins them.  Her hair is made of effervescent lumpy snowflakes and a halo adorns her head.                </p>
                 <div style={{ textAlign : "right"}}>
-                <p className="text-center mb-3 mb-lg-4" >
+              
                 CUT TO
-                </p>
+          
                 </div>
-               
-                <p className="mb-3 mb-lg-4">
+                <br></br>
+                <p className="mb-3 mb-lg-4" style={{ marginTop : "20px", fontSize : "18px"}}>
                 EXT. LATE MORNING - CASTLE
                 </p>
                 <p className="mb-3 mb-lg-4">
@@ -59,18 +88,18 @@ const Gustella = () => {
                 ANGLE ON - A sudden swirl of wind swoops up to him as GUSTELLA is trying to wake him.
                 </p>
                 <p className="text-center">GUSTELLA</p>
-                <p className="text-center">
+                <p className="text-right" style={{ margin : "0 auto"}}>
                 Wake up! Wake up! I am so bored!
-                </p>
-                <p className="text-center  mb-lg-4">
+                <br></br>
                 Let us play! 
                 </p>
+                <br></br>
                 <p className="mb-3 mb-lg-4">
                 There is no reaction from Lumiuko.  Gustella blows a little harder.
                 </p>
                 <p className="text-center">GUSTELLA (CONT'D)</p>
-                <p className="text-center mb-3 mb-lg-4">
-                Wake up, wake up you heavy sack of potatoes.
+                <p className="mb-3 mb-lg-4" style={{ margin : "0 auto"}}>
+                Wake up, wake up you heavy sack of <br></br>potatoes.
                 </p>
                 <p>This gets a reaction from Lumi.  He is startled awake.</p>
               </div>

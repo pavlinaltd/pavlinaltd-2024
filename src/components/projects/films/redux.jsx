@@ -11,8 +11,8 @@ const Redux = () => {
   return (
     <main className="film">
       <div className="container">
-        <div style={{ display : "flex" , alignItems : "center"}}>
-            <div style={{ width : "60%"}}>
+        <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
+            <div style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/hUMfTop4K-g"
@@ -28,21 +28,15 @@ const Redux = () => {
           
               
             </div>
-            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center"}}>
-
-            <div style={{ width : "75%", alignItems : "center",  justifyContent: "center", textAlign :"center" }}> 
-                <img src={Poster} alt="" className="img-fluid rounded-4" style={{objectFit : "fill" }}/>
-              </div> 
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" }}>
-                <div style={{ marginRight :"10px"}}>
-                Visit 
+            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600", background : "black" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "white"}}>
+                Read more at  
                 </div>
                 <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank"  rel="noreferrer">
-                <img src={ImdbIcon}  alt="" className="img rounded-4" style={{objectFit : "fill" }}/>
+                <img src={ImdbIcon}  alt="" className="img rounded-4 hoverable-img" style={{objectFit : "fill"}}/>
                 </a>
-                <div style={{ marginLeft :"10px"}}>
-                Site
-                </div>
+                
               </div>
            
             </div>
@@ -50,14 +44,15 @@ const Redux = () => {
         </div>
         <br>
         </br>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light mt-5" style={{ marginBottom : "60px"}}>
+        <br></br>
+        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
       
             <div style={{ display : "flex"}}>
               
-              {/* <div style={{ width : "75%"}}> 
+              <div style={{ width : "75%"}}> 
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{objectFit : "fill" }}/>
-              </div> */}
-              <div style={{ display : "flex" , flexDirection : "column", justifyContent : "space-between", paddingLeft : "20px", paddingRight : "20px" , fontSize : "20px"}}>
+              </div>
+              <div style={{ display : "flex" , flexDirection : "column", justifyContent : "space-between", paddingLeft : "20px", paddingRight : "20px" , fontSize : "10px"}}>
               <p >
                   THEN: Lumiukko, the magic snowman was the voice of Roger Moore
                   and adored by children worldwide. But he did not smile, wink

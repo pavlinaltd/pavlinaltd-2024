@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/my-heart-is-no-longer-an-orphan.png";
+import ImdbIcon from "../../../assets/common/imdb.png";
 
 const Orphan = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -9,32 +10,13 @@ const Orphan = () => {
   return (
     <main className="film">
       <div className="container p-0" style={{ marginBottom : "60px"}}>
-        <section
+        {/* <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              {/* <div className="col-12 col-md-6">
-                <h1 className="mb-5">My Heart is No Longer an Orphan</h1>
-                <h2>Screenplay by</h2>
-                <p className="mb-3 mb-lg-4">Pavlina Proevska</p>
-                <h2>Director</h2>
-                <p className="mb-3 mb-lg-4">Pavlina Proevska</p>
-                <h2>Cinematographer</h2>
-                <p className="mb-3 mb-lg-4">Dejan Dimeski</p>
-                <h2>Choreographer</h2>
-                <p className="mb-3 mb-lg-4">Gianni Santucci</p>
-                <h2>Composer</h2>
-                <p className="mb-3 mb-lg-4">Ben B. Goss</p>
-                <h2>Producer</h2>
-                <p className="mb-3 mb-lg-4">FilmsZaNas d.o.o.e.l.</p>
-                <h2>Co-producers</h2>
-                <p>Kaval Films d.o.o.e.l.</p>
-                <p className="mb-3 mb-lg-4">Roundabout d.o.o.e.l.</p>
-                <h2>Screenplay by</h2>
-                <p className="mb-3 mb-lg-4">Pavlina Proevska</p>
-              </div> */}
+          
               <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
@@ -48,8 +30,53 @@ const Orphan = () => {
               </div>
             </div>
           </div>
+          <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600", background : "black" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "white"}}>
+                Read more at  
+                </div>
+                <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img rounded-4 hoverable-img" style={{objectFit : "fill"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
 
-        </section>
+        </section> */}
+           <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
+            <div style={{ width : "100%"}}>
+            <div className="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/q4R1JfTIOpQ"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                   
+                 
+                </div>
+           
+                
+          
+              
+            </div>
+            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600", background : "black" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "white"}}>
+                Read more at  
+                </div>
+                <a href="https://www.imdb.com/title/tt12183014/?ref_=nm_knf_t_3" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img rounded-4 hoverable-img" style={{objectFit : "fill"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
+           
+        </div>
+        <br></br>
+        <br></br>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div style={{ display : "flex"}}>
