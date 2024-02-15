@@ -3,7 +3,7 @@ import "./films.css";
 
 import Poster from "../../../assets/films/posters/gustella.JPG";
 import Image from "../../../assets/films/gustella-castle.webp";
-import ImdbIcon from "../../../assets/common/imdb.png";
+import ImdbIcon from "../../../assets/common/imdbn.png";
 
 const Gustella = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -42,12 +42,12 @@ const Gustella = () => {
                 </div> 
             </div>
             <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600", background : "black" , borderRadius : "12px" }}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px", backgroundColor: "#94211d" }}>
                 <div style={{ marginRight :"10px", color : "white"}}>
-                Read more at  
+                Visit
                 </div>
-                <a href="https://www.imdb.com/title/tt12183014/?ref_=nm_knf_t_3" target="_blank"  rel="noreferrer">
-                <img src={ImdbIcon}  alt="" className="img rounded-4 hoverable-img" style={{objectFit : "fill"}}/>
+                <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
                 </a>
                 
               </div>
