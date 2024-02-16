@@ -2,25 +2,63 @@ import React, { useEffect } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/happy-hell-night.png";
+import Reel from "../../../assets/films/hhnreel.jpg";
 import header from "../../../assets/films/hhnposter.webp";
-
+import ImdbIcon from "../../../assets/common/imdbna.png";
 const Hell = () => {
   useEffect(() => window.scrollTo(0, 0));
 
   return (
-    <main className="film">
+    <main>
+       <div className="container-fluid">
+        <section id="header-container" className="row p-0">
+          <div className="header col-12 p-0 m-0">
+            <img src={header} alt="Placeholder" style={{ height : "450px", objectFit : "fill"}} />
+          </div>
+        </section>
+      </div>
+        {/* <img src={header} alt="Happy Hell Night" style={{ width : "100%", height : "50%"}} /> */}
       <div className="container p-0">
+    
         <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
-                <h1 className="mb-4">Happy Hell Night</h1>
-                {/* <p className="mb-3 mb-lg-4 fw-bold">
-                  Now on Digital, 4K Ultra HD™, Blu-ray™ and DVD
-                </p> */}
-                <img className="header" src={header} alt="Happy Hell Night" />
+
+              <div style={{ display : "flex", flexDirection : "column", width : "64%", textAlign : "center" }}>
+              <div style={{ alignSelf : "center", textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Visit
+                </div>
+                <a href="https://www.imdb.com/title/tt0236283/?ref_=nm_knf_t_4" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                </a>
+                
               </div>
-              <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
+           
+            </div>
+              <img
+                  src={Reel}
+                  alt="Happy Hell Night"
+                  width={"100%"}
+                  style={{borderRadius : "12px"}}
+                />
+              </div>
+              <div style={ {width : "36%"}}>
+              <img
+                  src={Poster}
+                  alt="Happy Hell Night"
+                  width={"100%"}
+                  style={{borderRadius : "12px"}}
+                />
+              </div>
+           
+             
+            </div>
+          </div>
+        </section>
+        <section style={{width : "80%", margin : "0 auto"}}>
+        <div className="align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/k_X7EnLEjNM"
@@ -30,20 +68,19 @@ const Hell = () => {
                   ></iframe>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
+              </section>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
-              <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
+              {/* <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img
                   src={Poster}
                   alt="Happy Hell Night"
                   className="img-fluid"
                 />
-              </div>
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5">
+              </div> */}
+              {/* <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5"> */}
+              <div style={ {textAlign : "justify"}}>
                 <p className="mb-3 mb-lg-4">
                   Twenty-five years ago at Winfield College, psycho-priest
                   Zachary Malius murdered seven frat boys.

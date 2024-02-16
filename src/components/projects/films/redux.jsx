@@ -3,7 +3,7 @@ import "./films.css";
 
 import Poster from "../../../assets/films/posters/the-magic-snowman-redux.png";
 import FaceGallery from "../../../assets/films/posters/faceGallery.jpg";
-import ImdbIcon from "../../../assets/common/imdbn.png";
+import ImdbIcon from "../../../assets/common/imdbna.png";
 
 const Redux = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -29,12 +29,12 @@ const Redux = () => {
               
             </div>
             <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px", backgroundColor: "#94211d" }}>
-                <div style={{ marginRight :"10px", color : "white"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
                 </div>
                 <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank"  rel="noreferrer">
-                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", height : "50px",  maxWidth: "100px"}}/>
                 </a>
                 
               </div>
