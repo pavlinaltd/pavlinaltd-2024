@@ -17,15 +17,7 @@ const Hell = () => {
           </div>
         </section>
       </div>
-        {/* <img src={header} alt="Happy Hell Night" style={{ width : "100%", height : "50%"}} /> */}
-      <div className="container p-0">
-    
-        <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-
-              <div style={{ display : "flex", flexDirection : "column", width : "64%", textAlign : "center" }}>
-              <div style={{ alignSelf : "center", textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
@@ -37,14 +29,24 @@ const Hell = () => {
               </div>
            
             </div>
+        {/* <img src={header} alt="Happy Hell Night" style={{ width : "100%", height : "50%"}} /> */}
+      <div className="container p-0">
+    
+        <section className="container bg-light rounded-lg mt-3" >
+          <div className="w-100 p-0 p-xl-5 py-xl-3">
+            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
+
+              {/* <div style={{ display : "flex", flexDirection : "column", width : "64%", textAlign : "center" }}>
+             
               <img
                   src={Reel}
                   alt="Happy Hell Night"
                   width={"100%"}
                   style={{borderRadius : "12px"}}
                 />
-              </div>
-              <div style={ {width : "36%"}}>
+              </div> */}
+             
+              <div style={ {width : "25%"}}>
               <img
                   src={Poster}
                   alt="Happy Hell Night"
@@ -52,40 +54,13 @@ const Hell = () => {
                   style={{borderRadius : "12px"}}
                 />
               </div>
-           
-             
-            </div>
-          </div>
-        </section>
-        <section style={{width : "80%", margin : "0 auto"}}>
-        <div className="align-items-center">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/k_X7EnLEjNM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-              </section>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
-              {/* <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
-                <img
-                  src={Poster}
-                  alt="Happy Hell Night"
-                  className="img-fluid"
-                />
-              </div> */}
-              {/* <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5"> */}
-              <div style={ {textAlign : "justify"}}>
-                <p className="mb-3 mb-lg-4">
+              <div style={ {display :"flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", width : "70%", fontSize : "17px", lineHeight : "1.2em", marginLeft : "40px"}}>
+                <p >
                   Twenty-five years ago at Winfield College, psycho-priest
                   Zachary Malius murdered seven frat boys.
                 </p>
-                <p className="mb-3 mb-lg-4">
+            
+                <p>
                   Malius is waiting, secretly locked in Winfield Insane Asylum.
                   Now, he's just a myth; the local boogie man, the sick joke
                   used to scare children. Malius is not afraid to die; living
@@ -94,13 +69,15 @@ const Hell = () => {
                   heroics. He faces the ultimate Phi Delta Kappa hazing:
                   photograph the mythical, monstrous Malius.
                 </p>
-                <p className="mb-3 mb-lg-4">
+            
+                <p>
                   Harry Collins, Sonny's brother, is already a Phi Delta Kappa.
                   In a jealous rage and caught in a love triangle with Sonny's
                   girl, Harry would like to even the score. He wants to scare
                   his brother.
                 </p>
-                <p className="mb-3 mb-lg-4">
+          
+                <p >
                   But when Sonny finds Malius something goes wrong, Malius
                   escapes. The horrors of his rampage, the mutilation of the Phi
                   Delta Kappa brothers is recreated. But Malius is more than a
@@ -108,14 +85,40 @@ const Hell = () => {
                   the dead by Sonny and his father, Henry Collins (played by
                   Darren Mc Gavin).
                 </p>
+              
                 <p>
                   Henry Collins tells his sons the truth; he sold his soul. He
                   must prepare to help them outlive him.
                 </p>
               </div>
+           
+             
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section style={{ width: "100%", marginTop: "40px", marginBottom: "40px" }}>
+  <div style={{ display: "flex", alignContent: "center" }}>
+    <div style={{ flex: "2", marginRight: "10px" , display : "flex" }}>
+      <img
+        src={Reel}
+        alt="Happy Hell Night"
+        style={{ width: "100%", height: "100%", borderRadius: "12px",  objectFit: "fill" }}
+      />
+    </div>
+    <div style={{ flex: "3", width: "100%", marginLeft : "40px" }}>
+      <div className="ratio ratio-16x9" style={{ width: "100%", height: "100%" }}>
+        <iframe
+          src="https://www.youtube.com/embed/k_X7EnLEjNM"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ width: "100%", height: "100%" }}
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+       
       </div>
     </main>
   );
