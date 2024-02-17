@@ -46,7 +46,7 @@ const Hell = () => {
                 />
               </div> */}
              
-              <div style={ {width : "25%"}}>
+              <div style={ {width : "30%"}}>
               <img
                   src={Poster}
                   alt="Happy Hell Night"
@@ -54,7 +54,7 @@ const Hell = () => {
                   style={{borderRadius : "12px"}}
                 />
               </div>
-              <div style={ {display :"flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", width : "70%", fontSize : "17px", lineHeight : "1.2em", marginLeft : "40px"}}>
+              <div style={ {display :"flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", width : "60%", fontSize : "17px", lineHeight : "1.2em", marginLeft : "40px"}}>
                 <p >
                   Twenty-five years ago at Winfield College, psycho-priest
                   Zachary Malius murdered seven frat boys.
