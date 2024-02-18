@@ -12,8 +12,8 @@ const Hell = () => {
     <main>
        <div className="container-fluid">
         <section id="header-container" className="row p-0">
-          <div className="header col-12 p-0 m-0">
-            <img src={header} alt="Placeholder" style={{ height : "450px", objectFit : "fill"}} />
+          <div className="col-12 p-0 m-0">
+            <img src={header} alt="Placeholder" className="hnn-banner" />
           </div>
         </section>
       </div>
@@ -34,7 +34,7 @@ const Hell = () => {
     
         <section className="container bg-light rounded-lg mt-3" >
           <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
+            <div className="p-0 pb-4 px-3 p-xl-5 py-xl-3 hnn-poster">
 
               {/* <div style={{ display : "flex", flexDirection : "column", width : "64%", textAlign : "center" }}>
              
@@ -46,7 +46,7 @@ const Hell = () => {
                 />
               </div> */}
              
-              <div style={ {width : "30%"}}>
+              <div className="hnn-img">
               <img
                   src={Poster}
                   alt="Happy Hell Night"
@@ -54,12 +54,12 @@ const Hell = () => {
                   style={{borderRadius : "12px"}}
                 />
               </div>
-              <div style={ {display :"flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", width : "60%", fontSize : "17px", lineHeight : "1.2em", marginLeft : "40px"}}>
+              <div className="hnn-desc">
                 <p >
                   Twenty-five years ago at Winfield College, psycho-priest
                   Zachary Malius murdered seven frat boys.
                 </p>
-            
+                <br></br>
                 <p>
                   Malius is waiting, secretly locked in Winfield Insane Asylum.
                   Now, he's just a myth; the local boogie man, the sick joke
@@ -69,14 +69,14 @@ const Hell = () => {
                   heroics. He faces the ultimate Phi Delta Kappa hazing:
                   photograph the mythical, monstrous Malius.
                 </p>
-            
+                <br></br>
                 <p>
                   Harry Collins, Sonny's brother, is already a Phi Delta Kappa.
                   In a jealous rage and caught in a love triangle with Sonny's
                   girl, Harry would like to even the score. He wants to scare
                   his brother.
                 </p>
-          
+                <br></br>
                 <p >
                   But when Sonny finds Malius something goes wrong, Malius
                   escapes. The horrors of his rampage, the mutilation of the Phi
@@ -85,7 +85,7 @@ const Hell = () => {
                   the dead by Sonny and his father, Henry Collins (played by
                   Darren Mc Gavin).
                 </p>
-              
+                <br></br>
                 <p>
                   Henry Collins tells his sons the truth; he sold his soul. He
                   must prepare to help them outlive him.
@@ -97,15 +97,15 @@ const Hell = () => {
           </div>
         </section>
         <section style={{ width: "100%", marginTop: "40px", marginBottom: "40px" }}>
-  <div style={{ display: "flex", alignContent: "center" }}>
-    <div style={{ flex: "2", marginRight: "10px" , display : "flex" }}>
+  <div className="hnn-trailer">
+    <div style={{ flex: "2" , display : "flex" }}>
       <img
         src={Reel}
         alt="Happy Hell Night"
         style={{ width: "100%", height: "100%", borderRadius: "12px",  objectFit: "fill" }}
       />
     </div>
-    <div style={{ flex: "3", width: "100%", marginLeft : "40px" }}>
+    <div className="hnn-iframe" style={{ flex: "3", width: "100%" }}>
       <div className="ratio ratio-16x9" style={{ width: "100%", height: "100%" }}>
         <iframe
           src="https://www.youtube.com/embed/k_X7EnLEjNM"

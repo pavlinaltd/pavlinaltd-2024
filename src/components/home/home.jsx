@@ -30,8 +30,8 @@ const Home = () => {
         </section>
       </div>
       <div className="container mx-auto p-0 m-0">
-        <section id="quote-container" className="row p-3 py-4 p-lg-0 px-lg-3">
-          <div className="intro col-12 p-3 py-md-4 p-xl-5 px-xl-0 m-0">
+        <section id="quote-container">
+          <div className="intro col-12 p-3 p-xl-5 px-xl-0 m-0">
             <h3 className="p-0 px-xl-0">
               “Press on. Nothing in the world can take the place of persistence.
               Talent will not: nothing is more common than unrewarded talent.
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+        <section className="home-section-padding">
           <div
             className="book-centered-div"
           >
@@ -51,8 +51,8 @@ const Home = () => {
           </div>
 
 
-
           <div className="book-image-row">
+          <div style={{display : "flex" , flex : 2,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/the-magic-snowman-redux">
                 <img
@@ -73,6 +73,8 @@ const Home = () => {
                 />
               </Link>
             </div>
+            </div>
+            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/gustella-dances">
                 <img
@@ -83,15 +85,15 @@ const Home = () => {
                 />
               </Link>
             </div>
+            </div>
           </div>
         </section>
 
-        <section style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+        <section className="home-section-padding">
 
-          <div style={{ marginTop: "80px", textAlign: "center" }}>
+          <div className="home-media">
             <div
-              className="book-centered-div"
-              style={{ width: "82%", margin: "0 auto" }}
+              className="book-centered-div home-media-wid"
             >
               <h2 className="book-title">MEDIA PROJECTS</h2>
             </div>
@@ -158,13 +160,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-
-
-
-
-
-
+        <section className="home-section-padding">
 
           <div style={{ marginTop: "60px" }}>
 
@@ -173,11 +169,10 @@ const Home = () => {
             >
               <h2 className="book-title">IN DEVELOPMENT</h2>
             </div>
-
-
           </div>
 
           <div className="book-image-row">
+            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/in-development#borders-in-heaven">
                 <img
@@ -196,6 +191,8 @@ const Home = () => {
                 />
               </Link>
             </div>
+            </div>
+            <div style={{display : "flex", flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/in-development#the-magic-snowman-returns">
                 <img
@@ -214,12 +211,13 @@ const Home = () => {
                 />
               </Link>
             </div>
+            </div>
           </div>
 
         </section>
         <section
-
-          style={{ paddingLeft: "50px", paddingRight: "50px", marginTop: "40px" }}
+          className="home-section-padding"
+          style={{ marginTop: "40px", marginBottom : "20px" }}
         >
           <div className="intro col-12 p-0 py-md-4 pt-xl-0 px-xl-0 m-0">
             <h2 className="p-0">

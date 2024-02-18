@@ -24,7 +24,10 @@ main section.films h2 {
   padding: 15px;
 }
 
-
+.home-media{
+  margin-top: 80px;
+  text-align: center;
+}
 
 .indev {
 
@@ -344,6 +347,11 @@ figcaption {
   transition: 0.3s;
 }
 
+.home-media-wid{
+  width: 82%;
+  margin: 0 auto;
+}
+
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -351,6 +359,10 @@ figcaption {
   cursor: pointer;
 }
 
+.home-section-padding {
+  padding-left: 50px ;
+  padding-right: 50px;
+}
 
 @media (min-width: 992px) {
   main section.films div.book-row {
@@ -385,9 +397,12 @@ figcaption {
     font-size: 1rem;
     line-height: 1.4;
   }
+  .book-image-row{
+    flex-direction: column;
+  }
 
   .book-title{
-    font-size : 22px;
+    font-size : 18px;
   }
 
   main section.films h2 {
@@ -395,6 +410,31 @@ figcaption {
   }
   main section.films h3 {
     font-size: 1.2rem;
+  }
+
+  .home-section-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-media{
+    width: 100% !important;
+  }
+
+  .home-media-wid{
+    width : 100%;
+  }
+
+  .two-book-boxes-item-left{
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .two-book-boxes-item{
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
   }
 }
 @media (max-width: 576px) {

@@ -1,6 +1,6 @@
 
 .headshot{
-  width: 30%;
+  width: 400px;
   height: auto;
 }
 
@@ -208,6 +208,16 @@ hr {
   border-color: #120101; /* Set border color to a darker color */
 } 
 
+@media (max-width: 1300px) {
+  .pavlina-desc {
+    font-size: 1.1vw;
+  }
+
+  .production-desc{
+    font-size: 1.1vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .carousel { 
     width: 100%; 
@@ -253,6 +263,13 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .pavlina-desc{
+    font-size: 14px;
+  }
+   .production-desc{
+    font-size: 14px;
+  }
 }
 
 
@@ -266,13 +283,6 @@ hr {
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
-  }
-  
-  .pavlina-desc{
-    font-size: 14px;
-  }
-   .production-desc{
-    font-size: 14px;
   }
   
 }
