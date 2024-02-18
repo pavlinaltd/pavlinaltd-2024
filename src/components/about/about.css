@@ -253,13 +253,6 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
-
-    .pavlina-desc{
-    font-size: 14px;
-  }
-   .production-desc{
-    font-size: 14px;
-  }
 }
 
 
@@ -275,5 +268,11 @@ hr {
     height: auto;
   }
   
+  .pavlina-desc{
+    font-size: 14px;
+  }
+   .production-desc{
+    font-size: 14px;
+  }
   
 }

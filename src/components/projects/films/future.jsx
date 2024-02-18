@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./films.css";
+import "./future.css";
 import { useLocation } from 'react-router-dom';
 
 import Keratza from "../../../assets/films/keraca-visuleva.webp";
@@ -10,14 +11,15 @@ import Modal from "react-bootstrap/Modal";
 
 const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
   return (
-    <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-xl">
+    <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
       <Modal.Header closeButton>
         <Modal.Title>Rice, Milk and Stilettos</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+        <section className="d-flex align-items-center modal-flex">
           <div
-            style={{width : "60%", display: "flex", alignSelf: "flex-start", justifyContent : "space-between", flexDirection : "column", marginRight : "60px" }}
+          className="modal-flex-desc"
+            style={{width : "60%" }}
           >
            <p className="future-film-desc">
                       RICE...This short film explores the traumatic effects of
@@ -77,9 +79,10 @@ const FutureFilmSnowModal = ({ isOpen, closeModal}) => {
         <Modal.Title>The Magic Snowman Returns</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+        <section className="d-flex align-items-center modal-flex">
           <div
-            style={{width : "30%",display: "flex", alignSelf: "flex-start", justifyContent : "space-between" , flexDirection : "column" }}
+            className="modal-flex-desc"
+            style={{width : "30%"  }}
           >
            <p className="future-film-desc">
                       In a snow covered field somewhere in the world, Lumiukko,
@@ -121,9 +124,10 @@ const FutureFilmKeratzaModal = ({ isOpen, closeModal }) => {
         <Modal.Title>Keratza</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <section className="d-flex align-items-center" style={{display : "flex", flexDirection : "row"}}>
+        <section className="d-flex align-items-center modal-flex">
           <div
-            style={{width : "44%", display: "flex", alignSelf: "flex-start", justifyContent : "space-between" , flexDirection : "column" , height : "100%" }}
+            className="modal-flex-desc"
+            style={{width : "44%" }}
           >
            <p className="future-film-desc">
                       ...It is 1995 and a truck filled with her paintings stops
@@ -211,12 +215,12 @@ const Future = () => {
           style={{ width : "85%", margin: '0px auto' }}
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3 " >
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
+            <div className="row p-0 pb-4 px-0 px-sm-3 p-xl-5 py-xl-3">
               <div className="col-12 col-md-6" >
                 <h1>Borders in Heaven</h1>
               </div>
-              <section className="synopsis container p-3 py-4 py-md-0 m-0">
-                <div className="future-film-section-col" style={{ marginTop: "40px", textAlign: "center" }}>
+              <section className="container p-3 py-4 py-md-0 m-0">
+                <div className="future-film-section-col">
      
                    
                       <iframe
@@ -231,7 +235,7 @@ const Future = () => {
             
 
 
-                  <div style={{flex : 1 , marginLeft : "40px"}}>
+                  <div className="borders-desc">
                     <p className="future-film-desc">
                       Borders in Heaven is a fish-out-of-water romantic comedy
                       that takes place in a small village in Macedonia called
@@ -268,8 +272,8 @@ const Future = () => {
                 <div className="col-12">
                   <h1>The Magic Snowman Returns</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "30px" }}>
-                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                <div className="future-film-section">
+                  <div className="future-film-section-desc">
                     <p className="future-film-desc">
                       In a snow covered field somewhere in the world, Lumiukko,
                       the magic snowman, is witnessing spring. All around him
@@ -300,7 +304,7 @@ const Future = () => {
                       alt="The Magic Snowman Returns"
                       className="future-film-img"
                       onClick={() => setIsSnow(true)}
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: "pointer", objectFit :"fill" }}
                     />
                   </div>
                 </div>
@@ -312,24 +316,27 @@ const Future = () => {
                 <div className="col-12">
                   <h1 style={{ fontStyle: "italic" }}>Keratza</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "30px" }}>
-                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                <div className="future-film-section">
+                  <div  className="future-film-section-desc">
                     <p className="future-film-desc">
                       ...It is 1995 and a truck filled with her paintings stops
                       at the Bulgarian-Macedonian Border. It is 2 am on a cold
                       October night...
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       Often referred as the Frieda Kahlo of the Balkans, Keratza
                       Visulcheva was born in 1910 in a village called Nesram, in
                       the Aegean part of Macedonia, today part of Greece.
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       Her story begins as a three-year old when she flees the
                       terror of the Ottoman Turks and with her parents settles
                       in nearby Bulgaria where she will spend most of her adult
                       life.
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       But while her travels take her all over Europe and her
                       work is recognized by the European artistic community, she
@@ -337,6 +344,7 @@ const Future = () => {
                       homeland open. Through her paintings, during happy times,
                       and when in the midst of a depression.
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       “The depression threatened to destroy me. I simply didn't
                       want to paint any more. I started cutting my paintings.
@@ -345,6 +353,7 @@ const Future = () => {
                       resumed my work. I swore that I will never again reach for
                       the paintings and that I would continue."
                     </p>
+                    <br></br>
                     <p className="future-film-desc">
                       At the age of 85, Keratza Visulcheva bequeathed her entire
                       artistic opus to Macedonia.
@@ -353,7 +362,7 @@ const Future = () => {
                   <div className="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-end">
                     <img src={Keratza} alt="Keratza" className="future-film-img" 
                      onClick={() => setIsKeratza(true)}
-                     style={{ cursor: "pointer" }}
+                     style={{ cursor: "pointer", objectFit :"fill" }}
                     />
                   </div>
                 </div>
@@ -365,8 +374,8 @@ const Future = () => {
                 <div className="col-12" >
                   <h1>Rice, Milk and Stilettos</h1>
                 </div>
-                <div className="future-film-section" style={{ marginTop: "30px" }}>
-                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", marginRight: "80px" }}>
+                <div className="future-film-section">
+                  <div className="future-film-section-desc">
                     <p className="future-film-desc">
                       RICE...This short film explores the traumatic effects of
                       the Cultural Revolution on Lee Chen, who in 1951
@@ -413,7 +422,7 @@ const Future = () => {
                       alt="Rice, Milk and Stilettos"
                       className="future-film-img"
                       onClick={() => setIsMRS(true)}
-                      style={{ cursor: "pointer" }}
+                      style={{ cursor: "pointer",  objectFit :"fill" }}
                     />
                   </div>
                 </div>
