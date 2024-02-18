@@ -98,6 +98,30 @@ main.film img.header {
   margin-left : 40px;
 }
 
+.redux-info{
+  display : flex; 
+  justify-content: space-around;
+  font-size : 1vw;
+}
+
+.redux-desc {
+   display : flex;
+  flex-direction : column;
+   justify-content : space-between;
+  padding-left : 20px;
+  padding-right : 20px;
+   text-align : justify;
+}
+.redux-poster{
+  width : 80%;
+}
+
+.orphan-info{
+  display: flex;
+}
+.orphan-desc {
+  font-size : 1.1vw;
+}
 
 @media (max-width: 1199.98px) {
   main.film h1 {
@@ -111,6 +135,32 @@ main.film img.header {
 @media (max-width: 767.98px) {
   main.film h1 {
     font-size: 1.5rem;
+  }
+
+  .redux-desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left : 10px;
+    padding-right : 10px;
+  }
+
+  .redux-poster{
+    width : 100%;
+  }
+
+
+  .orphan-desc{
+    font-size: 14px !important;
+  }
+
+  .redux-info{
+    flex-direction: column;
+    font-size : 14px;
+  }
+
+  .orphan-iframe{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hnn-banner{
@@ -131,6 +181,10 @@ main.film img.header {
 
   }
   
+  .orphan-info{
+    flex-direction: column;
+  }
+
   .hnn-desc{
     width: 100%;
     margin-left : 0px;

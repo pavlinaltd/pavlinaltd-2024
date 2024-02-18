@@ -20,12 +20,13 @@ const Projects = () => {
           className="container p-3 py-4 py-md-0 px-md-0 m-0 mx-auto"
           style={{ marginBottom: "60px" }}
         >
-          <div className="col-12 p-3 py-4 p-xl-0 pb-xl-0 m-0">
+          <div className="col-12 p-xl-0 pb-xl-0 m-0">
             <h2 className="p-0">Completed Features</h2>
           </div>
 
           <div className="book-image-row">
-            <div className="book-image" style={{ flex: "0 0 25%" }}>
+          <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+            <div className="book-image book-image-partial">
               <Link to="/the-magic-snowman">
                 <img
                   src={TheMagicSnowman}
@@ -34,7 +35,7 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            <div className="book-image" style={{ flex: "0 0 25%" }}>
+            <div className="book-image book-image-partial" >
               <Link to="/happy-hell-night">
                 <img
                   src={HappyHellNight}
@@ -43,18 +44,20 @@ const Projects = () => {
                 />
               </Link>
             </div>
+            </div>
           </div>
 
 
         </section>
 
 
-        <hr style={{marginTop : "60px"}} />
-        <section style={{ marginTop: "60px", marginBottom : "60px" }}>
-          <div className="col-12 p-3 py-4 p-xl-0 pb-xl-0 m-0" >
+        <hr className="hr-sep" />
+        <section className="projects-section">
+          <div className="col-12 p-xl-0 pb-xl-0 m-0" >
             <h2 className="p-0">Completed Documentaries and Short Films</h2>
           </div>
           <div className="book-image-row">
+          <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/promise-of-perfume">
                 <img
@@ -73,6 +76,8 @@ const Projects = () => {
                 />
               </Link>
             </div>
+            </div>
+            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/colors-of-macedonia">
                 <img
@@ -90,6 +95,7 @@ const Projects = () => {
                   alt="In Development"
                 />
               </Link>
+            </div>
             </div>
           </div>
 

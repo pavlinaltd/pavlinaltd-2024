@@ -47,12 +47,11 @@ const Redux = () => {
         <br></br>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
       
-            <div style={{ display : "flex", justifyContent: "space-around"}}>
-              
-              <div style={{  width : "80%"}} > 
+            <div className="redux-info">
+              <div className="redux-poster" > 
                 <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" }}/>
               </div>
-              <div style={{  display : "flex" , flexDirection : "column", paddingLeft : "20px", paddingRight : "20px" , fontSize : "17px", textAlign : "justify"}}>
+              <div className="redux-desc">
               <p >
               THEN: In 1989 Sir Roger Moore lent the voice to the magic snowman Lummi Ukko, and for the next fifteen years he was adored by children worldwide. But he did not smile, wink or frown then. Lumi Ukko was too lazy for that!
                 </p>

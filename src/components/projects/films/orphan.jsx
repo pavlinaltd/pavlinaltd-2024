@@ -45,7 +45,7 @@ const Orphan = () => {
 
         </section> */}
            <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
-            <div style={{ width : "100%"}}>
+            <div className="orphan-iframe" style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/q4R1JfTIOpQ"
@@ -78,15 +78,15 @@ const Orphan = () => {
         <br></br>
         <br></br>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div style={{ display : "flex"}}>
+          <section className="container p-3 py-4 py-md-0 px-md-5 m-0">
+            <div className="orphan-info">
               
-              <div className="col-12 col-md-4 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex" id='myHeart'> 
+              <div className="col-12 col-md-4 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex"> 
                 <img src={Poster} alt="" className="img-fluid rounded-4" />
               </div>
 
 
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5" style={{ fontSize : "18px", display :"flex", flexDirection : "column", justifyContent :"space-between"}}>
+              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5 orphan-desc" style={{ lineHeight : "1.2em", display :"flex", flexDirection : "column", justifyContent :"space-between", textAlign : "justify"}}>
                 <p >
                   In March of 1969, she was seventeen and he twenty years old,
                   when they met at a poetry read in a city in Macedonia, then

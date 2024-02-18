@@ -146,6 +146,10 @@ section {
   /* padding : 10px; */
 }
 
+.book-image-partial{
+  flex: 0 0 25%;
+}
+
 .book-image img {
   width: 100%; /* Set the image width to 100% of the div's width */
   height: 100%; /* Set the image height to 100% of the div's height */
@@ -358,10 +362,18 @@ figcaption {
   text-decoration: none;
   cursor: pointer;
 }
+.projects-section{
+  margin-top: 60px;
+  margin-bottom : 60px;
+}
 
 .home-section-padding {
   padding-left: 50px ;
   padding-right: 50px;
+}
+
+.hr-sep{
+  margin-top : 60px;
 }
 
 @media (min-width: 992px) {
@@ -397,8 +409,25 @@ figcaption {
     font-size: 1rem;
     line-height: 1.4;
   }
+
+  .hr-sep{
+    margin-top: 40px;
+  }
+
   .book-image-row{
     flex-direction: column;
+  }
+
+  .projects-section{
+    margin-top: 20px;
+    margin-bottom : 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+
+  .book-image-partial{
+    flex : 1;
   }
 
   .book-title{

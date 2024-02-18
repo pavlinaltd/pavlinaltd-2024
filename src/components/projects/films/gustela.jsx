@@ -59,12 +59,12 @@ const Gustella = () => {
         <br></br>
      
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div style={{ display : "flex"}}>
+          <section className="container p-3 py-4 py-md-0 px-md-5 m-0">
+            <div className="orphan-info">
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit : "fill"}} />
               </div>
-              <div style={{ display : "flex", flexDirection : "column", fontSize : "16px"}}>
+              <div className="orphan-desc" style={{ display : "flex", flexDirection : "column"}}>
                 <p className="mb-3 mb-lg-4">
                 A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA. 
                 </p>
@@ -78,7 +78,7 @@ const Gustella = () => {
           
                 </div>
                 <br></br>
-                <p className="mb-3 mb-lg-4" style={{ marginTop : "20px", fontSize : "18px"}}>
+                <p className="mb-3 mb-lg-4" style={{ marginTop : "20px"}}>
                 EXT. LATE MORNING - CASTLE
                 </p>
                 <p className="mb-3 mb-lg-4">
@@ -108,7 +108,7 @@ const Gustella = () => {
         </div>
         <div className="p-0 px-3 px-xl-5 pb-md-5">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row w-75 m-0 py-4 py-md-0 px-md-5 px-md-0 px-xl-5 m-0 mx-auto">
+            <div className="row m-0 py-4 py-md-0 px-md-5 px-md-0 px-xl-5 m-0 mx-auto">
               <img src={Image} alt="" className="img-fluid" />
             </div>
           </section>
