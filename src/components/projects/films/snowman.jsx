@@ -3,6 +3,7 @@ import "./films.css";
 
 import MagicSnowmanImg from "../../../assets/films/the_magic_snowman.jpg";
 import Poster from "../../../assets/films/SnowmanPoster.jpg";
+import Languages from "../../../assets/films/languages.png";
 
 const MagicSnowman = () => {
   useEffect(() => window.scroll(0, 0));
@@ -10,15 +11,12 @@ const MagicSnowman = () => {
   return (
     <main className="film">
       <div className="container p-0">
-        <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
+        {/* <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
-                <h1 className="mb-5">The Magic Snowman</h1>
-                <p className="mb-3 mb-lg-4 fw-bold">You can hear him speak if you believe...</p>
-                <h2>Distributed by</h2>
-                <p className="mb-3 mb-lg-4">BVI/Miramax</p>
-              </div>
+               <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center" >
+                  <img src={MagicSnowmanImg} alt="" className="img" />
+                </div>
               <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
@@ -31,20 +29,53 @@ const MagicSnowman = () => {
               </div>
             </div>
           </div>
-        </section>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
-              <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
-                <div className="col-12">
-                  <img src={Poster} alt="" className="img" />
-                </div>
-                <div className="col-12">
-                  <img src={MagicSnowmanImg} alt="" className="img" />
-                </div>
+        </section> */}
+                <section style={{ width: "100%", marginTop: "40px", marginBottom: "40px" }}>
+  <div className="hnn-trailer">
+    <div style={{ flex: "2" , display : "flex" }}>
+      <img
+        src={MagicSnowmanImg}
+        alt="Happy Hell Night"
+        style={{ width: "100%", height: "100%", borderRadius: "12px",  objectFit: "fill" }}
+      />
+    </div>
+    <div className="hnn-iframe" style={{ flex: "3", width: "100%" }}>
+      <div className="ratio ratio-16x9" style={{ width: "100%", height: "100%" }}>
+        <iframe
+          src="https://www.youtube.com/embed/aE3pq0ygwjo"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ width: "100%", height: "100%" }}
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section className="mb-5">
+          <div>
+          <div className="col-12 col-md-12 mt-12 mt-md-0 d-flex align-items-center" >
+                  <img src={Languages} alt="" className="img" />
               </div>
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5">
-                <p className="mb-3 mb-lg-4">
+              <div style={{ width : "100%", textAlign : "center", paddingLeft : "20px", paddingRight : "20px"}}>
+            <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE”</h3>  
+            <h3 style={{ fontWeight : "800", marginTop : "10px"}}> VICTORINE STUDIOS, NICE 1990</h3>
+          </div>
+          </div>
+
+        </section>
+        <section className="container bg-light rounded-lg mt-3" >
+          <div className="w-100 p-0 p-xl-5 py-xl-3">
+            <div className="p-0 pb-4 px-3 p-xl-5 py-xl-3 hnn-poster">
+              <div className="hnn-img">
+                <div className="col-12">
+                  <img src={Poster} alt=""   width={"100%"} className="img" />
+                </div>
+              
+              </div>
+              <div className="hnn-desc">
+                <p className="">
                   The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
                   co-production with FIT a production company based in
                   Yugoslavia. The film was dedicated to UNICEF which received a
@@ -57,6 +88,7 @@ const MagicSnowman = () => {
                   All future magic snowman movies embrace and explicate such
                   themes.
                 </p>
+                <br></br>
                 <p>
                   Over the past ten years, The Magic Snowman has aired on The
                   Disney Channel more than 38 times in children’s prime time
@@ -74,8 +106,9 @@ const MagicSnowman = () => {
                 </p>
               </div>
             </div>
+            </div>
           </section>
-        </div>
+        
       </div>
     </main>
   );
