@@ -4,6 +4,7 @@ import "./films.css";
 import MagicSnowmanImg from "../../../assets/films/the_magic_snowman.jpg";
 import Poster from "../../../assets/films/SnowmanPoster.jpg";
 import Languages from "../../../assets/films/languages.png";
+import ImdbIcon from "../../../assets/common/imdbna.png";
 
 const MagicSnowman = () => {
   useEffect(() => window.scroll(0, 0));
@@ -52,11 +53,23 @@ const MagicSnowman = () => {
     </div>
   </div>
 </section>
+<div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Visit
+                </div>
+                <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_t_7_prd" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
 
         <section className="mb-5">
           <div>
           <div className="col-12 col-md-12 mt-12 mt-md-0 d-flex align-items-center" >
-                  <img src={Languages} alt="" className="img" />
+                  <img src={Languages} alt="" className="img" width={"40%"} />
               </div>
               <div style={{ width : "100%", textAlign : "center", paddingLeft : "20px", paddingRight : "20px"}}>
             <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE”</h3>  

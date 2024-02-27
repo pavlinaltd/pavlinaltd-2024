@@ -123,6 +123,31 @@ main.film img.header {
   font-size : 1.1vw;
 }
 
+.pilgrim-section{
+  text-align : justify;
+  padding : 30px;
+  line-height : 1.4em;
+  display : flex;
+  justify-content : space-between;
+  gap : 40px;
+}
+
+.pilgrim-desc {
+  text-align : justify;
+  padding : 50px;
+  line-height : 1.4em;
+  display : flex;
+  flex-direction: column;
+  justify-content : space-between;
+  flex : 1;
+}
+
+.pilgrim-sub{
+  display : flex; 
+  justify-content : space-around;
+  line-height : 1.2em;
+}
+
 @media (max-width: 1199.98px) {
   main.film h1 {
     font-size: 1.7rem;
@@ -196,5 +221,17 @@ main.film img.header {
     padding: 20px;
   }
 
+  .pilgrim-section{
+
+    flex-direction: column;
+  }
+
+  .pilgrim-sub{
+    flex-direction: column;
+  }
+  
+  .pilgrim-interview{
+    margin-top: 20px;
+  }
 }
 

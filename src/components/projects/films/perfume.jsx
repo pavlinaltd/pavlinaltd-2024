@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/the-promise-of-perfume.png";
+import Poster from "../../../assets/films/posters/the-promise-of-perfume.jpg";
+import ImdbIcon from "../../../assets/common/imdbna.png";
 
 const Perfume = () => {
   useEffect(() => window.scroll(0, 0));
@@ -9,36 +10,19 @@ const Perfume = () => {
   return (
     <main className="film">
       <div className="container p-0">
-        <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
-                <h1 className="mb-4">The Promise of Perfume</h1>
-              </div>
-              <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/wHQmgYQYo70"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
+        <section>
+        <div className="p-0 px-3">
+          <section className="p-3 py-4 py-md-0 px-md-5 m-0" style={{ textAlign : "justify" }}>
+            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0 px-sm-0">
               <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img
                   src={Poster}
                   alt="The Promise of Perfume"
                   className="img"
+                  style={{ objectFit : "fill"}}
                 />
               </div>
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5">
+              <div className="col-12 col-md-8 bg-light" style={{ padding : "30px"}}>
                 <p className="mb-3 mb-lg-4">
                   The Promise of Perfume is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New
@@ -76,6 +60,35 @@ const Perfume = () => {
             </div>
           </section>
         </div>
+        </section>
+        <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Visit
+                </div>
+                <a href="https://www.imdb.com/title/tt0368133/?ref_=nm_knf_t_1" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
+        <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
+          <div className="w-100 p-0 p-xl-5 py-xl-3">
+            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
+              <div className="col-12 col-md-12 mt-4 mt-md-0 d-flex align-items-center">
+                <div className="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/wHQmgYQYo70"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
