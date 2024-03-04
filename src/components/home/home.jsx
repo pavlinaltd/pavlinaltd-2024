@@ -12,6 +12,7 @@ import BordersInHeaven from "../../assets/films/posters/borders in heaven.jpg";
 import Keratza from "../../assets/films/posters/keratza-poster.jpeg";
 import TheMagicSnowmanReturns from "../../assets/films/posters/The-Magic-Snowman-Returns.JPG";
 import RiceMilk from "../../assets/films/R_M_Stilettos.jpg";
+import AudioImg from "../../assets/common/audio.png";
 
 
 
@@ -147,7 +148,14 @@ const Home = () => {
                   </Link>
                   <div className="snowman-dist">
                     <div style={{}}>distributed by  <span style={{ fontStyle: "italic" }}> Authors Republic</span></div>
-                    <div> <a href="www.google.com" target="_blank">Audio Link</a></div>
+                    <div> <a href="www.google.com" target="_blank">
+                    <img
+                      src={AudioImg}
+                      alt="audio button"
+                      width="18px"
+                      height="18px"
+                    />
+                      </a></div>
                   </div>
 
                 </div>
