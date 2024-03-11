@@ -45,7 +45,7 @@ const Redux = () => {
         <br>
         </br>
         <br></br>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
+        <div className="pb-4 bg-light">
       
             <div className="redux-info">
               <div className="redux-poster" > 

@@ -72,19 +72,19 @@ const MagicSnowman = () => {
                   <img src={Languages} alt="" className="img" width={"40%"} />
               </div>
               <div style={{ width : "100%", textAlign : "center", paddingLeft : "20px", paddingRight : "20px"}}>
-            <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE”</h3>  
-            <h3 style={{ fontWeight : "800", marginTop : "10px"}}> VICTORINE STUDIOS, NICE 1990</h3>
+            <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</h3>  
+            {/* <h3 style={{ fontWeight : "800", marginTop : "10px"}}> VICTORINE STUDIOS, NICE 1990</h3> */}
           </div>
           </div>
 
         </section>
-        <section className="container bg-light rounded-lg mt-3" >
+        <section className="container bg-light rounded-lg mt-3 mb-4" >
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="p-0 pb-4 px-3 p-xl-5 py-xl-3 hnn-poster">
               <div className="hnn-img">
-                <div className="col-12">
-                  <img src={Poster} alt=""   width={"100%"} className="img" />
-                </div>
+       
+                  <img src={Poster} alt="Magic Snowman poster" />
+               
               
               </div>
               <div className="hnn-desc">
