@@ -99,7 +99,7 @@ const Home = () => {
               <h2 className="book-title">MEDIA PROJECTS</h2>
             </div>
             <div className="two-book-boxes">
-              <div className="two-book-boxes-item-left" style={{ backgroundColor: "#FFC72C" }} >
+              <div className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6" }} >
 
 
                 <div style={{ flex: 1 }}>

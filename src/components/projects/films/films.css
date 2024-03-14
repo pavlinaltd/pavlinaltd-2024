@@ -109,12 +109,12 @@ main.film img.header {
    display : flex;
   flex-direction : column;
    justify-content : space-between;
-  padding-left : 40px;
-  padding-right : 40px;
+  padding-left : 10px;
+  padding-right : 10px;
    text-align : justify;
 }
 .redux-poster{
-  width : 80%;
+  width : 100%;
 }
 
 .orphan-info{
@@ -135,6 +135,7 @@ main.film img.header {
 
 .pilgrim-desc {
   text-align : justify;
+  font-size: 1.2em;
   line-height : 1.4em;
   padding-left: 100px;
   padding-right: 100px;
@@ -186,8 +187,8 @@ main.film img.header {
   }
 
   .orphan-iframe{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .hnn-banner{

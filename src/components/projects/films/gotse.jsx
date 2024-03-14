@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/gotse.png";
+// import GotseBanner from "../../../assets/films/gotse_banner.png";
 
 const Gotse = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -12,7 +13,7 @@ const Gotse = () => {
         <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-6" style={{ fontSize : "1vw", lineHeight : "1.2em"}}>
                 <h1 className="mb-4">Gotse</h1>
                 <h2>Produced by</h2>
                 <p className="mb-3 mb-lg-4">Macedonian Arts Council</p>
@@ -45,22 +46,31 @@ const Gotse = () => {
         </section>
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
-              <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
+            <div style={{ display : "flex", flexDirection : "row" , gap : "40px"}}>
+              <div style={{ width : "20%" }} >
                 <img
                   src={Poster}
                   alt="Gotse"
                   className="img-fluid"
+                  style={{ objectFit : "fill", borderRadius : "12px"}}
                 />
               </div>
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5">
-                <p className="mb-3 mb-lg-4">
+              <div style={{ fontSize : "1vw", lineHeight : "1.2em", display : "flex", justifyContent : "space-between", flexDirection : "column", width : "50%"}}>
+                <p >
                 This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
                 </p>
-                <p className="mb-3 mb-lg-4">
+                <p>
                 One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev, a Macedonian national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.
                 </p>
               </div>
+              {/* <div>
+                <img
+                  src={GotseBanner}
+                  alt="Gotse"
+                  style={{ objectFit : "fill", borderRadius : "12px"}}
+                  className="img-fluid"
+                />
+              </div> */}
             </div>
           </section>
         </div>

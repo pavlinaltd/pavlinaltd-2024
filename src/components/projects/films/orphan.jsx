@@ -45,7 +45,7 @@ const Orphan = () => {
 
         </section> */}
            <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
-            <div className="orphan-iframe" style={{ width : "100%"}}>
+            <div style={{ width : "90%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/q4R1JfTIOpQ"

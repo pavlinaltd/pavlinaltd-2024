@@ -237,7 +237,7 @@ const Future = () => {
 
                   <div className="borders-desc">
                     <p className="future-film-desc">
-                      Borders in Heaven is a fish-out-of-water romantic comedy
+                      <span style={{ fontWeight : "bold" }}> Borders in Heaven </span> is a fish-out-of-water romantic comedy
                       that takes place in a small village in Macedonia called
                       Heaven. The main protagonist, Donna Lee, is a native New
                       Yorker who is sent there to investigate an insurance
@@ -257,11 +257,15 @@ const Future = () => {
                       ripples in Donna Lee's heartbeat. Magical realism through
                       a few other local characters adds a Don Quixotesque
                       atmosphere to the film. The more realistic aspects of the
-                      story are reminiscent of notable classics like Cinema
-                      Paradiso, Local Hero and Il Postino.
+                      story are reminiscent of notable classics like <span style={
+                        {fontStyle : "italic" }
+                      }>Cinema
+                      Paradiso, Local Hero </span> and <span style={
+                        {fontStyle : "italic" }
+                      }> Il Postino.</span>
                     </p>
-                    <br></br>
-                    <p className="future-film-desc">In development</p>
+                    {/* <br></br>
+                    <p className="future-film-desc">In development</p> */}
                   </div>
 
 
@@ -275,7 +279,7 @@ const Future = () => {
                 <div className="future-film-section">
                   <div className="future-film-section-desc">
                     <p className="future-film-desc">
-                      In a snow covered field somewhere in the world, Lumiukko,
+                      In a snow covered field somewhere in the world, Lumi ukko,
                       the magic snowman, is witnessing spring. All around him
                       are the sounds and signs of the approaching season. His
                       friend Gustella, the Winter Wind, arrives to wake him. "He

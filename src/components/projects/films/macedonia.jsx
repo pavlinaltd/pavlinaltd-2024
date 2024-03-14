@@ -3,31 +3,19 @@ import "./films.css";
 
 import Poster from "../../../assets/films/posters/the-colors-of-macedonia.png";
 import Header from "../../../assets/films/new_koce.png";
+import ImdbIcon from "../../../assets/common/imdbna.png";
+import colorsPoster from "../../../assets/films/colorsofmac.jpg";
 
 const Macedonia = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
     <main className="film">
-      <div className="container p-0">
-        <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
+      <div className="container">
+        <section className="">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6">
-                <h1 className="mb-4">The Colors of Macedonia</h1>
-                <h2>Written, Directed and Produced by</h2>
-                <p className="mb-3 mb-lg-4">Peter Murphy</p>
-                <h2>Executive Producers</h2>
-                <p>Macedonian Arts Council</p>
-                <p>Mike Zafirovski</p>
-                <p>George Atanasoski</p>
-                <p>Edited at KOCE-TV</p>
-                <p className="mb-3 mb-lg-4">Camera - Peter Murphy</p>
-                <h2>Macedonian Production Crew</h2>
-                <p>Stalin Lozanovski</p>
-                <p>Violeta Shindil</p>
-                <p>Marija Kostovska</p>
-              </div>
+            <div className="row">
+          
               <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
@@ -38,20 +26,43 @@ const Macedonia = () => {
                   ></iframe>
                 </div>
               </div>
+
+              <div style={{ borderRadius : "12px", width : "50%" }}>
+                <img
+                  src={colorsPoster}
+                  alt="The Colors of Macedonia"
+                  className="img"
+                  style={{ borderRadius : "12px", objectFit : "fill", height : "100%"}}
+                />
+              </div>
+
             </div>
           </div>
         </section>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0">
-              <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
+        <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Visit
+                </div>
+                <a href="https://www.imdb.com/title/tt4952568/?ref_=nm_flmg_t_5_prd" target="_blank"  rel="noreferrer">
+                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{ objectFit : "fill", maxHeight : "50px", maxWidth: "100px"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
+        <div className="p-0 pb-4 px-3 p-xl-5 mt-4 bg-light">
+          <section className="container">
+            <div className="" style={{ display : "flex", flexDirection : "row", gap : "40px"}}>
+              <div style={{ borderRadius : "12px", width : "30%" }}>
                 <img
                   src={Poster}
                   alt="The Colors of Macedonia"
                   className="img"
+                  style={{ borderRadius : "12px", objectFit : "fill"}}
                 />
               </div>
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5 d-flex flex-column justify-content-between">
+              <div className="col-12 col-md-8 d-flex flex-column justify-content-between" style={{ fontSize : "1.4vw", lineHeight : "1.2em"  }}>
                 <p className="mb-3 mb-lg-4">
                   The Colors of Macedonia is a half-hour documentary film
                   comissioned by the PBS affiliated KOCE-TV from the Macedonian
@@ -63,6 +74,7 @@ const Macedonia = () => {
                   src={Header}
                   alt="The Colors of Macedonia"
                   className="img"
+                  style={{ borderRadius : "12px", objectFit : "fill"}}
                 />
               </div>
             </div>

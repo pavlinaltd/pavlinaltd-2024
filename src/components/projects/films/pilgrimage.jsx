@@ -124,13 +124,11 @@ Prof. Andrew Rossos
               <div style={{ fontWeight : "bold" }}>
               WITH THE SUPPORT OF
               </div>
-              <br></br>
-              <div style={{ display : "flex", justifyContent :"space-between"}}>
+           
+              {/* <div style={{ display : "flex", justifyContent :"space-between"}}> */}
               <div style={{ alignSelf : "flex-end"}}>
               The John M. Bissell Foundation
-              </div>
-              <div>
-              The Macedonian Film Fund
+               - 
               <span>
               <img
                   src={MFA}
@@ -139,14 +137,15 @@ Prof. Andrew Rossos
                   style={{ objectFit : "fill", width : "80px", marginLeft : "10px"}}
                 />
               </span>
+              The Macedonian Film Fund
               </div>
            
-              </div>
+              {/* </div> */}
            </div>
         </section>
-        <section className="p-3 py-4 py-md-0 px-md-5 m-0">
+        <section className="p-3 py-4 py-md-0 px-md-5 m-0 mt-4">
             <div className="pilgrim-section">
-              <div style={{ width:"30%" , textAlign : "justify", borderRadius : "12px"}}>
+              <div style={{ width:"25%" , textAlign : "justify", borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="My American Pilgrimage"

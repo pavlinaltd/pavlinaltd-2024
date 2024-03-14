@@ -9,7 +9,7 @@ const Redux = () => {
   useEffect(() => window.scrollTo(0, 0));
 
   return (
-    <main className="film">
+    <main style={{ marginLeft : "150px", marginRight : "150px" }}>
       <div className="container">
         <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
             <div style={{ width : "100%"}}>
@@ -45,12 +45,20 @@ const Redux = () => {
         <br>
         </br>
         <br></br>
-        <div className="pb-4 bg-light">
+        <div className="pb-4 bg-light" style={{ display :"flex", flexDirection : "row", gap : "40px" }}>
       
-            <div className="redux-info">
-              <div className="redux-poster" > 
-                <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" }}/>
+         
+              <div style={{  width : "30%"}}> 
+                <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" , width : "100%" }}/>
               </div>
+            
+              <div style={{  width : "70%"}}>
+                <img src={FaceGallery} alt="face"  className="img rounded-4" style={{objectFit : "fill", width : "100%", height : "100%" }}/>
+              </div>
+         
+
+        </div>
+        <div className="pb-4 mb-5 bg-light">
               <div className="redux-desc">
               <p >
               THEN: In 1989 Sir Roger Moore lent the voice to the magic snowman Lummi Ukko, and for the next fifteen years he was adored by children worldwide. But he did not smile, wink or frown then. Lumi Ukko was too lazy for that!
@@ -68,12 +76,6 @@ const Redux = () => {
                 A fresh new sound mix and a brand new score, the re-edited version of this evergreen staple will give today’s children a fresh look at this film their parents grew up with and loved.
             </p>
               </div>
-
-
-              <div >
-                <img src={FaceGallery} alt=""  className="img rounded-4" style={{objectFit : "fill", width :"100%" }}/>
-              </div>
-            </div>
 
         </div>
 
