@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./films.css";
 
 //import Poster from "../../../assets/films/posters/between-two-worlds.png";
@@ -9,7 +9,54 @@ import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
 import FrenchPoem from "../../../assets/audio/Sun_French_Mastered.wav";
 import SerbianPoem from "../../../assets/audio/Sun_Serbian_Mastered.wav";
 const Between = () => {
-  useEffect(() => window.scrollTo(0, 0));
+
+  const serbianPoemRef = useRef(null);
+  const frenchPoemRef = useRef(null);
+  const englishPoemRef = useRef(null);
+
+  // useEffect(() => window.scrollTo(0, 0));
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Function to pause all audios except the one currently playing
+    const pauseOtherAudios = (currentAudioRef) => {
+      const audios = [serbianPoemRef, frenchPoemRef, englishPoemRef];
+      audios.forEach((audioRef) => {
+        if (audioRef.current && audioRef !== currentAudioRef) {
+          audioRef.current.pause();
+        }
+      });
+    };
+
+    // Adding event listeners to each audio element
+    const serbianAudio = serbianPoemRef.current;
+    const frenchAudio = frenchPoemRef.current;
+    const englishAudio = englishPoemRef.current;
+
+    if (serbianAudio) {
+      serbianAudio.addEventListener('play', () => pauseOtherAudios(serbianPoemRef));
+    }
+    if (frenchAudio) {
+      frenchAudio.addEventListener('play', () => pauseOtherAudios(frenchPoemRef));
+    }
+    if (englishAudio) {
+      englishAudio.addEventListener('play', () => pauseOtherAudios(englishPoemRef));
+    }
+
+    // Cleanup function to remove event listeners
+    return () => {
+      if (serbianAudio) {
+        serbianAudio.removeEventListener('play', () => pauseOtherAudios(serbianPoemRef));
+      }
+      if (frenchAudio) {
+        frenchAudio.removeEventListener('play', () => pauseOtherAudios(frenchPoemRef));
+      }
+      if (englishAudio) {
+        englishAudio.removeEventListener('play', () => pauseOtherAudios(englishPoemRef));
+      }
+    };
+  }, []);
 
   return (
     <main className="film">
@@ -32,10 +79,10 @@ const Between = () => {
 
                   <div style={{ flex : 2 , display : "flex", flexDirection : "column", justifyContent : "space-evenly" , fontSize : "20px", marginTop : "20px", marginBottom : "20px"}} >
                     <p >
-                      Between Two Worlds is a collection of poems written by the
-                      Montenegrin-born poet Miodrag Miloshević, whose life is
-                      the inspiration for a short film, My Heart Is No Longer An
-                      Orphan. 
+                      <span style={{ fontStyle : "italic"}}>Between Two Worlds </span> is a collection of poems written by the
+                      Montenegrin-born poet Miodrag Milošević, whose life is
+                      the inspiration for a short docu/drama,  <span style={{ fontStyle : "italic"}}>My Heart Is No Longer An
+                      Orphan</span>. 
                     </p>
                     <p>
                       The film tells the story of two young poets who fall in
@@ -83,7 +130,7 @@ const Between = () => {
                       Sonce
                         </div> */}
                         <div className="col-3">
-                        <audio controls='controls'>
+                        <audio controls='controls'  ref={serbianPoemRef}>
                         <source src={SerbianPoem} type="audio/wav"/>
                         </audio>
                         </div>
@@ -94,7 +141,7 @@ const Between = () => {
                      Soleil
                     </div> */}
                     <div className="col-3">
-                    <audio controls='controls'>
+                    <audio controls='controls'  ref={frenchPoemRef}>
                     <source src={FrenchPoem} type="audio/wav"/>
                     </audio>
                     </div>
@@ -105,7 +152,7 @@ const Between = () => {
                     Sun
                   </div> */}
                   <div className="col-3">
-                  <audio controls='controls'>
+                  <audio controls='controls'  ref={englishPoemRef}>
                   <source src={EnglishPoem} type="audio/wav"/>
                   </audio>
                   </div>

@@ -13,7 +13,7 @@ const Gotse = () => {
         <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-6" style={{ fontSize : "1vw", lineHeight : "1.2em"}}>
+              <div style={{ fontSize : "1vw", lineHeight : "1.2em", width : "40%"}}>
                 <h1 className="mb-4">Gotse</h1>
                 <h2>Produced by</h2>
                 <p className="mb-3 mb-lg-4">Macedonian Arts Council</p>
@@ -31,10 +31,10 @@ const Gotse = () => {
                 <p>Skopje, Ohrid, and the village of Vevchani</p>
                 <p className="mb-3 mb-lg-4">The Republic of Macedonia</p>
               </div>
-              <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
+              <div style={{ width : "60%"}}>
                 <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/JFaPLtBNQSg"
+                    src="https://www.youtube.com/embed/mphudxyW08c"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -57,7 +57,7 @@ const Gotse = () => {
               </div>
               <div style={{ fontSize : "1vw", lineHeight : "1.2em", display : "flex", justifyContent : "space-between", flexDirection : "column", width : "50%"}}>
                 <p >
-                This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
+                 (ГОЦЕ ДЕЛЧЕВ) This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
                 </p>
                 <p>
                 One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev, a Macedonian national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.

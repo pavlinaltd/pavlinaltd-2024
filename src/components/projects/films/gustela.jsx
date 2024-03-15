@@ -4,6 +4,7 @@ import "./films.css";
 import Poster from "../../../assets/films/posters/gustella.JPG";
 import Image from "../../../assets/films/gustella-castle.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import gustellaVideo from "../../../assets/films/gustella.mov";
 
 const Gustella = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -30,76 +31,84 @@ const Gustella = () => {
             </div>
           </div>
         </section> */}
-         <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
-            <div style={{ width : "100%"}}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div style={{ width: "100%" }}>
             <div className="ratio ratio-16x9">
-                  <iframe
+              {/* <iframe
                     src="https://www.youtube.com/"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
-                  ></iframe>
-                </div> 
+                  ></iframe> */}
+              <video
+                controls
+                title="Local Video Player"
+                allowFullScreen
+              >
+                <source src={gustellaVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px"}}>
-                <div style={{ marginRight :"10px", color : "black"}}>
+          </div>
+          <div style={{ textAlign: "center", width: "40%", display: "flex", flexDirection: "column", alignContent: "center", marginTop: "20px" }}>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", fontSize: "24px", fontWeight: "600", borderRadius: "12px" }}>
+              <div style={{ marginRight: "10px", color: "black" }}>
                 Visit
-                </div>
-                <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank"  rel="noreferrer">
-                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxWidth: "100px", maxHeight : "50px"}}/>
-                </a>
-                
               </div>
-           
+              <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank" rel="noreferrer">
+                <img src={ImdbIcon} alt="" className="img hoverable-img" style={{ objectFit: "fill", maxWidth: "100px", maxHeight: "50px" }} />
+              </a>
+
             </div>
-           
+
+          </div>
+
         </div>
         <br></br>
         <br></br>
-     
+
         <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
           <section className="container p-3 py-4 py-md-0 px-md-5 m-0">
             <div className="orphan-info">
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
-                <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit : "fill"}} />
+                <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill" }} />
               </div>
-              <div className="orphan-desc" style={{ display : "flex", flexDirection : "column"}}>
+              <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
                 <p className="mb-3 mb-lg-4">
-                A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA. 
+                  A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA.
                 </p>
                 <p className="mb-3 mb-lg-4">
-                Lumiuko is shaped as an old man, but in fact, he is a boy trapped in a snowy suit for 500 years.  He is all sculptured ice, with a few icicles that adorn his right shoulder.                 </p>
+                  Lumiuko is shaped as an old man, but in fact, he is a boy trapped in a snowy suit for 500 years.  He is all sculptured ice, with a few icicles that adorn his right shoulder.                 </p>
                 <p className="mb-3 mb-lg-4">
-                GUSTELLA is the ageless wind, the travel companion who carries him from place to place.  She is made of streaks of loosely joined snowflakes that can only be held together by transparent patches of ice that joins them.  Her hair is made of effervescent lumpy snowflakes and a halo adorns her head.                </p>
-                <div style={{ textAlign : "right"}}>
-              
-                CUT TO
-          
+                  GUSTELLA is the ageless wind, the travel companion who carries him from place to place.  She is made of streaks of loosely joined snowflakes that can only be held together by transparent patches of ice that joins them.  Her hair is made of effervescent lumpy snowflakes and a halo adorns her head.                </p>
+                <div style={{ textAlign: "right" }}>
+
+                  CUT TO
+
                 </div>
                 <br></br>
-                <p className="mb-3 mb-lg-4" style={{ marginTop : "20px"}}>
-                EXT. LATE MORNING - CASTLE
+                <p className="mb-3 mb-lg-4" style={{ marginTop: "20px" }}>
+                  EXT. LATE MORNING - CASTLE
                 </p>
                 <p className="mb-3 mb-lg-4">
-                Lumiuko sleeps in this wonderland dreaming of becoming a knight in his next life. 
+                  Lumiuko sleeps in this wonderland dreaming of becoming a knight in his next life.
                 </p>
                 <p className="mb-3 mb-lg-4">
-                ANGLE ON - A sudden swirl of wind swoops up to him as GUSTELLA is trying to wake him.
+                  ANGLE ON - A sudden swirl of wind swoops up to him as GUSTELLA is trying to wake him.
                 </p>
                 <p className="text-center">GUSTELLA</p>
-                <p className="text-right" style={{ margin : "0 auto"}}>
-                Wake up! Wake up! I am so bored!
-                <br></br>
-                Let us play! 
+                <p className="text-right" style={{ margin: "0 auto" }}>
+                  Wake up! Wake up! I am so bored!
+                  <br></br>
+                  Let us play!
                 </p>
                 <br></br>
                 <p className="mb-3 mb-lg-4">
-                There is no reaction from Lumiuko.  Gustella blows a little harder.
+                  There is no reaction from Lumiuko.  Gustella blows a little harder.
                 </p>
                 <p className="text-center">GUSTELLA (CONT'D)</p>
-                <p className="mb-3 mb-lg-4" style={{ margin : "0 auto"}}>
-                Wake up, wake up you heavy sack of <br></br>potatoes.
+                <p className="mb-3 mb-lg-4" style={{ margin: "0 auto" }}>
+                  Wake up, wake up you heavy sack of <br></br>potatoes.
                 </p>
                 <p>This gets a reaction from Lumi.  He is startled awake.</p>
               </div>
