@@ -9,8 +9,8 @@ const Redux = () => {
   useEffect(() => window.scrollTo(0, 0));
 
   return (
-    <main style={{ marginLeft : "150px", marginRight : "150px" }}>
-      <div className="container">
+    <main className="main-margin">
+      <div>
         <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
             <div style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
@@ -45,14 +45,14 @@ const Redux = () => {
         <br>
         </br>
         <br></br>
-        <div className="pb-4 bg-light" style={{ display :"flex", flexDirection : "row", gap : "40px" }}>
+        <div className="pb-4 bg-light img-section">
       
          
-              <div style={{  width : "30%"}}> 
+              <div className="fw-30"> 
                 <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" , width : "100%" }}/>
               </div>
             
-              <div style={{  width : "70%"}}>
+              <div className="fw-70">
                 <img src={FaceGallery} alt="face"  className="img rounded-4" style={{objectFit : "fill", width : "100%", height : "100%" }}/>
               </div>
          

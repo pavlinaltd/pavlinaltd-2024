@@ -8,8 +8,8 @@ const Orphan = () => {
   useEffect(() => window.scrollTo(0, 0));
 
   return (
-    <main className="film">
-      <div className="container p-0" style={{ marginBottom : "60px"}}>
+    <main className="main-margin">
+      <div style={{ marginBottom : "60px"}}>
         {/* <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
@@ -45,7 +45,7 @@ const Orphan = () => {
 
         </section> */}
            <div style={{ display : "flex" , flexDirection :"column", alignItems : "center"}}>
-            <div style={{ width : "90%"}}>
+            <div style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/q4R1JfTIOpQ"
@@ -77,11 +77,11 @@ const Orphan = () => {
         </div>
         <br></br>
         <br></br>
-        <div className="p-0 pb-4 px-3 p-xl-5 bg-light">
-          <section className="container p-3 py-4 py-md-0 px-md-5 m-0">
+        <div className="bg-light">
+          <section className="">
             <div className="orphan-info">
               
-              <div className="col-12 col-md-4 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex"> 
+              <div > 
                 <img src={Poster} alt="" className="img-fluid rounded-4" />
               </div>
 

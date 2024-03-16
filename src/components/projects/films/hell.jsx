@@ -30,11 +30,11 @@ const Hell = () => {
            
             </div>
         {/* <img src={header} alt="Happy Hell Night" style={{ width : "100%", height : "50%"}} /> */}
-      <div className="container p-0">
+      <div className="main-margin">
     
-        <section className="container bg-light rounded-lg mt-3" >
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="p-0 pb-4 px-3 p-xl-5 py-xl-3 hnn-poster">
+        <section className="mt-3" >
+          <div >
+            <div className="hnn-poster">
 
               {/* <div style={{ display : "flex", flexDirection : "column", width : "64%", textAlign : "center" }}>
              

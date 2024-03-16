@@ -10,8 +10,8 @@ const MagicSnowman = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
-    <main className="film">
-      <div className="container p-0">
+    <main className="main-margin">
+      <div>
         {/* <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0">
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
@@ -36,7 +36,7 @@ const MagicSnowman = () => {
     <div style={{ flex: "2" , display : "flex" }}>
       <img
         src={MagicSnowmanImg}
-        alt="Happy Hell Night"
+        alt="Magic Snowman Poster"
         style={{ width: "100%", height: "100%", borderRadius: "12px",  objectFit: "fill" }}
       />
     </div>
@@ -69,7 +69,7 @@ const MagicSnowman = () => {
         <section className="mb-5">
           <div>
           <div className="col-12 col-md-12 mt-12 mt-md-0 d-flex align-items-center" >
-                  <img src={Languages} alt="" className="img" width={"40%"} />
+                  <img src={Languages} alt="" className="img" width={"100%"} />
               </div>
               <div style={{ width : "100%", textAlign : "center", paddingLeft : "20px", paddingRight : "20px"}}>
             <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</h3>  
@@ -78,16 +78,16 @@ const MagicSnowman = () => {
           </div>
 
         </section>
-        <section className="container bg-light rounded-lg mt-3 mb-4" >
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="p-0 pb-4 px-3 p-xl-5 py-xl-3 hnn-poster">
-              <div className="hnn-img">
+        <section>
+          <div>
+            <div className="image-desc-flex">
+              <div className="fw-30">
        
-                  <img src={Poster} alt="Magic Snowman poster" />
+                  <img src={Poster} alt="Magic Snowman poster" style={{ width : "100%"}} />
                
               
               </div>
-              <div className="hnn-desc">
+              <div className="fw-70" style={{ textAlign : "justify"}}>
                 <p className="">
                   The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
                   co-production with FIT a production company based in

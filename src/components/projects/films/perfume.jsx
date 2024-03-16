@@ -8,12 +8,12 @@ const Perfume = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
-    <main className="film">
-      <div className="container p-0">
+    <main className="main-margin">
+      <div className="">
         <section className="">
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
-              <div className="col-12 col-md-12 mt-4 mt-md-0 d-flex align-items-center">
+          <div >
+            <div >
+              <div >
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/wHQmgYQYo70"
@@ -39,16 +39,16 @@ const Perfume = () => {
            
             </div>
 
-          <section className="" style={{ textAlign : "justify" }}>
-            <div className="row m-0 py-4 py-md-0 py-md-5 px-md-0 px-xl-5 m-0 px-sm-0">
-              <div className="col-12 col-md-4 row ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center" style={{ borderRadius : "12px"}}>
+          <section className="mt-4 mb-4" >
+            <div className="image-desc-flex">
+              <div className="fw-30" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="The Promise of Perfume"
-                  style={{ objectFit : "fill", borderRadius : "12px"}}
+                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-              <div className="col-12 col-md-8 hnn-desc">
+              <div className="fw-70" style={{ textAlign : "justify" }}>
                 <p className="mb-3 mb-lg-4">
                   The Promise of Perfume is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New

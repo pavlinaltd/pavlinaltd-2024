@@ -75,6 +75,7 @@ main.film img.header {
   gap : 50px;
 }
 
+
 .hnn-img {
   width : 35%;
 }
@@ -109,8 +110,8 @@ main.film img.header {
    display : flex;
   flex-direction : column;
    justify-content : space-between;
-  padding-left : 10px;
-  padding-right : 10px;
+  /* padding-left : 10px;
+  padding-right : 10px; */
    text-align : justify;
 }
 .redux-poster{
@@ -133,17 +134,39 @@ main.film img.header {
   gap : 40px;
 }
 
+.style-bold {
+  font-weight:  bold;
+}
+
+.style-italic {
+  font-style: italic;
+}
+
+.color-theme {
+  color: #94211d;
+}
+
+
 .pilgrim-desc {
   text-align : justify;
   font-size: 1.2em;
   line-height : 1.4em;
-  padding-left: 100px;
-  padding-right: 100px;
   display : flex;
   flex-direction: column;
   justify-content : space-between;
   flex : 1;
 }
+
+.image-desc-flex {
+  display: flex;
+  flex-direction: row;
+  gap : 40px;
+}
+
+.fw-50{
+  width: 50%;
+}
+
 
 .pilgrim-sub{
   display : flex; 
@@ -168,17 +191,25 @@ main.film img.header {
   .redux-desc {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left : 10px;
-    padding-right : 10px;
+    /* padding-left : 10px;
+    padding-right : 10px; */
   }
 
   .redux-poster{
     width : 100%;
   }
 
-
+  .fw-50{
+    width: 100%;
+  }
+  
   .orphan-desc{
     font-size: 14px !important;
+  }
+
+
+  .image-desc-flex {
+    flex-direction: column;
   }
 
   .redux-info{
@@ -221,7 +252,7 @@ main.film img.header {
   }
   .hnn-trailer {
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .pilgrim-section{

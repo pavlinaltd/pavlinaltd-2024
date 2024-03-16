@@ -12,6 +12,16 @@
     margin-left : 40px;
 }
 
+.main-margin {
+    margin-left : 10%;
+    margin-right : 10%;
+}
+
+.img-section  {
+    display : flex;
+    flex-direction : row;
+    gap : 40px;
+}
   
 .future-film-section {
     display: flex;
@@ -49,6 +59,14 @@
     margin-right: 80px;
 }
 
+.fw-30 {
+    width : 30%;
+}
+
+.fw-70 {
+    width : 70%;
+}
+
 
 .future-separator {
     width: 80%;
@@ -58,6 +76,10 @@
 
 @media (max-width: 767.98px) {
 
+    .main-margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
 .future-film-desc {
     font-size: 14px;
@@ -100,5 +122,17 @@
     .modal-flex-desc{
         margin-top: 20px;
         width: 100% !important; 
+    }
+
+    .img-section{
+        flex-direction: column;
+    }
+
+    .fw-30 {
+        width: 100%;
+    }
+
+    .fw-70 {
+        width: 100%;
     }
 }

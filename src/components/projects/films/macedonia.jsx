@@ -10,20 +10,17 @@ const Macedonia = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
-    <main className="film">
-      <div className="container">
-      <section className="row p-0 px-5">
-          <div className="col-12 p-0 m-0">
+    <main className="main-margin">
+      <div >
+      <section >
+          <div>
             <img   src={colorsPoster}
                   alt="The Colors of Macedonia" className="hnn-banner" />
           </div>
-          <div className="" style={{ fontSize : "1.4vw", lineHeight : "1.2em"  }}>
+          <div className="" style={{ fontSize : "1.4vw", lineHeight : "1.2em" , textAlign : "justify" }}>
                 <p className="mb-3 mb-lg-4 mt-3">
-                  <span style={{ fontWeight : "bold", color : "#94211d"}}>The Colors of Macedonia</span> is a half-hour documentary film
-                  comissioned by the PBS affiliated KOCE-TV from the Macedonian
-                  Art council in 2004. The film explores the cultural and
-                  spitual riches of Macedonia spanning two thousand years. It
-                  premiered on June 4th, 2004 on the PBS member television station KOCE-TV who retained all creative control to this film.
+                  <span style={{ fontWeight : "bold", color : "#94211d"}}>The Colors of Macedonia</span> is a half-hour documentary film that explores the cultural and spiritual riches of Macedonia spanning two thousand years.  
+It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE-TV, a PBS member television station in Huntington Beach, California who retained all creative control in the making of this film. It premiered on June 4th, 2004.  
                 </p>
                 </div>
         </section>
@@ -41,11 +38,11 @@ const Macedonia = () => {
            
             </div>
 
-        <section className="">
-          <div className="w-100 p-0 p-xl-5 py-xl-3">
-            <div className="row">
+        <section className="mt-4 mb-4">
+          <div className="">
+            <div className="image-desc-flex">
           
-              <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center">
+              <div className="fw-50">
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/ZJlqzm6VgXk"
@@ -64,12 +61,12 @@ const Macedonia = () => {
                   style={{ borderRadius : "12px", objectFit : "fill", height : "100%"}}
                 />
               </div> */}
-              <div style={{ borderRadius : "12px", width : "50%" }}>
+              <div className="fw-50">
                 <img
                   src={Header}
                   alt="The Colors of Macedonia"
                   className="img"
-                  style={{ borderRadius : "12px", objectFit : "fill", height : "100%"}}
+                  style={{ borderRadius : "12px", objectFit : "fill", width : "100%" ,height : "100%"}}
                 />
               </div>
 

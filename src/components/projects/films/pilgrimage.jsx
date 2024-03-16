@@ -9,10 +9,10 @@ const Pilgrimage = () => {
   useEffect(() => window.scrollTo(0, 0));
 
   return (
-    <main className="film">
-      <div className="container p-0">
+    <main className="main-margin">
+      <div className="">
          
-          <section className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0" >
+          <section className="" >
           <div className="w-100 p-0" style={{ marginTop : "10px"}}>
             <div className="">
               {/* <div className="col-12 col-md-6">
@@ -143,14 +143,14 @@ Prof. Andrew Rossos
               {/* </div> */}
            </div>
         </section>
-        <section className="p-3 py-4 py-md-0 px-md-5 m-0 mt-4">
-            <div className="pilgrim-section">
-              <div style={{ width:"25%" , textAlign : "justify", borderRadius : "12px"}}>
+        <section className="mt-4 mb-4">
+            <div className="image-desc-flex">
+              <div className="fw-30" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="My American Pilgrimage"
                   className="img"
-                  style={{ objectFit : "fill", borderRadius : "12px"}}
+                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
               <div className="pilgrim-desc">
