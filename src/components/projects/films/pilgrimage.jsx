@@ -153,8 +153,11 @@ Prof. Andrew Rossos
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
+             
               <div className="pilgrim-desc">
-                <div style={{ textAlign : "center", fontWeight : "bold" }}>ABOUT THE FILM</div>
+              <div style={{ textAlign : "center", fontWeight : "bold" }}>ABOUT THE FILM</div>
+              {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
+               
                 <p className="mb-3 mb-lg-4">
                 Stoyan Christowe was a journalist, author and a politician. Born in Ottoman Macedonia in 1898, he immigrated to the United States in 1911 with a burning desire to be an American's American. He came of age on the Great Plains and went on to be a well-known journalist, critic and lover of the English language. In all, he wrote six books, numerous short stories and articles. He ended his career as a Vermont State Representative and then a Senator.
                 </p>
@@ -162,6 +165,7 @@ Prof. Andrew Rossos
                 Stoyan Christowe remained passionate about his adopted country throughout his life and is remembered as a staunch defender of the democratic way. His is a quintessential American immigrant story that will be remembered through an endowment fund in support of students of literature and political science, in his native Macedonia and the documentary film  <span style={{ fontStyle : "italic"}}>My American Pilgrimage</span>.
                 </p>
 
+              {/* </div> */}
               </div>
             </div>
           </section>

@@ -48,7 +48,7 @@ const Perfume = () => {
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-              <div className="fw-70" style={{ textAlign : "justify" }}>
+              <div className="fw-70 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify"}}>
                 <p className="mb-3 mb-lg-4">
                   The Promise of Perfume is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New

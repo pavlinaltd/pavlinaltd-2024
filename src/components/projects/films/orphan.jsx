@@ -86,7 +86,7 @@ const Orphan = () => {
               </div>
 
 
-              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5 orphan-desc" style={{ lineHeight : "1.2em", display :"flex", flexDirection : "column", justifyContent :"space-between", textAlign : "justify"}}>
+              <div className="col-12 col-md-8 pe-0 ps-0 ps-md-5 orphan-desc" style={{  lineHeight : "1.2em", display :"flex", flexDirection : "column", justifyContent :"space-between", textAlign : "justify"}}>
                 <p >
                   In March of 1969, she was seventeen and he twenty years old,
                   when they met at a poetry read in a city in Macedonia, then

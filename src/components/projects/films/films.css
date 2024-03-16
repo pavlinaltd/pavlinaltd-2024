@@ -72,7 +72,7 @@ main.film img.header {
 }
 .hnn-poster{
   display: flex;
-  gap : 50px;
+  gap : 70px;
 }
 
 
@@ -85,8 +85,8 @@ main.film img.header {
   flex-direction : column; 
   justify-content : space-between;
   text-align : justify;
-  width : 60%;
-  font-size : 1.1vw;
+  width : 65%; 
+  font-size : 1.3vw;
   line-height : 1.2em;
   margin-left : 40px;
 }
@@ -108,6 +108,7 @@ main.film img.header {
 
 .redux-desc {
    display : flex;
+   font-size: 1.2vw;
   flex-direction : column;
    justify-content : space-between;
   /* padding-left : 10px;
@@ -120,9 +121,11 @@ main.film img.header {
 
 .orphan-info{
   display: flex;
+  gap: 40px;
 }
 .orphan-desc {
-  font-size : 1.1vw;
+  font-size : 1.2vw;
+  line-height: 1.1em;
 }
 
 .pilgrim-section{
@@ -149,7 +152,7 @@ main.film img.header {
 
 .pilgrim-desc {
   text-align : justify;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   line-height : 1.4em;
   display : flex;
   flex-direction: column;
@@ -160,7 +163,7 @@ main.film img.header {
 .image-desc-flex {
   display: flex;
   flex-direction: row;
-  gap : 40px;
+  gap : 80px;
 }
 
 .fw-50{
@@ -191,6 +194,7 @@ main.film img.header {
   .redux-desc {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 14px;
     /* padding-left : 10px;
     padding-right : 10px; */
   }
@@ -207,6 +211,9 @@ main.film img.header {
     font-size: 14px !important;
   }
 
+  .pilgrim-desc{
+    font-size: 14px;
+  }
 
   .image-desc-flex {
     flex-direction: column;

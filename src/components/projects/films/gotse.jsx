@@ -23,7 +23,7 @@ const Gotse = () => {
                   ></iframe>
                 </div>
               </div>
-              <div style={{ fontSize : "1vw", lineHeight : "1.2em", textAlign : "center"}}>
+              <div className="orphan-desc" style={{ textAlign : "center"}}>
                 <h1 className="mb-4 color-theme style-bold">Gotse</h1>
                 <h2  className="color-theme style-bold">Produced by</h2>
                 <p className="mb-3 mb-lg-4">Macedonian Arts Council</p>
@@ -55,7 +55,7 @@ const Gotse = () => {
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-              <div className="fw-70">
+              <div className="fw-70 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between"}}>
                 <p >
                  (ГОЦЕ ДЕЛЧЕВ) This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
                 </p>

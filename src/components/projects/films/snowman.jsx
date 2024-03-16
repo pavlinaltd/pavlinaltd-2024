@@ -78,16 +78,16 @@ const MagicSnowman = () => {
           </div>
 
         </section>
-        <section>
-          <div>
-            <div className="image-desc-flex">
-              <div className="fw-30">
+        <section className="mt-4 mb-4">
+     
+            <div className="image-desc-flex" style={{ gap : "60px"}}>
+              <div className="fw-30" >
        
                   <img src={Poster} alt="Magic Snowman poster" style={{ width : "100%"}} />
                
               
               </div>
-              <div className="fw-70" style={{ textAlign : "justify"}}>
+              <div className="fw-70 orphan-desc" style={{ textAlign : "justify", display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
                 <p className="">
                   The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
                   co-production with FIT a production company based in
@@ -119,7 +119,7 @@ const MagicSnowman = () => {
                 </p>
               </div>
             </div>
-            </div>
+      
           </section>
         
       </div>

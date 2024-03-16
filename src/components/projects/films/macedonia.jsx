@@ -17,7 +17,7 @@ const Macedonia = () => {
             <img   src={colorsPoster}
                   alt="The Colors of Macedonia" className="hnn-banner" />
           </div>
-          <div className="" style={{ fontSize : "1.4vw", lineHeight : "1.2em" , textAlign : "justify" }}>
+          <div className="orphan-desc" style={{textAlign : "justify" }}>
                 <p className="mb-3 mb-lg-4 mt-3">
                   <span style={{ fontWeight : "bold", color : "#94211d"}}>The Colors of Macedonia</span> is a half-hour documentary film that explores the cultural and spiritual riches of Macedonia spanning two thousand years.  
 It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE-TV, a PBS member television station in Huntington Beach, California who retained all creative control in the making of this film. It premiered on June 4th, 2004.  

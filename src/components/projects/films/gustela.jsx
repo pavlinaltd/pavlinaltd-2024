@@ -71,7 +71,7 @@ const Gustella = () => {
           <section className="">
             <div className="orphan-info">
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
-                <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill" }} />
+                <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%" }} />
               </div>
               <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
                 <p className="mb-3 mb-lg-4">
@@ -115,7 +115,7 @@ const Gustella = () => {
             </div>
           </section>
         </div>
-        <div className="p-0 px-3 px-xl-5 pb-md-5">
+        <div className="p-0 px-3 px-xl-5 pb-md-5 mt-4">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div className="row m-0 py-4 py-md-0 px-md-5 px-md-0 px-xl-5 m-0 mx-auto">
               <img src={Image} alt="" className="img-fluid" />
