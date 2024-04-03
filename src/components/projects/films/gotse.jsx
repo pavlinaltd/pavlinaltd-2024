@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/gotse.png";
+import Poster from "../../../assets/films/posters/gotse-poster.jpg";
 // import GotseBanner from "../../../assets/films/gotse_banner.png";
 
 const Gotse = () => {
@@ -10,7 +10,7 @@ const Gotse = () => {
   return (
     <main className="main-margin">
       <div className="">
-        <section className="">
+        <section className="mb-4">
           <div className="">
             <div className="image-desc-flex">
               <div style={{ width : "100%"}}>
@@ -24,9 +24,9 @@ const Gotse = () => {
                 </div>
               </div>
               <div className="orphan-desc" style={{ textAlign : "center"}}>
-                <h1 className="mb-4 color-theme style-bold">Gotse</h1>
+                <h1 className="mb-4 color-theme style-bold" style={{ fontWeight : "bold"}}>GOTSE (ГОЦЕ)</h1>
                 <h2  className="color-theme style-bold">Produced by</h2>
-                <p className="mb-3 mb-lg-4">Macedonian Arts Council</p>
+                <p className="mb-3 mb-lg-4">The Macedonian Arts Council</p>
                 <h2 className="color-theme style-bold">Producers</h2>
                 <p>Pavlina Proevska</p>
                 <p className="mb-3 mb-lg-4">Mile Arsovski</p>
@@ -35,19 +35,24 @@ const Gotse = () => {
                 <h2 className="color-theme style-bold">Written by</h2>
                 <p className="mb-3 mb-lg-4">Goran Stefanovski</p>
                 <h2 className="color-theme style-bold">Starring</h2>
-                <p>Nenad Stojanovski as Gotse</p>
-                <p className="mb-3 mb-lg-4">His Eminence Bishop Kiril</p>
+                <p>Nenad Stojanovski as <span style={{ fontStyle : "italic" }}>Gotse</span></p>
+                <p className="mb-3 mb-lg-4">His Eminence <span style={{ fontStyle : "italic" }}> Bishop Kiril </span> </p>
                 <h2 className="color-theme style-bold">Shooting Locations</h2>
                 <p>Skopje, Ohrid, and the village of Vevchani</p>
-                <p className="mb-3 mb-lg-4">The Republic of Macedonia</p>
+                <p className="">The Republic of Macedonia</p>
+                <p>(copyright sign) 2007</p>
               </div>
             </div>
           </div>
         </section >
    
           <section className="mt-4 mb-4" >
-            <div className="image-desc-flex">
-              <div className="fw-30" >
+            <div className="image-desc-flex" style={{ marginTop : "80px"}}>
+            {/* <div className="fw-30 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between"}}>
+               
+             
+              </div> */}
+              <div className="fw-70" >
                 <img
                   src={Poster}
                   alt="Gotse"
@@ -55,8 +60,8 @@ const Gotse = () => {
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-              <div className="fw-70 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between"}}>
-                <p >
+              <div className="fw-30 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between", textAlign : "justify", lineHeight : "1.2em"}}>
+              <p >
                  (ГОЦЕ ДЕЛЧЕВ) This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
                 </p>
                 <p>

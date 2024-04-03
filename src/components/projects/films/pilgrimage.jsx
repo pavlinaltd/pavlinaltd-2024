@@ -124,20 +124,23 @@ Prof. Andrew Rossos
               <div style={{ fontWeight : "bold" }}>
               WITH THE SUPPORT OF
               </div>
-           
-              {/* <div style={{ display : "flex", justifyContent :"space-between"}}> */}
-              <div style={{ alignSelf : "flex-end"}}>
+
+            <div style={{ display : "flex", justifyContent :"center", alignContent: "center"}}>
+              <div style={{ alignSelf : "center"}}>
               The John M. Bissell Foundation
-               - 
-              <span>
+              <span> - </span>
+              
+               </div>
+       
               <img
                   src={MFA}
                   alt="My American Pilgrimage"
                   className="img"
-                  style={{ objectFit : "fill", width : "80px", marginLeft : "10px"}}
+                  style={{ objectFit : "fill", width : "80px", marginLeft : "10px", marginRight : "10px", marginTop : "10px"}}
                 />
-              </span>
-              The Macedonian Film Fund
+              <div style={{ alignSelf : "center"}}>
+               The Macedonian Film Fund
+              </div>
               </div>
            
               {/* </div> */}

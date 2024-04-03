@@ -217,6 +217,7 @@ main.film img.header {
 
   .image-desc-flex {
     flex-direction: column;
+    gap : 40px;
   }
 
   .redux-info{

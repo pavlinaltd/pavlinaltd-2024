@@ -81,7 +81,7 @@ const MagicSnowman = () => {
         <section className="mt-4 mb-4">
      
             <div className="image-desc-flex" style={{ gap : "60px"}}>
-              <div className="fw-30" >
+              <div className="fw-30" style={{ padding : "20px", background : "#b9b3b3" }} >
        
                   <img src={Poster} alt="Magic Snowman poster" style={{ width : "100%"}} />
                
