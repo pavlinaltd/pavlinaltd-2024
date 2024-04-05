@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/happy-hell-night.png";
-import Reel from "../../../assets/films/hhnreel.jpg";
+import Reel from "../../../assets/films/congress.jpg";
 import header from "../../../assets/films/hhnposter.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 const Hell = () => {
@@ -11,13 +11,13 @@ const Hell = () => {
   return (
     <main>
        <div className="container-fluid">
-        <section id="header-container" className="row p-0">
+        <section id="header-container" className="row p-0 main-margin">
           <div className="col-12 p-0 m-0">
             <img src={header} alt="Placeholder" className="hnn-banner" />
           </div>
         </section>
       </div>
-      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px", marginBottom : "40px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
@@ -46,7 +46,7 @@ const Hell = () => {
                 />
               </div> */}
              
-              <div className="hnn-img">
+              <div className="hnn-img fw-30">
               <img
                   src={Poster}
                   alt="Happy Hell Night"
@@ -98,7 +98,7 @@ const Hell = () => {
         </section>
         <section style={{ width: "100%", marginTop: "40px", marginBottom: "40px" }}>
   <div className="hnn-trailer">
-    <div style={{ flex: "2" , display : "flex" }}>
+    <div className="fw-30" style={{ }}>
       <img
         src={Reel}
         alt="Happy Hell Night"
