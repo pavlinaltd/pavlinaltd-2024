@@ -5,6 +5,8 @@ import Poster from "../../../assets/films/posters/happy-hell-night.png";
 import Reel from "../../../assets/films/congress.jpg";
 import header from "../../../assets/films/hhnposter.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import AudioImg from "../../../assets/common/podcasts.png";
+
 const Hell = () => {
   useEffect(() => window.scrollTo(0, 0));
 
@@ -17,13 +19,22 @@ const Hell = () => {
           </div>
         </section>
       </div>
-      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px", marginBottom : "40px"}}>
+      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "row", alignContent : "center", justifyContent : "space-evenly", marginTop : "20px", marginBottom : "40px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
                 </div>
                 <a href="https://www.imdb.com/title/tt0236283/?ref_=nm_knf_t_4" target="_blank"  rel="noreferrer">
                 <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                </a>
+                
+              </div>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Listen to Podcast from 1hr30min
+                </div>
+                <a href="https://podcasts.apple.com/us/podcast/movie-melt-podcast-psychotronic-and-outsider-cinema/id1458025439?i=1000495807992" target="_blank"  rel="noreferrer">
+                <img src={AudioImg}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
                 </a>
                 
               </div>

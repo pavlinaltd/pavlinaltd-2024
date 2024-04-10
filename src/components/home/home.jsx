@@ -16,7 +16,7 @@ import AudioImg from "../../assets/common/audio.png";
 
 
 
-import header from "../../assets/brand/banner.jpg";
+import header from "../../assets/brand/banner-new.jpg";
 
 const Home = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -135,7 +135,7 @@ const Home = () => {
               <div className="two-book-boxes-item ">
 
                 <div >
-                  <Link to="/the-magic-snowman-book">
+                  {/* <Link to="/the-magic-snowman-book"> */}
 
                     <img
                       src={TheMagicSnowmanAudiobook}
@@ -145,7 +145,7 @@ const Home = () => {
 
                     />
 
-                  </Link>
+                  {/* </Link> */}
                   <div className="snowman-dist">
                     <div style={{}}>distributed by  <span style={{ fontStyle: "italic" }}> Authors Republic</span></div>
                     <div> <a href="www.google.com" target="_blank">
