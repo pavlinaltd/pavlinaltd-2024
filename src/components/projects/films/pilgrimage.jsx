@@ -18,11 +18,13 @@ const Pilgrimage = () => {
               {/* <div className="col-12 col-md-6">
                 <h1 className="mb-4">My American Pilgrimage</h1>
               </div> */}
-              <div className="col-12 col-md-12 mt-4 mt-md-0 d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/aHsLfMjUwSg"
                     title="YouTube video player"
+                    marginLeft = "10px"
+                
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   ></iframe>
@@ -146,18 +148,18 @@ Prof. Andrew Rossos
               {/* </div> */}
            </div>
         </section>
-        <section className="mt-4 mb-4">
+        <section className="mt-4 mb-4" style={{ marginLeft : "10vw", marginRight : "10vw"}}>
             <div className="image-desc-flex">
-              <div className="fw-25" style={{ borderRadius : "12px"}}>
+              <div className="fw-30" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="My American Pilgrimage"
                   className="img"
-                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
+                  style={{ objectFit : "fill", borderRadius : "12px", height : "100%", width : "100%"}}
                 />
               </div>
              
-              <div className="pilgrim-desc fw-75">
+              <div className="pilgrim-desc fw-70" style={{ fontSize : "1.3vw"}}>
 
               {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
                

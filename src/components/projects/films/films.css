@@ -59,6 +59,14 @@ main.film img.header {
   
 }
 
+.fw-40 {
+  width : 40%;
+}
+
+.fw-60 {
+  width : 60%;
+}
+
 .snowman-poster-right{
   width: 60%;
   height: 40%;
@@ -152,7 +160,7 @@ main.film img.header {
 .pilgrim-desc {
   text-align : justify;
   font-size: 1.4vw;
-  line-height : 1.8em;
+  line-height : 1.3em;
   display : flex;
   flex-direction: column;
   justify-content : space-between;
@@ -177,6 +185,15 @@ main.film img.header {
 .fw-75 {
   width : 75%;
 }
+
+.fw-35 {
+  width : 35%;
+}
+
+.fw-65 {
+  width : 65%;
+}
+
 
 
 .pilgrim-sub{
@@ -279,6 +296,24 @@ main.film img.header {
     flex-direction: column;
     /* padding: 20px; */
   }
+
+  .fw-40 {
+    width : 100%;
+  }
+  
+  .fw-60 {
+    width : 100%;
+  }
+  
+
+  .fw-35 {
+    width : 100%;
+  }
+  
+  .fw-65 {
+    width : 100%;
+  }
+  
 
   .pilgrim-section{
 

@@ -4,6 +4,7 @@ import "./films.css";
 // import Poster from "../../../assets/films/posters/the-colors-of-macedonia.png";
 import Header from "../../../assets/films/new_koce.png";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import MacIcon from "../../../assets/brand/logo_desktop.png";
 import colorsPoster from "../../../assets/films/colorsofmac.jpg";
 
 const Macedonia = () => {
@@ -25,7 +26,7 @@ It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE
                 </div>
         </section>
 
-        <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+        <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px", marginBottom : "50px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
@@ -61,12 +62,25 @@ It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE
                   style={{ borderRadius : "12px", objectFit : "fill", height : "100%"}}
                 />
               </div> */}
-              <div className="fw-50">
+              <div className="fw-50" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
+
+              <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px", marginBottom : "20px"}}>
+              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+                <div style={{ marginRight :"10px", color : "black"}}>
+                Visit
+                </div>
+                <a href="http://www.macedonianarts.org/stream.shtml" target="_blank"  rel="noreferrer">
+                <img src={MacIcon}  alt="" className="img hoverable-img" style={{ objectFit : "fill", maxHeight : "100px"}}/>
+                </a>
+                
+              </div>
+           
+            </div>
                 <img
                   src={Header}
                   alt="The Colors of Macedonia"
                   className="img"
-                  style={{ borderRadius : "12px", objectFit : "fill", width : "100%" ,height : "100%"}}
+                  style={{ borderRadius : "12px", objectFit : "fill", width : "100%"}}
                 />
               </div>
 

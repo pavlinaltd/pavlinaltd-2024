@@ -39,16 +39,16 @@ const Perfume = () => {
            
             </div>
 
-          <section className="mt-4 mb-4" >
-            <div className="image-desc-flex">
-              <div className="fw-25" style={{ borderRadius : "12px"}}>
+          <section className="mt-4 mb-4" style={{ marginLeft : "5vw", marginRight : "5vw"}}>
+            <div className="image-desc-flex" style={{ gap : '40px'}}>
+              <div className="fw-30" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="The Promise of Perfume"
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%", height : "100%"}}
                 />
               </div>
-              <div className="fw-75 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify"}}>
+              <div className="fw-70 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", fontSize : "1.2vw"}}>
                 <p className="mb-3 mb-lg-4">
                   The Promise of Perfume is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New

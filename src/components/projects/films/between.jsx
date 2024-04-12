@@ -65,19 +65,20 @@ const Between = () => {
         <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
+    
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3">
             <div className="row p-0 pb-4 px-3 p-xl-5 py-xl-3">
    
          
-              <section className="synopsis container p-3 py-4 py-md-0 m-0">
-                <div className="between-desc-section">
+              <section className="synopsis container p-3 py-4 py-md-0 m-0" >
+                <div className="between-desc-section"       style={{ marginLeft : "4vw", marginRight : "4vw"}}>
                  
-                  <div style={{ flex : 1}}>
+                  <div className="fw-40">
                     <img src={BetweenTwoWorlds } alt="BetweenTwoWorlds" />
                   </div>
 
-                  <div style={{ flex : 2 , display : "flex", flexDirection : "column", justifyContent : "space-evenly" , fontSize : "20px", marginTop : "20px", marginBottom : "20px"}} >
+                  <div className="fw-60" style={{ display : "flex", flexDirection : "column", justifyContent : "space-evenly" , fontSize : "1.1vw", lineHeight : "2vw",  marginTop : "20px", marginBottom : "20px"}} >
                     <p >
                       <span style={{ fontStyle : "italic"}}>Between Two Worlds </span> is a collection of poems written by the
                       Montenegrin-born poet Miodrag Milošević, whose life is
@@ -117,9 +118,9 @@ const Between = () => {
                 <br>
                 </br>
                 <section style={{marginTop : "60px"}}>
-                <div className="row poem-heading mb-2">
+                {/* <div className="row poem-heading mb-2">
                   <h1>Hear the Poems</h1>
-                </div>
+                </div> */}
 
               
                 <div className="col-12 col-md-11 mx-auto" style={{  position: "relative" }}>
@@ -166,12 +167,17 @@ const Between = () => {
             </div>
           </div>
         </section>
-        <div className="row m-0 p-0 pb-4 px-3 p-xl-5">
+        {/* <div className="row m-0 p-0 pb-4 px-3 p-xl-5">
          
           <div className="col-12 col-md-11 ">
             <img src={Review} alt="Review" className="img-fluid" />
           </div>
-        </div>
+        </div> */}
+        <div className="row m-0 p-0 pb-4 px-3 p-xl-5">
+  <div className="col-12 col-md-11 mx-auto">
+    <img src={Review} alt="Review" className="img-fluid mx-auto d-block" />
+  </div>
+</div>
       </div>
     </main>
   );
