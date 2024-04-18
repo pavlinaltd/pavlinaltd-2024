@@ -12,11 +12,39 @@ import BordersInHeaven from "../../assets/films/posters/borders in heaven.jpg";
 import Keratza from "../../assets/films/posters/keratza-poster.jpeg";
 import TheMagicSnowmanReturns from "../../assets/films/posters/The-Magic-Snowman-Returns.JPG";
 import RiceMilk from "../../assets/films/R_M_Stilettos.jpg";
-import AudioImg from "../../assets/common/audio.png";
+// import AudioImg from "../../assets/common/audio.png";
 
-
+import magicAudio from "../../assets/audio/The_Magic_Snowman.wav";
 
 import header from "../../assets/brand/banner-new.jpg";
+
+// function AudioPlayer({ magicAudio }) {
+//   const audioRef = useRef(null);
+
+//   const play = () => {
+//     if (audioRef.current) {
+//       audioRef.current.play();
+//     }
+//   };
+
+//   const pause = () => {
+//     if (audioRef.current) {
+//       audioRef.current.pause();
+//     }
+//   };
+
+//   return (
+//     <>
+//       <audio ref={audioRef}>
+//         <source src={magicAudio} type="audio/wav" />
+//         Your browser does not support the audio element.
+//       </audio>
+//       <button onClick={play}>Play</button>
+//       <button onClick={pause}>Pause</button>
+//     </>
+//   );
+// }
+
 
 const Home = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -148,14 +176,21 @@ const Home = () => {
                   {/* </Link> */}
                   <div className="snowman-dist">
                     <div style={{}}>distributed by  <span style={{ fontStyle: "italic" }}> Authors Republic</span></div>
-                    <div> <a href="www.google.com" target="_blank">
-                    <img
+                    <div style={{ textAlign : "right"}}> 
+                      {/* <a href="www.google.com" target="_blank"> 
+                      </a>*/}
+                      <audio controls controlsList="nodownload noplaybackrate">
+  <source src={magicAudio} type="audio/wav" />
+  Your browser does not support the audio element.
+</audio>
+{/* <AudioPlayer magicAudio={magicAudio}></AudioPlayer> */}
+                    {/* <img
                       src={AudioImg}
                       alt="audio button"
                       width="18px"
                       height="18px"
-                    />
-                      </a></div>
+                    /> */}
+                     </div>
                   </div>
 
                 </div>

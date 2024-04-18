@@ -7,6 +7,7 @@ import header from "../../../assets/films/hhnposter.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import AudioImg from "../../../assets/common/podcasts.png";
 
+
 const Hell = () => {
   useEffect(() => window.scrollTo(0, 0));
 
@@ -31,7 +32,7 @@ const Hell = () => {
               </div>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
-                Listen to Podcast from 1hr30min
+                START LISTENING FROM 1:30:00 ONWARD
                 </div>
                 <a href="https://podcasts.apple.com/us/podcast/movie-melt-podcast-psychotronic-and-outsider-cinema/id1458025439?i=1000495807992" target="_blank"  rel="noreferrer">
                 <img src={AudioImg}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
