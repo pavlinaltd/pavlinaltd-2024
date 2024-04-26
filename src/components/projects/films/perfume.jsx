@@ -68,8 +68,8 @@ const Perfume = () => {
                   Lancome and much more.
                 </p>
                 <p className="mb-3 mb-lg-4">
-                  Written, directed and produced by Pavlina Proevska under her
-                  production banner, Pavlina Ltd. The film is intended for TV
+                  Written, directed and produced by Pavlina Proevska, under her
+                  production banner, Pavlina Ltd, the film is intended for TV
                   distribution worldwide. The US distributor is PBS. La
                   Cinquieme in France and sales companies such as From the Fence
                   in the Netherlands, Beyond Distribution in the UK, RAI in
@@ -78,7 +78,7 @@ const Perfume = () => {
                 </p>
                 <p>
                   The Promise of Perfume brings the art and science of scent
-                  closer to the world audience in a refreshing manner that
+                  closer to world audiences in a refreshing manner that
                   combines the "how to" of perfume with the poetry of this
                   liquid that has often been called the essence of illusion.
                 </p>

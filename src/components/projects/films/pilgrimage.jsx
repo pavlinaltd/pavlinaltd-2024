@@ -21,7 +21,7 @@ const Pilgrimage = () => {
               <div className="d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/aHsLfMjUwSg"
+                    src="https://www.youtube.com/embed/ilRKidFlPqM"
                     title="YouTube video player"
                     marginLeft = "10px"
                 
@@ -164,7 +164,7 @@ Prof. Andrew Rossos
               {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
                
                 <p className="mb-3 mb-lg-4">
-                <spam style={{fontStyle : "italic"}}>Stoyan Christowe </spam>was a journalist, author and a politician. Born in Ottoman Macedonia in 1898, he immigrated to the United States in 1911 with a burning desire to be an American's American. He came of age on the Great Plains and went on to be a well-known journalist, critic and lover of the English language. In all, he wrote six books, numerous short stories and articles. He ended his career as a Vermont State Representative and then a Senator.
+                <span style={{fontStyle : "italic"}}>Stoyan Christowe </span>was a journalist, author and a politician. Born in Ottoman Macedonia in 1898, he immigrated to the United States in 1911 with a burning desire to be an American's American. He came of age on the Great Plains and went on to be a well-known journalist, critic and lover of the English language. In all, he wrote six books, numerous short stories and articles. He ended his career as a Vermont State Representative and then a Senator.
                 </p>
                 <p>
                 Stoyan Christowe remained passionate about his adopted country throughout his life and is remembered as a staunch defender of the democratic way. His is a quintessential American immigrant story that will be remembered through an endowment fund in support of students of literature and political science, in his native Macedonia and the documentary film  <span style={{ fontStyle : "italic"}}>My American Pilgrimage</span>.

@@ -3,8 +3,9 @@ import "./films.css";
 
 import MagicSnowmanImg from "../../../assets/films/the_magic_snowman.jpg";
 import Poster from "../../../assets/films/SnowmanPoster.jpg";
-import Languages from "../../../assets/films/languages.png";
+// import Languages from "../../../assets/films/languages.png";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import LanguagesVideo from "../../../assets/films/learning.mp4";
 
 const MagicSnowman = () => {
   useEffect(() => window.scroll(0, 0));
@@ -66,28 +67,28 @@ const MagicSnowman = () => {
            
             </div>
 
-        <section className="mb-5">
+        {/* <section className="mb-5">
           <div>
           <div className="col-12 col-md-12 mt-12 mt-md-0 d-flex align-items-center" >
                   <img src={Languages} alt="" className="img" width={"100%"} />
               </div>
               <div style={{ width : "100%", textAlign : "center", paddingLeft : "20px", paddingRight : "20px"}}>
             <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</h3>  
-            {/* <h3 style={{ fontWeight : "800", marginTop : "10px"}}> VICTORINE STUDIOS, NICE 1990</h3> */}
           </div>
           </div>
 
-        </section>
-        <section className="mt-4 mb-4">
+        </section> */}
+        {/* <section className="mt-4 mb-4">
      
-            <div className="image-desc-flex" style={{ gap : "60px"}}>
-              <div className="fw-30" style={{ padding : "20px", background : "#b9b3b3" }} >
+            <div className="image-desc-flex" style={{ gap : "40px" }}>
+              <div style={{ flex : 1,  padding : "20px", background : "#b9b3b3" }} >
        
                   <img src={Poster} alt="Magic Snowman poster" style={{ width : "100%"}} />
                
               
               </div>
-              <div className="fw-70 orphan-desc" style={{ textAlign : "justify", display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
+              <div className="orphan-desc" style={{ flex : 1, textAlign : "justify", display : "flex", flexDirection : "column", justifyContent : "space-between",   fontSize : "1.1vw",
+  lineHeight : "1.1em"}}>
                 <p className="">
                   The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
                   co-production with FIT a production company based in
@@ -118,10 +119,90 @@ const MagicSnowman = () => {
                   television programs for seventeen years.
                 </p>
               </div>
+              <div style={{ flex : 1, display : "flex", flexDirection : "column"}}>
+       
+              <video
+                controls
+                title="Local Video Player"
+                allowFullScreen
+              >
+                <source src={LanguagesVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+  
+              {/* <div>
+            <h3 style={{ fontWeight : "800"}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</h3>  
+         
+          </div> 
+            </div>
             </div>
       
-          </section>
-        
+        </section> */}
+        <section className="mt-4 mb-4">
+  <div className="image-desc-flex" style={{ display: 'flex', gap: '20px' }}>
+    <div style={{ flex: 1.5, padding: '5px', background: '#b9b3b3' ,justifyContent: 'center'}}>
+      <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}} />
+    </div>
+    <div style={{ 
+      flex: 1.5, 
+      padding: '5px', 
+      display: 'flex', 
+      flexDirection: 'column', 
+      justifyContent: 'space-between',
+      textAlign: 'justify', 
+      fontSize: '1.1vw',
+      lineHeight: '1.1em'
+    }}>
+       <p className="">
+                  The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
+                  co-production with FIT a production company based in
+                  Yugoslavia. The film was dedicated to UNICEF which received a
+                  portion of the producer's revenue. The film carries a powerful
+                  message in the context of a wonderful storyline featuring the
+                  character of Lumiukko, the magical snowman. Lumiukko travels
+                  the world with the help of his friend and lifelong companion,
+                  Gustella the wind, in order to help children by teaching them
+                  valuable lessons about honesty, integrity, and determination.
+                  All future magic snowman movies embrace and explicate such
+                  themes.
+                </p>
+              <br></br>
+                <p>
+                  Over the past ten years, The Magic Snowman has aired on The
+                  Disney Channel more than 38 times in children’s prime time
+                  slots. It is estimated that twenty million children have seen
+                  the film in the United States alone. Miramax Films has
+                  worldwide distribution rights to the original film. The video
+                  rights are with Artisan Entertainment and the film was
+                  re-released for Christmas 1999 even though sell-through on the
+                  film began in June 1995. Other major distributors who have
+                  acquired the original film are The Sky Channel in the UK,
+                  Italy's RAI Uno, and Spain's Television Española. The film has
+                  been sold worldwide in over thirty international markets. The
+                  Magic Snowman was a seasonal staple among children's
+                  television programs for seventeen years.
+                </p>
+    </div>
+    <div style={{ flex: 1, padding: '5px', display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
+      <video
+        controls
+        style={{ width: '100%', height: 'auto' }} // This makes the video responsive
+        title="Local Video Player"
+        allowFullScreen
+      >
+        <source src={LanguagesVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* Other contents */}
+      <div style={{ marginTop : "20px", textAlign : "center"}}>
+            <div style={{ fontWeight : "800",  fontSize: '1.1vw',
+      lineHeight: '1.1em'}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</div>  
+         
+          </div> 
+    </div>
+  </div>
+</section>
+
       </div>
     </main>
   );

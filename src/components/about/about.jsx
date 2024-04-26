@@ -44,7 +44,7 @@ const About = () => {
             <p>
               Native of Macedonia,{" "}
               <span style={{fontWeight : "bold"}}>Pavlina Proevska</span> studied Public Relations in Paris and worked
-in the news department at With the CBS News 1984' Summer Olympics Team as well
+in the news department at the CBS News 1984' Summer Olympics Team as well
 as in the field, for USA Cable Networks.
 </p>
        <br></br>   

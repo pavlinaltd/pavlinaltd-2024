@@ -5,6 +5,7 @@ import Poster from "../../../assets/films/posters/gustella.JPG";
 import Image from "../../../assets/films/gustella-castle.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import gustellaVideo from "../../../assets/films/gustella.mov";
+import gustellaScript from "../../../assets/films/gustella_script.jpg";
 
 const Gustella = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -73,7 +74,10 @@ const Gustella = () => {
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%" }} />
               </div>
-              <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
+              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center" style={{ width : "60%"}}>
+                <img src={gustellaScript} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%"}} />
+              </div>
+              {/* <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
                 <p className="mb-3 mb-lg-4">
                   A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA.
                 </p>
@@ -111,7 +115,7 @@ const Gustella = () => {
                   Wake up, wake up you heavy sack of <br></br>potatoes.
                 </p>
                 <p>This gets a reaction from Lumi.  He is startled awake.</p>
-              </div>
+              </div> */}
             </div>
           </section>
         </div>
