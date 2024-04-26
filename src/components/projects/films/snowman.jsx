@@ -154,7 +154,7 @@ const MagicSnowman = () => {
       lineHeight: '1.1em'
     }}>
        <p className="">
-                  The Magic Snowman was produced in 1988 by Pavlina Ltd. in a
+                  <span style={{ fontWeight : "bold",  color : "#94211d"}}> The Magic Snowman</span> was produced in 1988 by Pavlina Ltd. in a
                   co-production with FIT a production company based in
                   Yugoslavia. The film was dedicated to UNICEF which received a
                   portion of the producer's revenue. The film carries a powerful

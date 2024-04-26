@@ -64,13 +64,18 @@ const Gotse = () => {
           </div>
         </section >
    
-          <section className="mt-4 mb-4" >
-            <div className="image-desc-flex" style={{ marginTop : "80px"}}>
+          <section className="mt-4 mb-4"  style={{ marginLeft : "10vw", marginRight : "10vw"}}>
+            <div style={{ marginTop : "80px", display : "flex", flexDirection : "column", gap : "20px"}}>
             {/* <div className="fw-30 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between"}}>
                
              
               </div> */}
-              <div className="fw-70" >
+               <div className="orphan-desc" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
+              <p >
+                This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
+                </p>
+                </div>
+              <div className="" >
                 <img
                   src={Poster}
                   alt="Gotse"
@@ -78,10 +83,7 @@ const Gotse = () => {
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-              <div className="fw-30 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between", textAlign : "justify", lineHeight : "1.2em"}}>
-              <p >
-                This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
-                </p>
+             <div className="orphan-desc" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
                 <p>
                 One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev (ГОЦЕ ДЕЛЧЕВ), a Macedonian national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.
                 </p>

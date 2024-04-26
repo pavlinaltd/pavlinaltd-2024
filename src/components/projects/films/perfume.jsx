@@ -50,15 +50,15 @@ const Perfume = () => {
               </div>
               <div className="fw-70 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", fontSize : "1.2vw"}}>
                 <p className="mb-3 mb-lg-4">
-                  The Promise of Perfume is a one-hour documentary shot in
+                  <span style={{ fontWeight : "bold",  color : "#94211d"}}>The Promise of Perfume </span>is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New
                   York. Featuring perfume industry notables, including Jacques
                   Polge of Chanel, the five-time FIFI award-winning bottle
                   designer, Marc Rosen, and the perfume critic of the New York
                   Times, Chandler Burr. This is a film about women's love affair
                   with perfume and the lasting power of scent. The tagline
-                  reads: Every perfume a woman wears is composed of two
-                  ingredients: scent and passion.
+                  reads: "Every perfume a woman wears is composed of two
+                  ingredients: scent and passion."
                 </p>
                 <p className="mb-3 mb-lg-4">
                   The film's story line incorporates numerous video clips and
