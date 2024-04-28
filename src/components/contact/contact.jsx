@@ -29,19 +29,16 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_9flvwpo",
-        "pavlina_test",
-        form.current,
-        "yUFmfhgeWtbBEPp6l"
-      )
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_API,
+      })
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          console.log('SUCCESS!');
         },
         (error) => {
-          console.log(error.text);
-        }
+          console.log('FAILED...', error.text);
+        },
       );
     e.target.reset();
   };

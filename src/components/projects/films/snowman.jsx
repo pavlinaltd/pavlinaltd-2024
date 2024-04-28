@@ -143,6 +143,23 @@ const MagicSnowman = () => {
     <div style={{ flex: 1.5, padding: '5px', background: '#b9b3b3' ,justifyContent: 'center'}}>
       <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}} />
     </div>
+    <div style={{ flex: 1, padding: '5px', display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
+      <video
+        controls
+        style={{ width: '100%', height: 'auto' }} // This makes the video responsive
+        title="Local Video Player"
+        allowFullScreen
+      >
+        <source src={LanguagesVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {/* Other contents */}
+      <div style={{ marginTop : "20px", textAlign : "center"}}>
+            <div style={{ fontWeight : "800",  fontSize: '1.1vw',
+      lineHeight: '1.1em'}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</div>  
+         
+          </div> 
+    </div>
     <div style={{ 
       flex: 1.5, 
       padding: '5px', 
@@ -183,23 +200,7 @@ const MagicSnowman = () => {
                   television programs for seventeen years.
                 </p>
     </div>
-    <div style={{ flex: 1, padding: '5px', display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
-      <video
-        controls
-        style={{ width: '100%', height: 'auto' }} // This makes the video responsive
-        title="Local Video Player"
-        allowFullScreen
-      >
-        <source src={LanguagesVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {/* Other contents */}
-      <div style={{ marginTop : "20px", textAlign : "center"}}>
-            <div style={{ fontWeight : "800",  fontSize: '1.1vw',
-      lineHeight: '1.1em'}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</div>  
-         
-          </div> 
-    </div>
+   
   </div>
 </section>
 

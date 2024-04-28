@@ -33,13 +33,14 @@ const About = () => {
           {/* <div className = "row "> */}
             <section className="pavlina-section">
               <div className="pavlina-about" >
+                <div>
               <img
                   src={pavlina}
                   alt="Pavlina Proevska"
                   className="headshot"
 
                 />
-      
+      </div>
             <div className="pavlina-desc" >
             <p>
               Native of Macedonia,{" "}

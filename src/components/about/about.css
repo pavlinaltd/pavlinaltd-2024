@@ -1,7 +1,9 @@
 
 .headshot{
-  width: 400px;
-  height: auto;
+  width: 25vw; /* Fixed width */
+  height: 25vw; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+  margin-right: 10px; 
 }
 
 #about-career{
@@ -36,10 +38,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left : 30px;
+  margin-left : 20px;
   font-size : 1vw;
   text-align : justify;
-  line-height : 1.2em;
+  line-height : 1.1em;
 }
 
 .author {
@@ -209,9 +211,9 @@ hr {
 } 
 
 @media (max-width: 1300px) {
-  .pavlina-desc {
+  /* .pavlina-desc {
     font-size: 1.1vw;
-  }
+  } */
 
   .production-desc{
     font-size: 1.1vw;
