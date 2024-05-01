@@ -137,7 +137,7 @@
 }
 .between-overlay-soleil {
   position: absolute; /* Position the overlay relative to its closest positioned ancestor */
-  bottom: 10%; /* Position from the top of the container */
+  bottom: -5%; /* Position from the top of the container */
   right: 10%; /* Position from the left of the container */
   color: white; /* Text color for the overlay content */
   text-align: center; /* Center the content horizontally and vertically */
@@ -152,7 +152,7 @@
 
 .between-overlay-sun {
   position: absolute; /* Position the overlay relative to its closest positioned ancestor */
-  bottom: 15%; /* Position from the top of the container */
+  bottom: 0%; /* Position from the top of the container */
   left: 10%; /* Position from the left of the container */
   color: white; /* Text color for the overlay content */
   text-align: center; /* Center the content horizontally and vertically */

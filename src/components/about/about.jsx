@@ -44,47 +44,28 @@ const About = () => {
             <div className="pavlina-desc" >
             <p>
               Native of Macedonia,{" "}
-              <span style={{fontWeight : "bold"}}>Pavlina Proevska</span> studied Public Relations in Paris and worked
-in the news department at the CBS News 1984' Summer Olympics Team as well
-as in the field, for USA Cable Networks.
+              <span style={{fontWeight : "bold"}}>Pavlina Proevska</span> studied public relations in Paris and worked in the weekend news department at CBS News as well as in the field, for the USA Cable Networks.
 </p>
        <br></br>   
    <p>
-              The highlights of her tenure at With the CBS News 1984' Summer Olympics Team
-was as part of the team covering the Regan-Gorbachev Summit in Geneva, in 1986.
-For the USA Cable Network, she was part of the team working on the promotion of
-the thriller Death Train, in Slovenia in 1993 where she was introduced to Irish
-drinking by the star of the film, Pierce Brosnan.
+   The highlights of her tenure at CBS News include coverage of the 1984' Summer Olympics Games in Los Angeles, the Winter Olympics Games in Sarajevo, and the Regan-Gorbachev Summit in Geneva, in 1986. In 1993, for the USA Cable Network, she worked on the promotion of the thriller <span style={{fontStyle : "italic"}}>Death Train </span>, in Slovenia, where she was introduced to Irish drinking by the star of the film, Pierce Brosnan.
 </p>
 <br></br> 
    <p>
-              Ms. Proevska is currently working on the REDUX of{" "}
-              <span style={{ fontStyle : "italic"}}>The Magic Snowman</span>{" "}
-               for release
-on DVD/Blu-Ray and VOD plaXorms in 2024. She is also in pre-production of a short
-docu-drama, <span style={{ fontStyle : "italic"}}>My Heart Is No Longer an Orphan</span>
-, and she will be directing it late this summer in Montenegro, Macedonia.
+   Ms. Proevska is currently working on the REDUX of <span style={{fontStyle : "italic"}}>The Magic Snowman</span> for release on DVD/Blu-Ray and digital platforms at end of 2024. She is also in pre-production of <span style={{fontStyle : "italic"}}>My Heart Is No Longer An Orphan,</span> a short docu-drama scheduled for shooting in several of  the former Yugoslav republics in late 2024 and spring of 2025.
 </p>
 <br></br>
        <p>
-              She has recently completed two documentary films, 
-              <span style={{ fontStyle : "italic"}}>The Promise of Perfume</span>, and the
-biopic  <span style={{ fontStyle : "italic"}}>My American Pilgrimage</span>. The making of  <span style={{ fontStyle : "italic"}}>The Promise of Perfume</span> had taken
-her to the Jungle of French Guayana, Bulgaria, France, Tunisia and Macedonia.
+       She has recently completed two documentary films, <span style={{fontStyle : "italic"}}>The Promise of Perfume</span> and the biopic <span style={{fontStyle : "italic"}}>My American Pilgrimage.</span> The making of <span style={{fontStyle : "italic"}}>The Promise of Perfume</span> had taken her to the Jungle of French Guyana, Bulgaria, France, Tunisia and Macedonia.
 </p>
           
 <br></br> 
        <p>
-              She is especially proud of a special recognition she received recently as her second
-feature film, Happy Hell Night was admitted for permanent curating, at {" "}
-<span style={{ fontStyle : "italic"}}>The Archives
-of Moving Images</span>{" "} of the United States <span style={{ fontStyle : "italic"}}>Libarary of Congress</span>.
+       She is especially proud of a special recognition she received recently as the second feature she produced in 1993, <span style={{fontStyle : "italic"}}>Happy Hell Night,</span> was admitted for permanent curating at  <span style={{fontStyle : "italic"}}>The Archives of Moving Images</span> of the United States  <span style={{fontStyle : "italic"}}>Library of Congress</span>.
 </p>
 <br></br>
              <p>
-              Ms. Proevska is active in the promotion of Macedonia's cultural heritage as the
-founder and Executive Director of the Macedonian Arts Council. She is fluent in five
-languages and lives and works in New York City.
+             Ms. Proevska is active in the promotion of Macedonia's cultural heritage as the founder and executive director of the Macedonian Arts Council. She is fluent in five languages and lives in New York City.
             
             </p>
             </div>
@@ -99,7 +80,7 @@ languages and lives and works in New York City.
           </div>
               <hr style={{ width : "70%", marginTop : "40px"}}></hr>
           <section className="mt-5" style={{ marginBottom : "60px"}}>
-          <div className="about-company-section">
+          <div className="about-company-section" style={{ marginLeft : "4vw", marginRight : "4vw"}}>
           <div className="carousel extras">  
           <Carousel data-bs-theme="dark" >
             <Carousel.Item>
@@ -169,27 +150,25 @@ languages and lives and works in New York City.
           </div>
           <div className="production-desc">
             <p>
-              <strong style={{ fontWeight : "bold"}}>PAVLINA Ltd.</strong> is an independent production company engaged in the development and production of feature films and documentaries. It was incorporated in 1986 by Pavlina Proevska, President and General Partner. The co-producing partner of Pavlina Ltd., FilmsZaNas d.o.o.e.l. is based in Macedonia.
+              <strong style={{ fontWeight : "bold"}}>PAVLINA Ltd.</strong> is an independent film production company engaged in the development and production of feature films and documentaries. It was incorporated in 1986 by Pavlina Proevska, President and General Partner. The co-producing partner of Pavlina Ltd., FilmsZaNas d.o.o.e.l. is based in Macedonia.
               </p>
               <br></br>
               <p>
-              The first feature film produced by Pavlina Ltd. in 1987 ,
-              <span style={{ fontStyle : "italic"}}>The Magic Snowman</span>, is a live action children's fairy tale starring Roger Moore as the voice of the snowman. The film's gross receipts to date are ten times the original low-budget cost and was in active distribution through Miramax/ Buena Vista International for twelve years.
+              The first feature film produced by Pavlina Ltd., <span style={{fontStyle : "italic"}}>The Magic Snowman </span>, is a live action children's fairy tale starring Sir Roger Moore as the voice of the magic snowman. In active distribution through Miramax/Buena Vista International for twelve years,  the film's gross receipts to date are ten times its original production cost.
               </p>
               <br></br>
               <p>
-              The second feature produced in 1992 was the supernatural thriller{" "}
-              <span style={{ fontStyle : "italic"}}>Happy Hell Night</span>, starring Darren McGavin with appearance by Jorja Fox and Sam Rockwell. The film was distributed worldwide by several international distributors and released on DVD by Anchor Bay Entertainment. More recently, the legendary Samuel Goldwyn Films acquired the rights of distribution for North America. The film negative is curated at the Moving Images Archives of the US Library of Congress.
+              The second feature produced in 1992 was the supernatural thriller <span style={{fontStyle : "italic"}}>Happy Hell Night,</span> starring Darren McGavin with appearance by Jorja  Fox and Sam Rockwell. Distributed worldwide by several international distributors, it was released on DVD by Anchor Bay Entertainment. More recently, the legendary Samuel Goldwyn Films acquired digital distribution for North America. The film negative is curated at <span style={{fontStyle : "italic"}}>The Archives of Moving Images</span> of the US Library of Congress.
               </p>
               <br></br>
               <p>
-              To ensure a successful distribution life and minimize investment risks, the company focuses on development and production of perennial stories. In keeping with such business strategy, over the past ten years the company has financed the acquisition and development of several children's properties.
+              The company's strength is in the original content it develops and produces and while through its feature films it offers popular entertainment, the documentaries celebrate people whose lives have left an imprint on the human experience.
               </p>
-              <br></br>
+              {/* <br></br>
               <p>
               The company's strength is in the original content of the stories it develops and produces and while through its feature films it offers popular entertainment, the documentaries celebrate people whose lives have left an imprint on the human experience.
               
-            </p>
+            </p> */}
           
 
           </div>

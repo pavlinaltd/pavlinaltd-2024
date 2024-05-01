@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./films.css";
 
 //import Poster from "../../../assets/films/posters/between-two-worlds.png";
-import Poem from "../../../assets/films/between-poem.png";
+import Poem from "../../../assets/films/sun_text.png";
 import Review from "../../../assets/films/between-review.png";
 import BetweenTwoWorlds from "../../../assets/books/BetweenTwoWorlds.png";
 import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
@@ -103,7 +103,7 @@ const Between = () => {
                     </p>
                     <p>
                       The illustrations by Kathi Ha add a palpable feeling to
-                      the words on the page and allows the reader to catch a
+                      the words on the page allowing the reader to catch a
                       glimpse of the poet's dark and longing heart.
                     </p>
                     <p >Available on Amazon Books</p>
@@ -123,7 +123,7 @@ const Between = () => {
                 </div> */}
 
               
-                <div className="col-12 col-md-11 mx-auto" style={{  position: "relative" }}>
+                <div className="col-12 col-md-11 mx-auto " style={{  position: "relative" }}>
                       <img src={Poem} alt="Poem" className="img-fluid" />
                           <div className="between-overlay-sonce">
                      
