@@ -74,6 +74,27 @@
     margin-bottom: 40px;
   }
 
+  @media (max-width: 960px) {
+
+    .fw-30 {
+        width : 100%;
+    }
+    
+    .fw-70 {
+        width : 100%;
+    }
+
+    .fw-60 {
+        width : 100%;
+    }
+
+    .fw-40 {
+        width : 100%;
+    }
+}
+
+
+
 @media (max-width: 767.98px) {
 
     .main-margin {

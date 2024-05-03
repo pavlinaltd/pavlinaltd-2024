@@ -4,7 +4,7 @@ import "./films.css";
 //import Poster from "../../../assets/films/posters/between-two-worlds.png";
 import Poem from "../../../assets/films/sun_text.png";
 import Review from "../../../assets/films/between-review.png";
-import BetweenTwoWorlds from "../../../assets/books/BetweenTwoWorlds.png";
+import BetweenTwoWorlds from "../../../assets/books/book_final.png";
 import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
 import FrenchPoem from "../../../assets/audio/Sun_French_Mastered.wav";
 import SerbianPoem from "../../../assets/audio/Sun_Serbian_Mastered.wav";
@@ -72,13 +72,13 @@ const Between = () => {
    
          
               <section className="synopsis container p-3 py-4 py-md-0 m-0" >
-                <div className="between-desc-section"       style={{ marginLeft : "4vw", marginRight : "4vw"}}>
+                <div className="between-desc-section"       style={{ marginLeft : "4vw", marginRight : "4vw", gap : "30px"}}>
                  
-                  <div className="fw-40">
+                  <div className="fw-30">
                     <img src={BetweenTwoWorlds } alt="BetweenTwoWorlds" />
                   </div>
 
-                  <div className="fw-60" style={{ display : "flex", flexDirection : "column", justifyContent : "space-evenly" , fontSize : "1.1vw", lineHeight : "2vw",  marginTop : "20px", marginBottom : "20px"}} >
+                  <div className="fw-60" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between" , fontSize : "1.1vw", lineHeight : "2vw"}} >
                     <p >
                       <span style={{ fontStyle : "italic"}}>Between Two Worlds </span> is a collection of poems written by the
                       Montenegrin-born poet Miodrag Milošević, whose life is
