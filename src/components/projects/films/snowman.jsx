@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./films.css";
 
 import MagicSnowmanImg from "../../../assets/films/the_magic_snowman.jpg";
@@ -6,9 +6,30 @@ import Poster from "../../../assets/films/SnowmanPoster.jpg";
 // import Languages from "../../../assets/films/languages.png";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import LanguagesVideo from "../../../assets/films/learning.mp4";
+import Modal from "react-bootstrap/Modal";
+
 
 const MagicSnowman = () => {
   useEffect(() => window.scroll(0, 0));
+  const [isMRS, setIsMRS] = useState(false);
+
+  const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
+    return (
+      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <section className="d-flex align-items-center modal-flex">
+            <div style={{ flex: "1", textAlign : "center" }}>
+              <img src={Poster} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+            </div>
+          </section>
+        </Modal.Body>
+      </Modal>
+    );
+  };
+
 
   return (
     <main className="main-margin">
@@ -141,13 +162,13 @@ const MagicSnowman = () => {
         <section className="mt-4 mb-4">
   <div className="image-desc-flex" style={{ display: 'flex', gap: '20px' }}>
     <div style={{ flex: 1.5, padding: '5px', background: '#b9b3b3' ,justifyContent: 'center'}}>
-      <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}} />
+      <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}}  onClick={() => setIsMRS(true)}/>
     </div>
     <div style={{ flex: 1, padding: '5px', display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
       <video
         controls
         style={{ width: '100%', height: 'auto' }} // This makes the video responsive
-        title="Local Video Player"
+        title="PRACTICING LANGUAGES WITH SIR ROGER MOORE"
         allowFullScreen
       >
         <source src={LanguagesVideo} type="video/mp4" />
@@ -203,7 +224,16 @@ const MagicSnowman = () => {
    
   </div>
 </section>
-
+{isMRS && (
+        
+        <div>
+   
+             <FutureFilmRiceModal
+       isOpen={isMRS}
+       closeModal={() => setIsMRS(false)}
+     />
+        </div>
+     )}
       </div>
     </main>
   );

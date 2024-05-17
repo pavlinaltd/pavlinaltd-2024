@@ -5,7 +5,9 @@ import Poster from "../../../assets/films/posters/the-magic-snowman-redux.png";
 import FaceGallery from "../../../assets/films/posters/faceGallery.jpg";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 
+
 const Redux = () => {
+
   useEffect(() => window.scrollTo(0, 0));
 
   return (
@@ -49,7 +51,7 @@ const Redux = () => {
       
          
               <div className="fw-30"> 
-                <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" , width : "100%" }}/>
+                <img src={Poster} alt="" className="img-fluid rounded-4"  style={{objectFit : "fill" , width : "100%" }} />
               </div>
             
               <div className="fw-70">
@@ -84,6 +86,9 @@ const Redux = () => {
 
 
       </div>
+
+
+
     </main>
   );
 };

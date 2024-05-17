@@ -1,11 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/the-promise-of-perfume.jpg";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import Modal from "react-bootstrap/Modal";
 
 const Perfume = () => {
   useEffect(() => window.scroll(0, 0));
+  const [isMRS, setIsMRS] = useState(false);
+
+
+  const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
+    return (
+      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <section className="d-flex align-items-center modal-flex">
+            <div style={{ flex: "1", textAlign : "center" }}>
+              <img src={Poster} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+            </div>
+          </section>
+        </Modal.Body>
+      </Modal>
+    );
+  };
 
   return (
     <main className="main-margin">
@@ -46,6 +66,7 @@ const Perfume = () => {
                   src={Poster}
                   alt="The Promise of Perfume"
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%", height : "100%"}}
+                  onClick={() => setIsMRS(true)}
                 />
               </div>
               <div className="fw-70 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", fontSize : "1.2vw"}}>
@@ -85,7 +106,16 @@ const Perfume = () => {
               </div>
             </div>
           </section>
-      
+          {isMRS && (
+        
+        <div>
+   
+             <FutureFilmRiceModal
+       isOpen={isMRS}
+       closeModal={() => setIsMRS(false)}
+     />
+        </div>
+     )}
       </div>
     </main>
   );

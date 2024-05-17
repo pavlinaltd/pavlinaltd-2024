@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="contact-box col col-xs-12  ">
               <div className="pavlina-contact">
               
-                <h3><FontAwesomeIcon icon={faLocationDot} /> 380 Rector Place, New York, NY, 10280 USA</h3>
+                <h3><FontAwesomeIcon icon={faLocationDot} /> 380 Rector Place, New York, NY, USA, 10280</h3>
                 <h3>   <FaViber/> <FontAwesomeIcon icon={faSquareWhatsapp} />   (212)799-0009</h3>
                 <h3> <FaSkype/>Resen51</h3>
                 <h3><FontAwesomeIcon icon={faEnvelope} /> pavlinaltd@gmail.com</h3>

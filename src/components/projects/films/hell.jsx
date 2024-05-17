@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/happy-hell-night.png";
@@ -6,10 +6,30 @@ import Reel from "../../../assets/films/congress.jpg";
 import header from "../../../assets/films/hhnposter.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import AudioImg from "../../../assets/common/podcasts.png";
+import Modal from "react-bootstrap/Modal";
 
 
 const Hell = () => {
   useEffect(() => window.scrollTo(0, 0));
+  const [isMRS, setIsMRS] = useState(false);
+
+
+  const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
+    return (
+      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <section className="d-flex align-items-center modal-flex">
+            <div style={{ flex: "1", textAlign : "center" }}>
+              <img src={Poster} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+            </div>
+          </section>
+        </Modal.Body>
+      </Modal>
+    );
+  };
 
   return (
     <main>
@@ -64,6 +84,7 @@ const Hell = () => {
                   alt="Happy Hell Night"
           
                   style={{borderRadius : "12px", height : "100%", width : "100%"}}
+                  onClick={() => setIsMRS(true)}
                 />
               </div>
               <div className="hnn-desc" style={{ fontSize : "1.2vw"}}>
@@ -130,6 +151,16 @@ const Hell = () => {
     </div>
   </div>
 </section>
+{isMRS && (
+        
+        <div>
+   
+             <FutureFilmRiceModal
+       isOpen={isMRS}
+       closeModal={() => setIsMRS(false)}
+     />
+        </div>
+     )}
        
       </div>
     </main>
