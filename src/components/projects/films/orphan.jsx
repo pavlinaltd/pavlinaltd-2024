@@ -78,7 +78,7 @@ const Orphan = () => {
         <br></br>
         <br></br>
 
-          <section style={{ marginLeft : "4vw", marginRight : "4vw"}}>
+          <section style={{ marginLeft : "5vw", marginRight : "5vw"}}>
             <div className="orphan-info" style={{ gap : "40px"}}>
               
               <div className="fw-35">  

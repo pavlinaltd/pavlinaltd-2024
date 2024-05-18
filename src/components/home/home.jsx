@@ -127,11 +127,11 @@ const Home = () => {
               <h2 className="book-title">MEDIA PROJECTS</h2>
             </div>
             <div className="two-book-boxes">
-              <div className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6" }} >
+              <Link className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6", textDecoration : "none", color: "inherit" }} to="/between-two-worlds" >
 
 
                 <div style={{ flex: 1 }}>
-                  <Link to="/between-two-worlds">
+                  {/* <Link to="/between-two-worlds"> */}
 
                     <img
                       src={BetweenTwoWorlds}
@@ -140,7 +140,7 @@ const Home = () => {
                       style={{}}
                     />
 
-                  </Link>
+                  {/* </Link> */}
 
 
                 </div>
@@ -159,7 +159,7 @@ const Home = () => {
                     <p className="text-center my-2">Francis Dumaurier</p>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="two-book-boxes-item ">
 
                 <div >

@@ -38,7 +38,7 @@ const Footer = () => {
         <div style={{ fontSize : "12px"}}>©2024 PAVLINA LTD. ALL RIGHTS RESERVED</div>
         </div>
         <div className="bottom-links" style={{marginTop : "20px"}}>
-          <h3><FontAwesomeIcon icon={faLocationDot} />  380 Rector Place, New York, NY, USA, 10280</h3>
+          <h3><FontAwesomeIcon icon={faLocationDot} />  380 Rector Pl., New York, NY 10280</h3>
           <h3> <FontAwesomeIcon icon={faSquareWhatsapp}></FontAwesomeIcon>    (212)799-0009</h3>
           <h3> <FaSkype /> Resen51</h3>
 

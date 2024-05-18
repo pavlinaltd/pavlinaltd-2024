@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <main id='about-us'>
-      <div className="container">
+      <div className="container" >
       
 
           <div  className="mb-5">
@@ -31,7 +31,7 @@ const About = () => {
     
 
           {/* <div className = "row "> */}
-            <section className="pavlina-section">
+            <section className="pavlina-section" style={{ marginLeft : "5vw", marginRight : "5vw"}}>
               <div className="pavlina-about" >
                 <div>
               <img
@@ -78,9 +78,10 @@ const About = () => {
           <div className="mt-5">
             <h1 id="heading" >"Production - a combination of persistence and blind faith."</h1>  
           </div>
+          </div>
               <hr style={{ width : "70%", marginTop : "40px"}}></hr>
-          <section className="mt-5" style={{ marginBottom : "60px"}}>
-          <div className="about-company-section" style={{ marginLeft : "4vw", marginRight : "4vw"}}>
+          <section className="mt-5" style={{ marginBottom : "60px" ,  marginLeft : "5vw", marginRight : "5vw"}}>
+          <div className="about-company-section">
           <div className="carousel extras">  
           <Carousel data-bs-theme="dark" >
             <Carousel.Item>
@@ -176,7 +177,7 @@ const About = () => {
           </section>
 
 
-        </div>
+    
 
 
 

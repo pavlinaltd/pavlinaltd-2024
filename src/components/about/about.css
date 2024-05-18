@@ -71,8 +71,8 @@
   height: 400px;
   width: 400px;
   float : left;
-  margin-right : 10px;
-  margin-left : 20px;
+  /* margin-right : 10px; */
+  /* margin-left : 20px; */
 }
 
 .carousel-container {

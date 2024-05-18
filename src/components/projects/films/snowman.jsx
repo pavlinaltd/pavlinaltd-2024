@@ -159,7 +159,7 @@ const MagicSnowman = () => {
             </div>
       
         </section> */}
-        <section className="mt-4 mb-4">
+        <section className="mt-4 mb-4"  style={{ marginLeft :"5vw", marginRight :"5vw" }}>
   <div className="image-desc-flex" style={{ display: 'flex', gap: '20px' }}>
     <div style={{ flex: 1.5, padding: '5px', background: '#b9b3b3' ,justifyContent: 'center'}}>
       <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}}  onClick={() => setIsMRS(true)}/>
@@ -176,8 +176,8 @@ const MagicSnowman = () => {
       </video>
       {/* Other contents */}
       <div style={{ marginTop : "20px", textAlign : "center"}}>
-            <div style={{ fontWeight : "800",  fontSize: '1.1vw',
-      lineHeight: '1.1em'}}>  “PRACTICING LANGUAGES WITH SIR ROGER MOORE” - VICTORINE STUDIOS, NICE 1990</div>  
+            <div style={{ fontWeight : "600",  fontSize: '0.8vw',
+      lineHeight: '1.1em'}}>  “CONQUERING LANGUAGES WITH <br></br> SIR ROGER MOORE” <br></br> VICTORINE STUDIOS – NICE 1990</div>  
          
           </div> 
     </div>
@@ -188,8 +188,8 @@ const MagicSnowman = () => {
       flexDirection: 'column', 
       justifyContent: 'space-between',
       textAlign: 'justify', 
-      fontSize: '1.1vw',
-      lineHeight: '1.1em'
+      fontSize: '1vw',
+      lineHeight: '1em'
     }}>
        <p className="">
                   <span style={{ fontWeight : "bold",  color : "#94211d"}}> The Magic Snowman</span> was produced in 1988 by Pavlina Ltd. in a

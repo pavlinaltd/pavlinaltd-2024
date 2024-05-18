@@ -29,9 +29,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_API,
-      })
+    .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_API)
       .then(
         () => {
           console.log('SUCCESS!');
@@ -59,7 +57,7 @@ const Contact = () => {
             <div className="contact-box col col-xs-12  ">
               <div className="pavlina-contact">
               
-                <h3><FontAwesomeIcon icon={faLocationDot} /> 380 Rector Place, New York, NY, USA, 10280</h3>
+                <h3><FontAwesomeIcon icon={faLocationDot} /> 380 Rector Pl., New York, NY 10280</h3>
                 <h3>   <FaViber/> <FontAwesomeIcon icon={faSquareWhatsapp} />   (212)799-0009</h3>
                 <h3> <FaSkype/>Resen51</h3>
                 <h3><FontAwesomeIcon icon={faEnvelope} /> pavlinaltd@gmail.com</h3>
@@ -95,11 +93,11 @@ const Contact = () => {
                 className="h-100"
               >
                 <div className="ml-5 mb-1">
-                  <input name="name" placeholder="Name" type="text" required />
+                  <input name="from_name" placeholder="Name" type="text" required />
                 </div>
                 <div className="mb-1">
                   <input
-                    name="email"
+                    name="from_email"
                     placeholder="Email"
                     type="email"
                     required
@@ -138,7 +136,7 @@ const Contact = () => {
               <iframe
                 className="google-map"
                 title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.404149276478!2d-74.02011378453007!3d40.70911877933224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1021509aa5%3A0x875c1c5d6844bf1!2s380%20Rector%20Pl%2C%20New%20York%2C%20NY%2010280%2C%20USA!5e0!3m2!1sen!2sbr!4v1673380162092!5m2!1sen!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.396520997501!2d-74.02068852409117!3d40.709286737781895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b1f6cda30a7%3A0xdd9c2ba2390e2083!2s380%20Rector%20Pl%2C%20New%20York%2C%20NY%2010280!5e0!3m2!1sen!2sus!4v1715991347263!5m2!1sen!2sus"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

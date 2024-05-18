@@ -72,7 +72,7 @@ const Between = () => {
    
          
               <section className="synopsis container p-3 py-4 py-md-0 m-0" >
-                <div className="between-desc-section"       style={{ marginLeft : "4vw", marginRight : "4vw", gap : "30px"}}>
+                <div className="between-desc-section"       style={{ marginLeft : "5vw", marginRight : "5vw", gap : "30px"}}>
                  
                   <div className="fw-30">
                     <img src={BetweenTwoWorlds } alt="BetweenTwoWorlds" />

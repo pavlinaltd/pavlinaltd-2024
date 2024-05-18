@@ -64,7 +64,7 @@ const Gotse = () => {
           </div>
         </section >
    
-          <section className="mt-4 mb-4"  style={{ marginLeft : "10vw", marginRight : "10vw"}}>
+          <section className="mt-4 mb-4"  style={{ marginLeft : "5vw", marginRight : "5vw"}}>
             <div style={{ marginTop : "80px", display : "flex", flexDirection : "column", gap : "20px"}}>
             {/* <div className="fw-30 orphan-desc" style={{  display : "flex" , flexDirection : "column" , justifyContent : "space-between"}}>
                
