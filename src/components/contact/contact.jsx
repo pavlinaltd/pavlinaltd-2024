@@ -27,7 +27,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    //console.log("KEY " + process.env.REACT_APP_EMAILJS_PUBLIC_API);
     emailjs
     .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_API)
       .then(
@@ -45,7 +45,7 @@ const Contact = () => {
     <main id="contact">
 
       
-      <section className="upper-section container">
+      <section className="upper-section container margin-main">
       <div className="row mb-4 ">
       
       </div>
@@ -116,11 +116,12 @@ const Contact = () => {
                     placeholder="Message"
                     name="message"
                     form="contact-form"
-                    className="w-100 h-100 p-0"
+                    className="w-100 p-0"
                     required
+                    rows="4"
                   ></textarea>
                 </div>
-                <div className="d-flex justify-content-start justify-content-md-end mt-3">
+                <div className="d-flex justify-content-start justify-content-md-end">
                   <input
                     type="submit"
                     className="text-uppercase px-4 py-2"
@@ -131,8 +132,12 @@ const Contact = () => {
             </div>
 
 
-            <div className="row mt-5 pt-5 pb-5  mx-auto" >
-            <div className="contact-box row col-md-12 col-xs-12 ">
+        
+          </div>
+        </div>
+      </section>
+      <section className="mt-5 pb-5 w-100 margin-main" >
+            <div className="contact-box" >
               <iframe
                 className="google-map"
                 title="map"
@@ -142,10 +147,7 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
     </main>
   );
 };

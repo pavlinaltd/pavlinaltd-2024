@@ -51,7 +51,7 @@ const Gustella = () => {
               </video>
             </div>
           </div>
-          <div style={{ textAlign: "center", width: "40%", display: "flex", flexDirection: "column", alignContent: "center", marginTop: "20px" }}>
+          <div style={{ textAlign: "center", width: "100%", display: "flex", flexDirection: "column", alignContent: "center", marginTop: "20px" }}>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", fontSize: "24px", fontWeight: "600", borderRadius: "12px" }}>
               <div style={{ marginRight: "10px", color: "black" }}>
                 Visit
@@ -74,7 +74,7 @@ const Gustella = () => {
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%" }} />
               </div>
-              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center" style={{ width : "60%"}}>
+              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center fw-60">
                 <img src={gustellaScript} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%"}} />
               </div>
               {/* <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>

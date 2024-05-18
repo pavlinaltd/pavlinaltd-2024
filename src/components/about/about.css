@@ -32,6 +32,7 @@
 .pavlina-about {
   display: flex;
   flex-direction: row;
+  overflow: visible; 
 }
 
 .pavlina-desc{
@@ -91,7 +92,7 @@
   flex-direction : column;
   justify-content : space-between;
   align-content : center;
-  margin-left : 50px;
+  margin-left : 20px;
   font-size : 1.1vw;
   text-align : justify;
   line-height : 1.2em;
@@ -137,8 +138,8 @@
 }
 .between-overlay-soleil {
   position: absolute; /* Position the overlay relative to its closest positioned ancestor */
-  bottom: -5%; /* Position from the top of the container */
-  right: 10%; /* Position from the left of the container */
+  bottom: 0%; /* Position from the top of the container */
+  right: 1%; /* Position from the left of the container */
   color: white; /* Text color for the overlay content */
   text-align: center; /* Center the content horizontally and vertically */
   box-sizing: border-box; /* Include padding in width and height calculations */
@@ -154,7 +155,7 @@
 .between-overlay-sun {
   position: absolute; /* Position the overlay relative to its closest positioned ancestor */
   bottom: 0%; /* Position from the top of the container */
-  left: 10%; /* Position from the left of the container */
+  left: 1%; /* Position from the left of the container */
   color: white; /* Text color for the overlay content */
   text-align: center; /* Center the content horizontally and vertically */
   box-sizing: border-box; /* Include padding in width and height calculations */
@@ -163,7 +164,7 @@
 .between-overlay-sonce {
   position: absolute; /* Position the overlay relative to its closest positioned ancestor */
   top: 48%; /* Position from the top of the container */
-  right: 10%; /* Position from the left of the container */
+  right: 1%; /* Position from the left of the container */
   color: white; /* Text color for the overlay content */
   text-align: center; /* Center the content horizontally and vertically */
   box-sizing: border-box; /* Include padding in width and height calculations */
@@ -195,8 +196,8 @@
 .about-company-section {
   display : flex;
   flex-direction : row;
-  align-content : center;
-  justify-content: center;
+  /* align-content : center;
+  justify-content: center; */
 }
 
 hr { 
@@ -263,8 +264,7 @@ hr {
 
   .production-desc{
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+   margin-left: 0px;
   }
 
   .pavlina-desc{

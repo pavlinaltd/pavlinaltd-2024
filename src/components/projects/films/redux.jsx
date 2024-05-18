@@ -30,7 +30,7 @@ const Redux = () => {
           
               
             </div>
-            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+            <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit

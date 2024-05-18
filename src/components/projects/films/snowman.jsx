@@ -159,10 +159,10 @@ const MagicSnowman = () => {
             </div>
       
         </section> */}
-        <section className="mt-4 mb-4"  style={{ marginLeft :"5vw", marginRight :"5vw" }}>
+        <section className="mt-4 mb-4 margin-main">
   <div className="image-desc-flex" style={{ display: 'flex', gap: '20px' }}>
     <div style={{ flex: 1.5, padding: '5px', background: '#b9b3b3' ,justifyContent: 'center'}}>
-      <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center"}}  onClick={() => setIsMRS(true)}/>
+      <img src={Poster} alt="Magic Snowman poster" style={{ width: '100%', height: 'auto', alignContent : "center", cursor : "pointer"}}  onClick={() => setIsMRS(true)}/>
     </div>
     <div style={{ flex: 1, padding: '5px', display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
       <video

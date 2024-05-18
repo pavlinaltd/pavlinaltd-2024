@@ -31,9 +31,9 @@ const About = () => {
     
 
           {/* <div className = "row "> */}
-            <section className="pavlina-section" style={{ marginLeft : "5vw", marginRight : "5vw"}}>
+            <section className="pavlina-section margin-main">
               <div className="pavlina-about" >
-                <div>
+                <div style={{ flex : "1"}}>
               <img
                   src={pavlina}
                   alt="Pavlina Proevska"
@@ -41,7 +41,7 @@ const About = () => {
 
                 />
       </div>
-            <div className="pavlina-desc" >
+            <div className="pavlina-desc" style={{ flex : "2"}}>
             <p>
               Native of Macedonia,{" "}
               <span style={{fontWeight : "bold"}}>Pavlina Proevska</span> studied public relations in Paris and worked in the weekend news department at CBS News as well as in the field, for the USA Cable Networks.
@@ -80,7 +80,7 @@ const About = () => {
           </div>
           </div>
               <hr style={{ width : "70%", marginTop : "40px"}}></hr>
-          <section className="mt-5" style={{ marginBottom : "60px" ,  marginLeft : "5vw", marginRight : "5vw"}}>
+          <section className="mt-5 margin-main" style={{ marginBottom : "60px"}}>
           <div className="about-company-section">
           <div className="carousel extras">  
           <Carousel data-bs-theme="dark" >
@@ -149,7 +149,7 @@ const About = () => {
           </Carousel>
           
           </div>
-          <div className="production-desc">
+          <div className="production-desc" style={{ flex : "2"}}>
             <p>
               <strong style={{ fontWeight : "bold"}}>PAVLINA Ltd.</strong> is an independent film production company engaged in the development and production of feature films and documentaries. It was incorporated in 1986 by Pavlina Proevska, President and General Partner. The co-producing partner of Pavlina Ltd., FilmsZaNas d.o.o.e.l. is based in Macedonia.
               </p>

@@ -59,13 +59,13 @@ const Perfume = () => {
            
             </div>
 
-          <section className="mt-4 mb-4" style={{ marginLeft : "5vw", marginRight : "5vw"}}>
+          <section className="mt-4 mb-4 margin-main">
             <div className="image-desc-flex" style={{ gap : '40px'}}>
               <div className="fw-30" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="The Promise of Perfume"
-                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%", height : "100%"}}
+                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%", height : "100%", cursor : "pointer"}}
                   onClick={() => setIsMRS(true)}
                 />
               </div>

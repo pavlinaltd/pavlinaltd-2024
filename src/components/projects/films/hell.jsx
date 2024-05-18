@@ -40,7 +40,7 @@ const Hell = () => {
           </div>
         </section>
       </div>
-      <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "row", alignContent : "center", justifyContent : "space-evenly", marginTop : "20px", marginBottom : "40px"}}>
+      <div className="hnn-button" style={{ textAlign : "center" , width : "100%"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
@@ -50,13 +50,15 @@ const Hell = () => {
                 </a>
                 
               </div>
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
+              <div className="hnn-listen" style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 START LISTENING FROM 1:21:00 ONWARD
                 </div>
+                <div>
                 <a href="https://podcasts.apple.com/us/podcast/movie-melt-podcast-psychotronic-and-outsider-cinema/id1458025439?i=1000495807992" target="_blank"  rel="noreferrer">
-                <img src={AudioImg}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
+                <img src={AudioImg}  alt="" className="img hoverable-img" style={{objectFit : "contain", maxHeight : "50px"}}/>
                 </a>
+                </div>
                 
               </div>
            
@@ -64,7 +66,7 @@ const Hell = () => {
         {/* <img src={header} alt="Happy Hell Night" style={{ width : "100%", height : "50%"}} /> */}
       <div className="main-margin">
     
-        <section className="mt-3" style={{ marginLeft :"5vw", marginRight :"5vw"}}>
+        <section className="mt-3 margin-main">
           <div >
             <div className="hnn-poster" style={{ gap : "10px"}}>
 
@@ -83,7 +85,7 @@ const Hell = () => {
                   src={Poster}
                   alt="Happy Hell Night"
           
-                  style={{borderRadius : "12px", height : "100%", width : "100%"}}
+                  style={{borderRadius : "12px", height : "100%", width : "100%", cursor : "pointer"}}
                   onClick={() => setIsMRS(true)}
                 />
               </div>
@@ -129,7 +131,7 @@ const Hell = () => {
             </div>
           </div>
         </section>
-        <section style={{  marginTop: "40px", marginBottom: "40px", marginLeft :"5vw", marginRight :"5vw" }}>
+        <section className="margin-main" style={{  marginTop: "40px", marginBottom: "40px"}}>
   <div className="hnn-trailer">
     <div className="fw-30" style={{ }}>
       <img

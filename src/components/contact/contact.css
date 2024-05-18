@@ -41,12 +41,12 @@ main#contact section.upper-section form input[type=email] {
   
 }
 main#contact section.upper-section form div.textarea {
-  height: 40.5%;
+  /* height: 40.5%; */
   width: 100%;
 }
 main#contact section.upper-section form div.textarea textarea {
   border: 0.5px solid #94211d;
-  height: 10rem;
+  height: 8rem;
   padding: 5px;
   resize: none;
   background-color: transparent;
@@ -65,10 +65,8 @@ main#contact section.upper-section form input[type=submit] {
   border: 0.5px solid #94211d;
   transition: all 0.25s ease;
   
-  
-
-  
 }
+
 main#contact section.upper-section form input[type=submit]:hover {
   background-color: #94211d;
   color: #fff;
@@ -85,11 +83,11 @@ main#contact section.upper-section form input[type=submit]:hover {
 }
 @media (max-width: 767.98px) {
   main#contact form {
-    min-height: 100vh;
+    /* min-height: 100vh; */
   
   }
   main#contact form div.textarea {
-    height: 65%;
+    /* height: 65%; */
   }
   main#contact form div.textarea textarea {
     border: 0.5px solid #94211d;
@@ -128,7 +126,7 @@ main#contact section.upper-section form input[type=submit]:hover {
   position: relative;
   height: 350px;
   width: 100%;
-  margin-left:  45px;
+  /* margin-left:  45px; */
   
   
 

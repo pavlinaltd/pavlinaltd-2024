@@ -61,7 +61,7 @@ const Orphan = () => {
           
               
             </div>
-            <div style={{ textAlign : "center" , width : "40%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
+            <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
               <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
                 <div style={{ marginRight :"10px", color : "black"}}>
                 Visit
@@ -78,7 +78,7 @@ const Orphan = () => {
         <br></br>
         <br></br>
 
-          <section style={{ marginLeft : "5vw", marginRight : "5vw"}}>
+          <section className="margin-main">
             <div className="orphan-info" style={{ gap : "40px"}}>
               
               <div className="fw-35">  

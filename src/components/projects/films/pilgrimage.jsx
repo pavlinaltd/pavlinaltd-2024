@@ -168,19 +168,19 @@ Prof. Andrew Rossos
               {/* </div> */}
            </div>
         </section>
-        <section className="mt-4 mb-4" style={{ marginLeft : "10vw", marginRight : "10vw"}}>
+        <section className="mt-4 mb-4 margin-main">
             <div className="image-desc-flex">
-              <div className="fw-30" style={{ borderRadius : "12px"}}>
+              <div className="fw-20" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="My American Pilgrimage"
                   className="img"
-                  style={{ objectFit : "fill", borderRadius : "12px", height : "100%", width : "100%"}}
+                  style={{ objectFit : "fill", borderRadius : "12px", height : "100%", width : "100%", cursor : "pointer"}}
                   onClick={() => setIsMRS(true)}
                 />
               </div>
              
-              <div className="pilgrim-desc fw-70" style={{ fontSize : "1.3vw"}}>
+              <div className="pilgrim-desc fw-80" style={{ fontSize : "1.3vw"}}>
 
               {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
                
