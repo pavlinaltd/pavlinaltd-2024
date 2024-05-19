@@ -23,7 +23,7 @@ const Gotse = () => {
                     style={{ height : "100%"}}                  ></iframe>
                 </div>
               </div>
-              <div className="orphan-desc fw-30" style={{ textAlign : "center", display : "flex", flexDirection : "column", justifyContent : "space-between"}}>
+              <div className="orphan-desc fw-30" style={{ textAlign : "center", display : "flex", flexDirection : "column", justifyContent : "space-between", alignSelf: "center"}}>
                 <h1 className="color-theme style-bold" style={{ fontWeight : "bold"}}>GOTSE (ГОЦЕ)</h1>
               <br></br>
                 <div>

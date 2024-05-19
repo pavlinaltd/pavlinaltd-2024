@@ -148,8 +148,8 @@
 .between-desc-section {
   display : flex;
   justify-content : space-around; 
-  align-content : center;
-  justify-content: center;
+  /* align-content : center;
+  justify-content: center; */
 }
 
 .between-overlay-sun {
@@ -230,10 +230,6 @@ hr {
     margin-left : 0;
   }
 
-  .between-desc-section {
-    flex-direction: column;
-  }
-
   .about-company-section{
     flex-direction: column;
   }
@@ -286,6 +282,15 @@ hr {
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
+  }
+
+ 
+}
+@media (max-width: 500px) {
+
+
+  .between-desc-section {
+    flex-direction: column;
   }
   
 }

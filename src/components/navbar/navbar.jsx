@@ -16,9 +16,9 @@ const NavBar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg p-3 py-4 p-md-5 w-100">
-      <div className=" container-fluid px-3 px-xl-5 py-xl-4">
-        <Link className="navbar-brand m-0 ps-xl-5 flex-grow-1" to="/home">
-          <img src={logo} alt="Pavlina Ltd. Logo"/>
+      <div className=" container-fluid px-3 px-xl-5 py-xl-4" style={{ overflow : "visible"}}>
+        <Link className="navbar-brand m-0 ps-xl-5 flex-grow-1" to="/home" style={{ overflow : "visible"}}>
+          <img src={logo} alt="Pavlina Ltd. Logo" style={{ overflow : "visible"}}/>
           
         </Link>
         <button
@@ -37,6 +37,7 @@ const NavBar = () => {
         <div
           className="collapse navbar-collapse pe-xl-5 d-lg-flex justify-content-lg-end"
           id="mobileNavbar"
+          style={{ overflow : "visible"}}
         >
           <ul className="navbar-nav text-center text-uppercase w-100 justify-content-lg-end">
             <li className="nav-item">

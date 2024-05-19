@@ -217,7 +217,7 @@ const Future = () => {
           <div className="w-100 p-0 p-xl-5 py-xl-3 " >
             <div className="row p-0 pb-4 px-0 px-sm-3 p-xl-5 py-xl-3">
               <div className="col-12 col-md-6" >
-                <h1>Borders in Heaven</h1>
+                <h1 style={{ overflow : "visible"}}>Borders in Heaven</h1>
               </div>
               <section className="container p-3 py-4 py-md-0 m-0">
                 <div className="future-film-section-col">
@@ -274,7 +274,7 @@ const Future = () => {
               <hr className="future-separator" id="the-magic-snowman-returns"></hr>
               <section>
                 <div className="col-12">
-                  <h1>The Magic Snowman Returns</h1>
+                  <h1 style={{ overflow : "visible"}}>The Magic Snowman Returns</h1>
                 </div>
                 <div className="future-film-section">
                   <div className="future-film-section-desc">
@@ -318,7 +318,7 @@ const Future = () => {
               <hr className="future-separator" id="keratza"/>
               <section>
                 <div className="col-12">
-                  <h1 style={{ fontStyle: "italic" }}>Keratza</h1>
+                  <h1 style={{ fontStyle: "italic", overflow : "visible" }} >Keratza</h1>
                 </div>
                 <div className="future-film-section">
                   <div  className="future-film-section-desc">
@@ -376,7 +376,7 @@ const Future = () => {
 
               <section>
                 <div className="col-12" >
-                  <h1>Rice, Milk and Stilettos</h1>
+                  <h1 style={{ overflow : "visible"}}>Rice, Milk and Stilettos</h1>
                 </div>
                 <div className="future-film-section">
                   <div className="future-film-section-desc">

@@ -73,6 +73,13 @@
     margin-top: 70px;
     margin-bottom: 40px;
   }
+  @media (max-width: 1024px) {
+    .future-film-desc {
+        font-size: 1.2vw;
+        line-height: 1.2em;
+    }
+  }
+
 
   @media (max-width: 960px) {
 

@@ -1,18 +1,39 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./films.css";
 
 //import Poster from "../../../assets/films/posters/between-two-worlds.png";
 import Poem from "../../../assets/films/sun_text.png";
-import Review from "../../../assets/films/between-review.png";
+import Review from "../../../assets/films/between-reviewnew.png";
 import BetweenTwoWorlds from "../../../assets/books/book_final.png";
 import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
 import FrenchPoem from "../../../assets/audio/Sun_French_Mastered.wav";
 import SerbianPoem from "../../../assets/audio/Sun_Serbian_Mastered.wav";
+import Modal from "react-bootstrap/Modal";
+
 const Between = () => {
 
   const serbianPoemRef = useRef(null);
   const frenchPoemRef = useRef(null);
   const englishPoemRef = useRef(null);
+  const [isMRS, setIsMRS] = useState(false);
+
+
+  const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
+    return (
+      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <section className="d-flex align-items-center modal-flex">
+            <div style={{ flex: "1", textAlign : "center" }}>
+              <img src={BetweenTwoWorlds} alt="Between two worlds" className="future-film-img" style={{ width : "80%"}} />
+            </div>
+          </section>
+        </Modal.Body>
+      </Modal>
+    );
+  };
 
   // useEffect(() => window.scrollTo(0, 0));
 
@@ -61,14 +82,14 @@ const Between = () => {
   return (
     <main className="film main-margin">
 
-              <section className="synopsis container p-3 py-4 py-md-0 m-0" >
-                <div className="between-desc-section margin-main" style={{ gap: "30px" }}>
+              <section className="margin-main pb-5"  >
+                <div className="between-desc-section" style={{ gap: "30px" }}>
 
                   <div className="fw-25">
-                    <img src={BetweenTwoWorlds} alt="BetweenTwoWorlds" style={{ objectFit: "contain", width : "100%"}}/>
+                    <img src={BetweenTwoWorlds} alt="BetweenTwoWorlds" style={{ objectFit: "contain", width : "100%", cursor : "pointer"}}  onClick={() => setIsMRS(true)}/>
                   </div>
 
-                  <div className="fw-75" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", fontSize: "1.2vw", lineHeight: "1.4vw" }} >
+                  <div className="fw-75" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", fontSize: "1.2vw", lineHeight: "1.4vw", textAlign : "justify" }} >
                     <div >
                       <span style={{ fontStyle: "italic" }}>Between Two Worlds </span> is a collection of poems written by the
                       Montenegrin-born poet Miodrag Milošević, whose life is
@@ -105,49 +126,43 @@ const Between = () => {
 
                 </div>
               </section>
-           
-        <br>
-              </br>
-              <br>
-              </br>
-              <br>
-              </br>
-              <section style={{ marginTop: "60px" }}>
+          
+              <section className="mt-5 pb-5 margin-main" style={{ marginTop: "60px" }}>
                 {/* <div className="row poem-heading mb-2">
                   <h1>Hear the Poems</h1>
                 </div> */}
 
 
-                <div className="col-12 col-md-11 mx-auto " style={{ position: "relative" }}>
+                <div className="" style={{ position: "relative" }}>
                   <img src={Poem} alt="Poem" className="img-fluid" />
-                  <div className="between-overlay-sonce">
+                  <div className="between-overlay-sonce audio-mobile">
 
                     {/* <div className="col-2">
                       Sonce
                         </div> */}
-                    <div className="col-3">
+                    <div style={{  overflow: "visible" }}>
                       <audio controls='controls' ref={serbianPoemRef}>
                         <source src={SerbianPoem} type="audio/wav" />
                       </audio>
                     </div>
                   </div>
 
-                  <div className="between-overlay-soleil">
+                  <div className="between-overlay-soleil audio-mobile">
                     {/* <div className="col-2">
                      Soleil
                     </div> */}
-                    <div className="col-3">
-                      <audio controls='controls' ref={frenchPoemRef}>
+                    <div style={{  overflow: "visible" }}>
+                      <audio controls='controls' ref={frenchPoemRef} >
                         <source src={FrenchPoem} type="audio/wav" />
                       </audio>
                     </div>
                   </div>
 
-                  <div className="between-overlay-sun">
+                  <div className="between-overlay-sun audio-mobile">
                     {/* <div className="col-2">
                     Sun
                   </div> */}
-                    <div className="col-3">
+                    <div style={{  overflow: "visible" }}>
                       <audio controls='controls' ref={englishPoemRef}>
                         <source src={EnglishPoem} type="audio/wav" />
                       </audio>
@@ -165,12 +180,21 @@ const Between = () => {
             <img src={Review} alt="Review" className="img-fluid" />
           </div>
         </div> */}
-        <div className="row m-0 p-0 pb-4">
-          <div className="col-12 col-md-11 mx-auto">
+        <div className="row mt-5 mb-5 p-0 pb-4 margin-main">
+          {/* <div className=""> */}
             <img src={Review} alt="Review" className="img-fluid mx-auto d-block" />
-          </div>
+          {/* </div> */}
         </div>
-
+        {isMRS && (
+        
+        <div>
+   
+             <FutureFilmRiceModal
+       isOpen={isMRS}
+       closeModal={() => setIsMRS(false)}
+     />
+        </div>
+     )}
     </main>
   );
 };

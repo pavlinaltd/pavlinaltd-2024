@@ -88,36 +88,6 @@ It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE
             </div>
           </div>
         </section>
-    
-        {/* <div className="p-0 pb-4 px-3 p-xl-5 mt-4 bg-light">
-          <section className="container">
-            <div className="" style={{ display : "flex", flexDirection : "row", gap : "40px"}}>
-              <div style={{ borderRadius : "12px", width : "30%" }}>
-                <img
-                  src={Poster}
-                  alt="The Colors of Macedonia"
-                  className="img"
-                  style={{ borderRadius : "12px", objectFit : "fill"}}
-                />
-              </div>
-              <div className="col-12 col-md-8 d-flex flex-column justify-content-between" style={{ fontSize : "1.4vw", lineHeight : "1.2em"  }}>
-                <p className="mb-3 mb-lg-4">
-                  The Colors of Macedonia is a half-hour documentary film
-                  comissioned by the PBS affiliated KOCE-TV from the Macedonian
-                  Art council in 2004. The film explores the cultural and
-                  spitual riches of Macedonia spanning two thousand years. It
-                  premiered on June 4th, 2004 on KOCE-TV (PBS).
-                </p>
-                <img
-                  src={Header}
-                  alt="The Colors of Macedonia"
-                  className="img"
-                  style={{ borderRadius : "12px", objectFit : "fill"}}
-                />
-              </div>
-            </div>
-          </section>
-        </div> */}
       </div>
     </main>
   );

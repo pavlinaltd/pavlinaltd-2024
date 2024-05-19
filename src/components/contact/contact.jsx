@@ -141,12 +141,14 @@ const Contact = () => {
               <iframe
                 className="google-map"
                 title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.396520997501!2d-74.02068852409117!3d40.709286737781895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b1f6cda30a7%3A0xdd9c2ba2390e2083!2s380%20Rector%20Pl%2C%20New%20York%2C%20NY%2010280!5e0!3m2!1sen!2sus!4v1715991347263!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.809891941106!2d-74.02033102409119!3d40.70910123779322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1023900001%3A0xf4d277c50c6d89ae!2sPavlina%20Ltd!5e0!3m2!1sen!2sus!4v1716094613572!5m2!1sen!2sus"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+
+          
             </section>
     </main>
   );
