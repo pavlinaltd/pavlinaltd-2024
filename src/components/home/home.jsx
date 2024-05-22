@@ -4,7 +4,7 @@ import "./home.css";
 
 import TheMagicSnowmanRedux from "../../assets/films/posters/the-magic-snowman-redux.png";
 import MyHeartIsNoLongerAnOrphan from "../../assets/films/posters/my-heart-is-no-longer-an-orphan.png";
-import GustellaDances from "../../assets/films/posters/gustella-dances.png";
+import GustellaDances from "../../assets/films/posters/gustella-new.png";
 import BetweenTwoWorlds from "../../assets/books/BetweenTwoWorlds.png";
 // import TheMagicSnowmanAudiobook from "../../assets/films/posters/the-magic-snowman-audiobook.png";
 import TheMagicSnowmanAudiobook from "../../assets/books/magicSnowman.jpg";

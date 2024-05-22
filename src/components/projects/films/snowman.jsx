@@ -189,36 +189,14 @@ const MagicSnowman = () => {
       justifyContent: 'space-between',
       textAlign: 'justify', 
       fontSize: '1vw',
-      lineHeight: '1em'
+      lineHeight: '1.15em'
     }}>
        <p className="">
-                  <span style={{ fontWeight : "bold",  color : "#94211d"}}> The Magic Snowman</span> was produced in 1988 by Pavlina Ltd. in a
-                  co-production with FIT a production company based in
-                  Yugoslavia. The film was dedicated to UNICEF which received a
-                  portion of the producer's revenue. The film carries a powerful
-                  message in the context of a wonderful storyline featuring the
-                  character of Lumiukko, the magical snowman. Lumiukko travels
-                  the world with the help of his friend and lifelong companion,
-                  Gustella the wind, in order to help children by teaching them
-                  valuable lessons about honesty, integrity, and determination.
-                  All future magic snowman movies embrace and explicate such
-                  themes.
+                  <span style={{ fontWeight : "bold",  color : "#94211d", fontStyle : "italic"}}> The Magic Snowman</span> was produced in 1988 by Pavlina Ltd. in a co-production with FIT, a film production company based in the former Yugoslavia. Dedicated to the World’s children, the film was endorsed by UNICEF which received a portion of the film's revenues throughout its distribution life.  The film’s storyline featuring the character of the magical snowman Lumi Ukko, caries a powerful message for children. Lumi Ukko travels the world with the help of his friend and lifelong companion, Gustella the wind, and teaches children valuable lessons about honesty, integrity, and determination. He teaches them to believe in themselves.
                 </p>
               <br></br>
                 <p>
-                  Over the past ten years, The Magic Snowman has aired on The
-                  Disney Channel more than 38 times in children’s prime time
-                  slots. It is estimated that twenty million children have seen
-                  the film in the United States alone. Miramax Films has
-                  worldwide distribution rights to the original film. The video
-                  rights are with Artisan Entertainment and the film was
-                  re-released for Christmas 1999 even though sell-through on the
-                  film began in June 1995. Other major distributors who have
-                  acquired the original film are The Sky Channel in the UK,
-                  Italy's RAI Uno, and Spain's Television Española. The film has
-                  been sold worldwide in over thirty international markets. The
-                  Magic Snowman was a seasonal staple among children's
-                  television programs for seventeen years.
+                Over a period of twelve years,  <span style={{ fontStyle : "italic"}}> The Magic Snowman </span> has aired on The Disney Channel more than 38 times in children’s prime time slots. It is estimated that about twenty million children have seen the film in the United States alone. Miramax Films had worldwide TV distribution rights while the video rights were acquired by Artisan Entertainment.  Among the major distributors who acquired the original film were  <span style={{ fontStyle : "italic"}}>The Sky Channel</span> in the UK, Italy's  <span style={{ fontStyle : "italic"}}>RAI Uno </span>, and Spain's  <span style={{ fontStyle : "italic"}}>Television Española.</span>  Sold worldwide in over thirty international markets, the film was a seasonal staple among children's television programs for seventeen years.
                 </p>
     </div>
    
