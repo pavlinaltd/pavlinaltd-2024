@@ -41,7 +41,7 @@ const Pilgrimage = () => {
               <div className="d-flex align-items-center">
                 <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/ilRKidFlPqM"
+                    src="https://www.youtube.com/embed/uNeB23OKaE8"
                     title="YouTube video player"
                     marginLeft = "10px"
                 
