@@ -72,8 +72,9 @@ const Gotse = () => {
               </div> */}
                <div className="orphan-desc" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
               <p >
-                This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled Oro Makedonsko-Our Kanada at the Toronto Convention Center in the spring of 1994 organized to celebrate the independent Republic of Macedonia.
-                </p>
+              This short film was commissioned by the Canadian-Macedonian Foundation on the occasion of a multimedia concert entitled
+<span style={{ fontStyle : "italic"}}> Oro Makedonsko-Our Canada</span> at the Toronto Convention Center in the spring of 1994 organized to celebrate the independence of
+the Republic of Macedonia.                </p>
                 </div>
               <div className="" >
                 <img
@@ -85,7 +86,7 @@ const Gotse = () => {
               </div>
              <div className="orphan-desc" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
                 <p>
-                One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev (ГОЦЕ ДЕЛЧЕВ), a Macedonian national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.
+                One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev (ГОЦЕ ДЕЛЧЕВ), a national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.
                 </p>
               </div>
               {/* <div>

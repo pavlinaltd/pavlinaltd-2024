@@ -4,7 +4,7 @@ import "./projects.css";
 
 import TheMagicSnowman from "../../assets/films/posters/the-magic-snowman.png";
 import HappyHellNight from "../../assets/films/posters/happy-hell-night.png";
-import ThePromiseOfPerfume from "../../assets/films/posters/the-promise-of-perfume.jpg";
+import ThePromiseOfPerfume from "../../assets/films/posters/Promise_of_perfume_poster.jpg";
 import MyAmericanPilgrimage from "../../assets/films/posters/my-american-pilgrimage.jpg";
 import TheColorsOfMacedonia from "../../assets/films/posters/the-colors-of-macedonia.png";
 import Gotse from "../../assets/films/posters/gotse.png";

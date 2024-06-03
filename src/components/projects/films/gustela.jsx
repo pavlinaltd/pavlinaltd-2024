@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/gustella.JPG";
+import Poster from "../../../assets/films/posters/gustella-new.png";
 import Image from "../../../assets/films/gustella-castle.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import gustellaVideo from "../../../assets/films/gustella.mov";
@@ -68,8 +68,8 @@ const Gustella = () => {
         <br></br>
         <br></br>
 
-        <div className=" bg-light">
-          <section className="">
+
+          <section className="bg-light margin-main">
             <div className="orphan-info">
               <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
                 <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%" }} />
@@ -118,7 +118,7 @@ const Gustella = () => {
               </div> */}
             </div>
           </section>
-        </div>
+    
         <div className="p-0 px-3 px-xl-5 pb-md-5 mt-4">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div className="row m-0 py-4 py-md-0 px-md-5 px-md-0 px-xl-5 m-0 mx-auto">

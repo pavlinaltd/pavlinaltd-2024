@@ -177,7 +177,7 @@ const MagicSnowman = () => {
       {/* Other contents */}
       <div style={{ marginTop : "20px", textAlign : "center"}}>
             <div style={{ fontWeight : "600",  fontSize: '0.8vw',
-      lineHeight: '1.1em'}}>  “CONQUERING LANGUAGES WITH <br></br> SIR ROGER MOORE” <br></br> VICTORINE STUDIOS – NICE 1990</div>  
+      lineHeight: '1.1em'}}>  “CONQUERING LANGUAGES <br></br>WITH SIR ROGER MOORE” <br></br> VICTORINE STUDIOS – NICE 1990</div>  
          
           </div> 
     </div>

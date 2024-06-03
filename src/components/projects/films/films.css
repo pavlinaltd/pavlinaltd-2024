@@ -67,6 +67,9 @@ main.film img.header {
     margin-top : 20px;
     margin-bottom : 40px;
 }
+.fw-45 {
+  width: 45%;
+}
 
 .fw-40 {
   width : 40%;
@@ -137,7 +140,7 @@ main.film img.header {
 
 .orphan-info{
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 .orphan-desc {
   font-size : 1.2vw;
@@ -199,7 +202,9 @@ main.film img.header {
   width : 80%;
 }
 
-
+.fw-30 {
+  width: 30%;
+}
 
 .fw-25 {
   width : 25%;
@@ -251,6 +256,10 @@ main.film img.header {
   width : 100%;
 }
 
+.fw-25 {
+  width : 100%;
+}
+
 .fw-80 {
   width : 100%;
 }
@@ -269,6 +278,10 @@ main.film img.header {
     margin-right: 0vw;
   }
 
+  .fw-45 {
+    width: 100%;
+  }
+
   .redux-desc {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -277,7 +290,9 @@ main.film img.header {
     padding-right : 10px; */
   }
 
-
+  .fw-30 {
+    width: 100%;
+  }
 
   .fw-25 {
     width: 100%;

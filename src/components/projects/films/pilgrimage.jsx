@@ -4,11 +4,13 @@ import "./films.css";
 import Poster from "../../../assets/films/posters/my-american-pilgrimage.jpg";
 import MFA from "../../../assets/films/posters/mff.png";
 import ImdbIcon from "../../../assets/common/imdbna.png";
+import Book from "../../../assets/films/bookcover0602.png";
 import Modal from "react-bootstrap/Modal";
 
 const Pilgrimage = () => {
   useEffect(() => window.scrollTo(0, 0));
   const [isMRS, setIsMRS] = useState(false);
+  const [isBook, setIsBook] = useState(false);
 
 
   const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
@@ -21,6 +23,23 @@ const Pilgrimage = () => {
           <section className="d-flex align-items-center modal-flex">
             <div style={{ flex: "1", textAlign : "center" }}>
               <img src={Poster} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+            </div>
+          </section>
+        </Modal.Body>
+      </Modal>
+    );
+  };
+
+  const FutureBookModal = ({ isOpen, closeModal }) => {
+    return (
+      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <section className="d-flex align-items-center modal-flex">
+            <div style={{ flex: "1", textAlign : "center" }}>
+              <img src={Book} alt="This Is My Country: A semi autobiographical novel by Stoyan Christowe" className="future-film-img" style={{ width : "80%"}} />
             </div>
           </section>
         </Modal.Body>
@@ -169,8 +188,8 @@ Prof. Andrew Rossos
            </div>
         </section>
         <section className="mt-4 mb-4 margin-main">
-            <div className="image-desc-flex">
-              <div className="fw-20" style={{ borderRadius : "12px"}}>
+            <div className="image-desc-flex" style={{ gap : "20px"}}>
+              <div className="fw-25" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="My American Pilgrimage"
@@ -179,8 +198,22 @@ Prof. Andrew Rossos
                   onClick={() => setIsMRS(true)}
                 />
               </div>
+
+              <div className="fw-30" style={{ borderRadius : "12px"}}>
+                <a href="https://www.barnesandnoble.com/w/this-is-my-country-stoyan-christowe/1145041072;jsessionid=B5E387529B0A4A27376A85283C2D1922.prodny_store02-atgap07?ean=2940159021229"
+            target="_blank"
+            rel="noreferrer">
+                <img
+                  src={Book}
+                  alt="This Is My Country: A semi autobiographical novel by Stoyan Christowe"
+                  className="img"
+                  style={{ objectFit : "fill", borderRadius : "12px", height : "100%", width : "100%", cursor : "pointer"}}
+                  // onClick={() => setIsBook(true)}
+                />
+                </a>
+              </div>
              
-              <div className="pilgrim-desc fw-80" style={{ fontSize : "1.3vw"}}>
+              <div className="pilgrim-desc fw-45" style={{ fontSize : "1.2vw"}}>
 
               {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
                
@@ -205,6 +238,17 @@ Prof. Andrew Rossos
      />
         </div>
      )}
+{isBook && (
+        
+        <div>
+   
+             <FutureBookModal
+       isOpen={isBook}
+       closeModal={() => setIsBook(false)}
+     />
+        </div>
+     )}
+
        
       </div>
     </main>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/the-promise-of-perfume.jpg";
+import Poster from "../../../assets/films/posters/Promise_of_perfume_poster.jpg";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import Modal from "react-bootstrap/Modal";
 
