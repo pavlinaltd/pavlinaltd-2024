@@ -19,6 +19,11 @@ main.film audio {
  max-width: 250px;
   height: 20px;
 }
+
+audio progress {
+width: 100px;
+}
+
 main.film img {
   width: 100%;
   height: 100%;

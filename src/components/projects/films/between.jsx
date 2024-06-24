@@ -25,19 +25,27 @@ const Between = () => {
     setIsVisibleEng(!isVisibleEng); // Toggle the visibility state
     setIsVisibleSun(false);
     setIsVisibleSol(false);
+    frenchPoemRef.current.style.zIndex = 0;
+    englishPoemRef.current.style.zIndex = 0;
+    serbianPoemRef.current.style.zIndex = 100;
   };
 
   const toggleVisibilitySun = () => {
     setIsVisibleEng(false); // Toggle the visibility state
     setIsVisibleSun(!isVisibleSun);
     setIsVisibleSol(false);
+    frenchPoemRef.current.style.zIndex = 0;
+    englishPoemRef.current.style.zIndex = 100;
+    serbianPoemRef.current.style.zIndex = 0;
   };
 
   const toggleVisibilitySol = () => {
     setIsVisibleEng(false); // Toggle the visibility state
     setIsVisibleSun(false);
     setIsVisibleSol(!isVisibleSol);
-    alert("clicked");
+    frenchPoemRef.current.style.zIndex = 100;
+    englishPoemRef.current.style.zIndex = 0;
+    serbianPoemRef.current.style.zIndex = 0;
   };
 
 
@@ -164,7 +172,7 @@ const Between = () => {
                   
            
       {/* {isVisibleEng && ( */}
-                      <audio controls='controls' ref={serbianPoemRef} style={{visibility: isVisibleEng ? 'visible' : 'hidden' }}>
+                      <audio controls='controls' controlsList="nodownload noplaybackrate"  ref={serbianPoemRef} style={{visibility: isVisibleEng ? 'visible' : 'hidden', position : 'relative'}}>
                         <source src={SerbianPoem} type="audio/wav" />
                       </audio>  
                       {/* )} */}
@@ -184,7 +192,7 @@ const Between = () => {
             
          
             {/* {isVisibleSol && ( */}
-                      <audio controls='controls' ref={frenchPoemRef}  style={{visibility: isVisibleSol ? 'visible' : 'hidden'}}>
+                      <audio controls='controls' controlsList="nodownload noplaybackrate"  ref={frenchPoemRef}  style={{visibility: isVisibleSol ? 'visible' : 'hidden', position : 'relative'}}>
                         <source src={FrenchPoem} type="audio/wav" />
                       </audio> 
                     {/* )} */}
@@ -211,7 +219,7 @@ const Between = () => {
       />
            
                     {/* {isVisibleSun && ( */}
-                      <audio controls='controls' ref={englishPoemRef} style={{visibility: isVisibleSun ? 'visible' : 'hidden'}}>
+                      <audio controls='controls' controlsList="nodownload noplaybackrate"  ref={englishPoemRef} style={{visibility: isVisibleSun ? 'visible' : 'hidden', position : 'relative'}}>
                         <source src={EnglishPoem} type="audio/wav" />
                       </audio> 
 
