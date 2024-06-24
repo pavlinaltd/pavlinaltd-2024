@@ -15,12 +15,9 @@ main.film section.synopsis .quote p {
   color: #94211d;
 }
 
-audio {
-  height: 20px;
-}
 main.film audio {
-  /* width: 300px;
-  height: 20px; */
+ max-width: 250px;
+  height: 20px;
 }
 main.film img {
   width: 100%;
@@ -206,6 +203,11 @@ main.film img.header {
   width : 20%;
 }
 
+/* audio {
+  max-width: 250px !important;
+  height: 20px;
+} */
+
 .fw-80 {
   width : 80%;
 }
@@ -276,6 +278,7 @@ main.film img.header {
     font-size: 14px !important;
   }
 
+ 
 
   .hnn-button {
     flex-direction: column;

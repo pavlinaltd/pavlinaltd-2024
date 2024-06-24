@@ -37,6 +37,7 @@ const Between = () => {
     setIsVisibleEng(false); // Toggle the visibility state
     setIsVisibleSun(false);
     setIsVisibleSol(!isVisibleSol);
+    alert("clicked");
   };
 
 
@@ -160,56 +161,48 @@ const Between = () => {
                   <img src={Poem} alt="Poem" className="img-fluid" />
                   <div className="between-overlay-sonce">
 
-                    {/* <div className="col-2">
-                      Sonce
-                        </div> */}
-                    <div>
+                  
            
-      {isVisibleEng && (
-                      <audio controls='controls' ref={serbianPoemRef}>
+      {/* {isVisibleEng && ( */}
+                      <audio controls='controls' ref={serbianPoemRef} style={{visibility: isVisibleEng ? 'visible' : 'hidden' }}>
                         <source src={SerbianPoem} type="audio/wav" />
-                      </audio>  )}
+                      </audio>  
+                      {/* )} */}
                       <img
         src={AudioButton} // The image that when clicked will toggle the audio controller
         alt="Toggle Audio"
         onClick={toggleVisibilityEng}
-        style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
+        style={{ cursor: 'pointer', width: '25px', height: '25px'}} // Example styling
       />
-                    </div>
+                  
                   </div>
 
                   <div className="between-overlay-soleil audio-mobile">
                     {/* <div className="col-2">
                      Soleil
                     </div> */}
-                    <div style={{  overflow: "visible" }}>
-                   
-                    {/* <img
-        src={AudioButton} // The image that when clicked will toggle the audio controller
-        alt="Toggle Audio"
-        onClick={toggleVisibility}
-        style={{ cursor: 'pointer', width: '30px', height: '30px' }} // Example styling
-      />
-      {isVisible && ( */}
-            {isVisibleSol && (
-                      <audio controls='controls' ref={frenchPoemRef} >
+            
+         
+            {/* {isVisibleSol && ( */}
+                      <audio controls='controls' ref={frenchPoemRef}  style={{visibility: isVisibleSol ? 'visible' : 'hidden'}}>
                         <source src={FrenchPoem} type="audio/wav" />
-                      </audio> )}
+                      </audio> 
+                    {/* )} */}
+                   
                       <img
         src={AudioButton} // The image that when clicked will toggle the audio controller
         alt="Toggle Audio"
         onClick={toggleVisibilitySol}
         style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
       />
-                   
-                    </div>
+                 
                   </div>
 
                   <div className="between-overlay-sun audio-mobile">
                     {/* <div className="col-2">
                     Sun
                   </div> */}
-                    <div style={{  overflow: "visible" }}>
+   
                     <img
         src={AudioButton} // The image that when clicked will toggle the audio controller
         alt="Toggle Audio"
@@ -217,15 +210,15 @@ const Between = () => {
         style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
       />
            
-                    {isVisibleSun && (
-                      <audio controls='controls' ref={englishPoemRef}>
+                    {/* {isVisibleSun && ( */}
+                      <audio controls='controls' ref={englishPoemRef} style={{visibility: isVisibleSun ? 'visible' : 'hidden'}}>
                         <source src={EnglishPoem} type="audio/wav" />
-                      </audio> )}
+                      </audio> 
 
                         </div>
 
 
-                  </div>
+               
 
                 </div>
 
