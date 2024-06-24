@@ -69,12 +69,12 @@ const Contact = () => {
               <div className = 'row sub-heading'>
                 <div className="col ">
                     <h2 className="mb-1 mt-1">Macedonian Arts Council Inc.</h2>     
-                    <h4 className="mb-1">info@macedonianarts.org</h4>
+                    <h4 className="contact-email" >info@macedonianarts.org</h4>
                     <h4 className="mb-1">212-799-0009</h4>
                   </div>
                 <div className="col col-xs-12"> 
                   <h2 className="mb-1 mt-1">FilmsZaNas d.o.o.e.l</h2>
-                  <h4 className="mb-1">filmszanas@gmail.com</h4>
+                  <h4 className="contact-email">filmszanas@gmail.com</h4>
                   <h4 className="mb-1">212-799-0009</h4>
                 </div>
 

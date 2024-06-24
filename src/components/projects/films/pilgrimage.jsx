@@ -213,7 +213,7 @@ Prof. Andrew Rossos
                 </a>
               </div>
              
-              <div className="pilgrim-desc fw-45" style={{ fontSize : "1.2vw"}}>
+              <div className="pilgrim-desc fw-45">
 
               {/* <div className="orphan-desc" style={{ display :"flex", flexDirection : "column", justifyContent :"space-between" ,alignItems : "stretch" }}> */}
                

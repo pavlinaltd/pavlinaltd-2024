@@ -9,6 +9,7 @@ import EnglishPoem from "../../../assets/audio/Sun_English_Mastered.wav";
 import FrenchPoem from "../../../assets/audio/Sun_French_Mastered.wav";
 import SerbianPoem from "../../../assets/audio/Sun_Serbian_Mastered.wav";
 import Modal from "react-bootstrap/Modal";
+import AudioButton from "../../../assets/common/aud.png";
 
 const Between = () => {
 
@@ -16,6 +17,28 @@ const Between = () => {
   const frenchPoemRef = useRef(null);
   const englishPoemRef = useRef(null);
   const [isMRS, setIsMRS] = useState(false);
+  const [isVisibleEng, setIsVisibleEng] = useState(false); // State to track visibility
+  const [isVisibleSun, setIsVisibleSun] = useState(false); 
+  const [isVisibleSol, setIsVisibleSol] = useState(false); 
+
+  const toggleVisibilityEng = () => {
+    setIsVisibleEng(!isVisibleEng); // Toggle the visibility state
+    setIsVisibleSun(false);
+    setIsVisibleSol(false);
+  };
+
+  const toggleVisibilitySun = () => {
+    setIsVisibleEng(false); // Toggle the visibility state
+    setIsVisibleSun(!isVisibleSun);
+    setIsVisibleSol(false);
+  };
+
+  const toggleVisibilitySol = () => {
+    setIsVisibleEng(false); // Toggle the visibility state
+    setIsVisibleSun(false);
+    setIsVisibleSol(!isVisibleSol);
+  };
+
 
 
   const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
@@ -89,7 +112,7 @@ const Between = () => {
                     <img src={BetweenTwoWorlds} alt="BetweenTwoWorlds" style={{ objectFit: "contain", width : "100%", cursor : "pointer"}}  onClick={() => setIsMRS(true)}/>
                   </div>
 
-                  <div className="fw-75" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", fontSize: "1.2vw", lineHeight: "1.4vw", textAlign : "justify" }} >
+                  <div className="fw-75 orphan-desc" >
                     <div >
                       <span style={{ fontStyle: "italic" }}>Between Two Worlds </span> is a collection of poems written by the
                       Montenegrin-born poet Miodrag Milošević, whose life is
@@ -135,15 +158,23 @@ const Between = () => {
 
                 <div className="" style={{ position: "relative" }}>
                   <img src={Poem} alt="Poem" className="img-fluid" />
-                  <div className="between-overlay-sonce audio-mobile">
+                  <div className="between-overlay-sonce">
 
                     {/* <div className="col-2">
                       Sonce
                         </div> */}
-                    <div style={{  overflow: "visible" }}>
+                    <div>
+           
+      {isVisibleEng && (
                       <audio controls='controls' ref={serbianPoemRef}>
                         <source src={SerbianPoem} type="audio/wav" />
-                      </audio>
+                      </audio>  )}
+                      <img
+        src={AudioButton} // The image that when clicked will toggle the audio controller
+        alt="Toggle Audio"
+        onClick={toggleVisibilityEng}
+        style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
+      />
                     </div>
                   </div>
 
@@ -152,9 +183,25 @@ const Between = () => {
                      Soleil
                     </div> */}
                     <div style={{  overflow: "visible" }}>
+                   
+                    {/* <img
+        src={AudioButton} // The image that when clicked will toggle the audio controller
+        alt="Toggle Audio"
+        onClick={toggleVisibility}
+        style={{ cursor: 'pointer', width: '30px', height: '30px' }} // Example styling
+      />
+      {isVisible && ( */}
+            {isVisibleSol && (
                       <audio controls='controls' ref={frenchPoemRef} >
                         <source src={FrenchPoem} type="audio/wav" />
-                      </audio>
+                      </audio> )}
+                      <img
+        src={AudioButton} // The image that when clicked will toggle the audio controller
+        alt="Toggle Audio"
+        onClick={toggleVisibilitySol}
+        style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
+      />
+                   
                     </div>
                   </div>
 
@@ -163,10 +210,19 @@ const Between = () => {
                     Sun
                   </div> */}
                     <div style={{  overflow: "visible" }}>
+                    <img
+        src={AudioButton} // The image that when clicked will toggle the audio controller
+        alt="Toggle Audio"
+        onClick={toggleVisibilitySun}
+        style={{ cursor: 'pointer', width: '25px', height: '25px' }} // Example styling
+      />
+           
+                    {isVisibleSun && (
                       <audio controls='controls' ref={englishPoemRef}>
                         <source src={EnglishPoem} type="audio/wav" />
-                      </audio>
-                    </div>
+                      </audio> )}
+
+                        </div>
 
 
                   </div>

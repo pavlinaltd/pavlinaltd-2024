@@ -89,7 +89,7 @@ const Hell = () => {
                   onClick={() => setIsMRS(true)}
                 />
               </div>
-              <div className="hnn-desc" style={{ fontSize : "1.2vw"}}>
+              <div className="hnn-desc">
                 <p >
                   Twenty-five years ago at Winfield College, psycho-priest
                   Zachary Malius murdered seven frat boys.
@@ -133,7 +133,7 @@ const Hell = () => {
         </section>
         <section className="margin-main" style={{  marginTop: "40px", marginBottom: "40px"}}>
   <div className="hnn-trailer">
-    <div className="fw-30" style={{ }}>
+    <div className="fw-30" >
       <img
         src={Reel}
         alt="Happy Hell Night"

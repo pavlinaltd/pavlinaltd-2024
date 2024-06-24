@@ -48,10 +48,10 @@ const Gallery = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
-    <main id="gallery">
-      <section className="container p-3 p-3 px-md-0 pt-0">
+    <main id="gallery" className="main-margin">
+      <section className="">
 
-        <div className="px-3 py-4 px-xl-0">
+        <div className="py-4">
           <h2 className=" mb-2">My Heart Is No Longer An Orphan</h2>
           <div
             className="row m-0 px-lg-0"
@@ -102,7 +102,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="px-3 py-4 px-xl-0">
+        <div className="py-4">
           <h2 className=" mb-2">The Promise Of Perfume</h2>
           <div
             className="row m-0 px-lg-0"
@@ -153,10 +153,10 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="px-3 py-4 px-xl-0">
+        <div className="py-4">
           <h2 className=" mb-2">My American Pilgrimage</h2>
           <div
-            className="row m-0 px-lg-0"
+            className="row"
             data-bs-toggle="modal"
             data-bs-target="#GalleryModal"
           >
@@ -204,7 +204,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="px-3 py-4 px-xl-0">
+        <div className="py-4">
           <h2 className=" mb-2">Happy Hell Night</h2>
           <div
             className="row m-0 px-lg-0"
@@ -255,7 +255,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="px-3 py-4 px-xl-0">
+        <div className="py-4">
           <h2 className=" mb-2">The Magic Snowman</h2>
           <div
             className="row m-0 px-lg-0"
@@ -324,8 +324,11 @@ const Gallery = () => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#GalleryModal"
-              className="btn-close ms-auto pe-4 py-2"
+              className="btn-close"
               aria-label="Close"
+              style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1050
+                }}
+
             ></button>
             <div
               id="indicators"

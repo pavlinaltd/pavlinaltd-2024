@@ -176,21 +176,11 @@ const MagicSnowman = () => {
       </video>
       {/* Other contents */}
       <div style={{ marginTop : "20px", textAlign : "center"}}>
-            <div style={{ fontWeight : "600",  fontSize: '0.8vw',
-      lineHeight: '1.1em'}}>  “CONQUERING LANGUAGES <br></br>WITH SIR ROGER MOORE” <br></br> VICTORINE STUDIOS – NICE 1990</div>  
+            <div className="snowman-text">  “CONQUERING LANGUAGES <br></br>WITH SIR ROGER MOORE” <br></br> VICTORINE STUDIOS – NICE 1990</div>  
          
           </div> 
     </div>
-    <div style={{ 
-      flex: 1.5, 
-      padding: '5px', 
-      display: 'flex', 
-      flexDirection: 'column', 
-      justifyContent: 'space-between',
-      textAlign: 'justify', 
-      fontSize: '1vw',
-      lineHeight: '1.15em'
-    }}>
+    <div className="snowman-details">
        <p className="">
                   <span style={{ fontWeight : "bold",  color : "#94211d", fontStyle : "italic"}}> The Magic Snowman</span> was produced in 1988 by Pavlina Ltd. in a co-production with FIT, a film production company based in the former Yugoslavia. Dedicated to the World’s children, the film was endorsed by UNICEF which received a portion of the film's revenues throughout its distribution life.  The film’s storyline featuring the character of the magical snowman Lumi Ukko, caries a powerful message for children. Lumi Ukko travels the world with the help of his friend and lifelong companion, Gustella the wind, and teaches children valuable lessons about honesty, integrity, and determination. He teaches them to believe in themselves.
                 </p>

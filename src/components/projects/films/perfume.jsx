@@ -69,7 +69,7 @@ const Perfume = () => {
                   onClick={() => setIsMRS(true)}
                 />
               </div>
-              <div className="fw-70 orphan-desc" style={{ display : "flex", flexDirection : "column", justifyContent : "space-between", textAlign : "justify", fontSize : "1.2vw"}}>
+              <div className="fw-70 orphan-desc">
                 <p className="mb-3 mb-lg-4">
                   <span style={{ fontWeight : "bold",  color : "#94211d"}}>The Promise of Perfume </span>is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New

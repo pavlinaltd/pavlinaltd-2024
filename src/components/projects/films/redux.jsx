@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./films.css";
 
-import Poster from "../../../assets/films/posters/the-magic-snowman-redux.png";
+import Poster from "../../../assets/films/posters/redux-final.jpg";
 import FaceGallery from "../../../assets/films/posters/faceGallery.jpg";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 
@@ -17,7 +17,7 @@ const Redux = () => {
             <div style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/ae_CI8622sA"
+                    src="https://www.youtube.com/embed/7JoqIvKvJ-Y"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

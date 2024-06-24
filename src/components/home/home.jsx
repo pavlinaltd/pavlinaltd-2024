@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 
-import TheMagicSnowmanRedux from "../../assets/films/posters/the-magic-snowman-redux.png";
+import TheMagicSnowmanRedux from "../../assets/films/posters/redux-final.jpg";
 import MyHeartIsNoLongerAnOrphan from "../../assets/films/posters/my-heart-is-no-longer-an-orphan.png";
 import GustellaDances from "../../assets/films/posters/gustella-new.png";
 import BetweenTwoWorlds from "../../assets/books/BetweenTwoWorlds.png";
@@ -175,11 +175,10 @@ const Home = () => {
 
                   {/* </Link> */}
                   <div className="snowman-dist">
-                    <div style={{}}>distributed by  <span style={{ fontStyle: "italic" }}> Authors Republic</span></div>
-                    <div style={{ textAlign : "right"}}> 
+                  <div style={{}}> 
                       {/* <a href="www.google.com" target="_blank"> 
                       </a>*/}
-                      <audio controls controlsList="nodownload noplaybackrate">
+                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none' }}>
   <source src={magicAudio} type="audio/wav" />
   Your browser does not support the audio element.
 </audio>
@@ -191,6 +190,8 @@ const Home = () => {
                       height="18px"
                     /> */}
                      </div>
+                    <div style={{}}>Distributed by : <span style={{ fontStyle: "italic" }}> Authors' Republic</span></div>
+                  
                   </div>
 
                 </div>

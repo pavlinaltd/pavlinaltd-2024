@@ -287,6 +287,7 @@ figcaption {
 .snowman-dist {
   display : flex;
   justify-content : space-between;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.252);
   color: white;
   padding: 5px;
