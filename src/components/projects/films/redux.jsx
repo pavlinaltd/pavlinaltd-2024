@@ -17,7 +17,7 @@ const Redux = () => {
             <div style={{ width : "100%"}}>
             <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.youtube.com/embed/7JoqIvKvJ-Y"
+                    src="https://www.youtube.com/embed/odSJICPCz-E"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

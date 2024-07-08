@@ -4,6 +4,10 @@ $black: #000;
 $red: #94211d;
 $gray: #eaeaea;
 
+.hidden {
+  overflow: hidden;
+}
+
 main {
   div.header {
     width: 100%;

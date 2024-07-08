@@ -61,7 +61,7 @@ const Home = () => {
       <div className="container mx-auto p-0 m-0">
         <section id="quote-container">
           <div className="intro col-12 p-3 p-xl-5 px-xl-0 m-0">
-            <h3 className="p-0 px-xl-0">
+            <h3 className="p-0 px-xl-0 hidden">
               “Press on. Nothing in the world can take the place of persistence.
               Talent will not: nothing is more common than unrewarded talent.
               Education alone will not: the world is full of educated failures.
