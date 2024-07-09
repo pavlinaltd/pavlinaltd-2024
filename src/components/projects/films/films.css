@@ -262,7 +262,7 @@ main.film img.header {
   line-height : 1.2em;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   main.film h1 {
     font-size: 1.7rem;
   }
@@ -308,6 +308,14 @@ main.film img.header {
 }
 
 .fw-25 {
+  width : 100%;
+}
+
+.fw-30 {
+  width : 100%;
+}
+
+.fw-45 {
   width : 100%;
 }
 

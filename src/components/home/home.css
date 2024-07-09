@@ -401,11 +401,6 @@ figcaption {
   main div.intro {
     font-size: 1.5rem;
   }
-
-  .two-book-boxes-item{
-    flex-direction: column;
-  }
-
   main section.films h2 {
     font-size: 1.5rem;
   }
@@ -415,9 +410,16 @@ figcaption {
   main section.films div.film-poster div.row {
     background-color: transparent;
   }
+  .two-book-boxes-item-left{
+    width: 80%;
+    margin: 0;
+    margin-top: 20px;
+  }
 
-  .two-book-boxes{
-    flex-direction: column;
+  .two-book-boxes-item{
+    width: 80%;
+    margin: 0;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767.98px) {
@@ -481,6 +483,7 @@ figcaption {
     margin: 0;
     margin-top: 20px;
   }
+  
 }
 @media (max-width: 576px) {
   main section#quote-container h3, main section#quote-container p {

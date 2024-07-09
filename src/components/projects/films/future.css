@@ -82,6 +82,17 @@
         font-size: 1.2vw;
         line-height: 1.2em;
     }
+    .fw-30 {
+        width : 100%;
+    }
+    
+    .fw-45 {
+        width : 100%;
+    }
+
+    .future-film-section-desc{
+        margin-right: 40px;
+    }
   }
 
 
@@ -106,6 +117,8 @@
     .fw-40 {
         width : 100%;
     }
+
+    
 }
 
 
