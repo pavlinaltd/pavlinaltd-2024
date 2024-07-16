@@ -307,7 +307,6 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-
       <div
         className="modal fade"
         id="GalleryModal"
@@ -411,6 +410,7 @@ const Gallery = () => {
               </a>
             </div>
           </div>
+      
         </div>
       </div>
     </main>

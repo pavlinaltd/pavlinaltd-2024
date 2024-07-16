@@ -199,19 +199,36 @@ Prof. Andrew Rossos
                 />
               </div>
 
-              <div className="fw-30" style={{ borderRadius : "12px"}}>
-                <a href="https://www.barnesandnoble.com/w/this-is-my-country-stoyan-christowe/1145041072;jsessionid=B5E387529B0A4A27376A85283C2D1922.prodny_store02-atgap07?ean=2940159021229"
-            target="_blank"
-            rel="noreferrer">
-                <img
-                  src={Book}
-                  alt="This Is My Country: A semi autobiographical novel by Stoyan Christowe"
-                  className="img"
-                  style={{ objectFit : "fill", borderRadius : "12px", height : "100%", width : "100%", cursor : "pointer"}}
-                  // onClick={() => setIsBook(true)}
-                />
-                </a>
-              </div>
+              <div className="fw-30" style={{
+    position: 'relative',
+    borderRadius: '12px',
+    overflow: 'hidden' // Ensure nothing spills outside the border
+}}>
+    <a href="https://www.barnesandnoble.com/w/this-is-my-country-stoyan-christowe/1145041072;jsessionid=B5E387529B0A4A27376A85283C2D1922.prodny_store02-atgap07?ean=2940159021229"
+       target="_blank"
+       rel="noreferrer"
+       style={{ display: 'block', height: '100%' }}
+    >
+        <img
+            src={Book}
+            alt="This Is My Country: A semi autobiographical novel by Stoyan Christowe"
+            className="img"
+            style={{ objectFit: 'fill', borderRadius: '12px', height: '100%', width: '100%', cursor: 'pointer' }}
+        />
+        <div style={{
+            position: 'absolute',
+            bottom: '0',
+            background: 'rgba(0, 0, 0, 0.5)', // Semi-transparent overlay
+            color: 'white',
+            width: '100%',
+            textAlign: 'center',
+            padding: '5px 0', // Vertical padding
+            fontSize: '1em'
+        }}>
+            Read Now
+        </div>
+    </a>
+</div>
              
               <div className="pilgrim-desc fw-45">
 

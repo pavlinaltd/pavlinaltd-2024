@@ -6,6 +6,7 @@ import Poster from "../../../assets/films/SnowmanPoster.jpg";
 // import Languages from "../../../assets/films/languages.png";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import LanguagesVideo from "../../../assets/films/learning.mp4";
+import LanguagesThumbnail from "../../../assets/films/practice.png";
 import Modal from "react-bootstrap/Modal";
 
 
@@ -169,6 +170,7 @@ const MagicSnowman = () => {
         controls
         style={{ width: '100%', height: 'auto' }} // This makes the video responsive
         title="PRACTICING LANGUAGES WITH SIR ROGER MOORE"
+        poster={LanguagesThumbnail}
         allowFullScreen
       >
         <source src={LanguagesVideo} type="video/mp4" />

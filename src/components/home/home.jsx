@@ -178,7 +178,7 @@ const Home = () => {
                   <div style={{}}> 
                       {/* <a href="www.google.com" target="_blank"> 
                       </a>*/}
-                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none' }}>
+                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none', height : '25px' }}>
   <source src={magicAudio} type="audio/wav" />
   Your browser does not support the audio element.
 </audio>

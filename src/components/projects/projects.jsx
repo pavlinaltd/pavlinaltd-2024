@@ -13,15 +13,15 @@ const Projects = () => {
   useEffect(() => window.scroll(0, 0));
 
   return (
-    <main id="projects" className="text-uppercase">
-      <div className="container p-0">
+    <main id="projects" className="text-uppercase main-margin">
+      {/* <div className="container p-0"> */}
         <section
           id="previous-films"
-          className="container p-3 py-4 py-md-0 px-md-0 m-0 mx-auto"
+          className="margin-main projects-section"
           style={{ marginBottom: "60px" }}
         >
           <div className="col-12 p-xl-0 pb-xl-0 m-0">
-            <h2 className="p-0">Completed Features</h2>
+            <h2 className="p-0">Features</h2>
           </div>
 
           <div className="book-image-row">
@@ -52,13 +52,13 @@ const Projects = () => {
 
 
         <hr className="hr-sep" />
-        <section className="projects-section">
+        <section className="margin-main projects-section">
           <div className="col-12 p-xl-0 pb-xl-0 m-0" >
-            <h2 className="p-0">Completed Documentaries and Short Films</h2>
+            <h2 className="p-0">Documentaries</h2>
           </div>
           <div className="book-image-row">
           <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
-            <div className="book-image">
+            <div className="book-image book-image-partial">
               <Link to="/promise-of-perfume">
                 <img
                   src={ThePromiseOfPerfume}
@@ -67,7 +67,7 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            <div className="book-image">
+            <div className="book-image book-image-partial">
               <Link to="/my-american-pilgrimage">
                 <img
                   src={MyAmericanPilgrimage}
@@ -77,7 +77,7 @@ const Projects = () => {
               </Link>
             </div>
             </div>
-            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+            {/* <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/colors-of-macedonia">
                 <img
@@ -96,11 +96,40 @@ const Projects = () => {
                 />
               </Link>
             </div>
+            </div> */}
+          </div>
+
+        </section>
+        <hr className="hr-sep" />
+        <section className="margin-main projects-section">
+          <div className="col-12 p-xl-0 pb-xl-0 m-0" >
+            <h2 className="p-0">Short Films</h2>
+          </div>
+          <div className="book-image-row">
+            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+            <div className="book-image book-image-partial">
+              <Link to="/colors-of-macedonia">
+                <img
+                  src={TheColorsOfMacedonia}
+                  className="img-fluid rounded-3"
+                  alt="In Development"
+                />
+              </Link>
+            </div>
+            <div className="book-image book-image-partial">
+              <Link to="/gotse">
+                <img
+                  src={Gotse}
+                  className="img-fluid rounded-3"
+                  alt="In Development"
+                />
+              </Link>
+            </div>
             </div>
           </div>
 
         </section>
-      </div>
+      {/* </div> */}
     </main>
   );
 };
