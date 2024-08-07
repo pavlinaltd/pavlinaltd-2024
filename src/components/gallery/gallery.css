@@ -1,4 +1,4 @@
-main#gallery h1 {
+/* main#gallery h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #94211d;
@@ -46,5 +46,220 @@ main#gallery button:focus {
 @media (max-width: 576px) {
   main#gallery h2 {
     font-size: 1.2rem;
+  }
+}
+
+.blurredBG{
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+} */
+
+
+.tabs{
+  display: flex;
+  justify-content: center;
+}
+
+.tabs button{
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-style: solid;
+  border-color: rgb(241, 239, 239);
+  border-width: 1px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+.tabs button:hover{
+  border-width: 2px;
+  border-color: rgb(241, 239, 239)  rgb(241, 239, 239) #94112D rgb(241, 239, 239);
+
+}
+.galleryWrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 10px auto;
+  width: 1300px;
+  padding-bottom: 50px;
+}
+
+.movieTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  font-weight:bold;
+  font-size:xx-large;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.galleryWrap .gallery-item{
+  width: 400px;
+  cursor: pointer;
+
+}
+
+.galleryWrap .gallery-item img{
+    width: 400px;
+    height: 300px;
+}
+.galleryWrap .gallery-item img:hover{
+  transform: scale(1.02);
+
+}
+.sliderWrap{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0,0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+.orphan{
+  background-image: url("./orphan.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.perfume{
+  background-image: url("./perfume.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  
+}
+
+.pilgrimage{
+  background-image: url("./pilgrimage.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.hellNight{
+  background-image: url("./hellNight.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.snowman{
+  background-image: url("./snowman.png"); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+
+
+
+.sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext{
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+.btnClose:hover,.btnPrev:hover,.btnNext:hover{
+  opacity: 1;
+}
+
+.sliderWrap .btnClose{
+  top: 40px;
+  right: 40px;
+
+}
+.sliderWrap .btnPrev{
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+
+}
+.sliderWrap .btnNext{
+  top: 50%;
+  transform: translateX(-50%);
+  right: 40px;
+
+}
+
+.fullScreenImage{
+  width: calc(100% - 40px);
+  height: calc(100%) -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+  .perfume, .pilgrimage, .hellNight, .snowman, .orphan {
+    background-image: none;
+    background-color: rgba(141, 138, 138, 0.9); 
+    
+  }
+  
+  
+  .tabs{
+    margin: auto;
+    width: 300px;
+  }
+  .tabs button{
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(241, 239, 239);
+    border-width: 1px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    }
+    .galleryWrap{
+      margin: 10px auto;
+      width: 300px;
+      
+    }
+
+    .galleryWrap .gallery-item img{
+      width: 350px;
+      height: 300px;
+  }
+ 
+}
+@media (max-width: 576px) {
+  .tabs{
+    margin: auto;
+    width: 300px;
+  }
+  .tabs button{
+    background-color: #fff;
+    padding: 7px;
+    margin: 5px;
+    font-size: 12px;
+    
+    }
+    .galleryWrap{
+      margin: 10px auto;
+      width: 300px;
+      
+    }
+
+    .galleryWrap .gallery-item img{
+      width: 350px;
+      height: 300px;
   }
 }

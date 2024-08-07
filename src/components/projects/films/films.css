@@ -51,6 +51,10 @@ main.film img.header {
 .synopsis{
   font-size: 1.3rem;
 }
+.between-desc-section{
+  display: flex;
+  justify-content: center;
+}
 
 .snowman-posters{
 
@@ -62,6 +66,26 @@ main.film img.header {
 .snowman-poster-left{
   width: 20%;
   height: 10%;
+  
+}
+
+.between-overlay-sonce{
+  position: relative;
+  top: -300px;
+  left: 700px;
+  width: 300px;
+}
+
+.between-overlay-soleil{
+  position: relative;
+  left: 700px;
+  width: 300px;
+}
+.between-overlay-sun{
+  position: relative;
+  top: -80px;
+  left: 20px;
+  width: 300px;
   
 }
 
@@ -327,7 +351,29 @@ main.film img.header {
   width: 100%;
 }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1280px) {
+
+  .between-overlay-sonce{
+    position: relative;
+    top: -100px;
+    left: 0px;
+   
+  }
+  
+  .between-overlay-soleil{
+    position: relative;
+    left: 0;
+    top: -20px;
+  
+  }
+  .between-overlay-sun{
+    position: relative;
+    top: -70px;
+    left: 20px;
+
+    
+  }
+  
   main.film h1 {
     font-size: 1.5rem;
   }
@@ -459,9 +505,4 @@ main.film img.header {
   .pilgrim-interview{
     margin-top: 20px;
   }
-
-  /* .audio-mobile{
-    max-width: 150px;
-  } */
 }
-

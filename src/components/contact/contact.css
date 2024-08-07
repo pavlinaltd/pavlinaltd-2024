@@ -1,3 +1,4 @@
+
 /* .col-12{
   float: right;
 } */
@@ -5,6 +6,7 @@
 
 main#contact {
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
 
 }
@@ -131,6 +133,8 @@ main#contact section.upper-section form input[type=submit]:hover {
   position: relative;
   height: 350px;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* margin-left:  45px; */
   
   

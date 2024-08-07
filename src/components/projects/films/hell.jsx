@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./films.css";
 
 import Poster from "../../../assets/films/posters/happy-hell-night.png";
-import Reel from "../../../assets/films/congress.jpg";
+import Reel from "../../../assets/films/congress_fix.png";
 import header from "../../../assets/films/hhnposter.webp";
 import ImdbIcon from "../../../assets/common/imdbna.png";
 import AudioImg from "../../../assets/common/podcasts.png";
@@ -142,13 +142,18 @@ const Hell = () => {
     </div>
     <div className="hnn-iframe" style={{ flex: "3", width: "100%" }}>
       <div className="ratio ratio-16x9" style={{ width: "100%", height: "100%" }}>
-        <iframe
-          src="https://www.youtube.com/embed/k_X7EnLEjNM"
+        {/* <iframe
+          src="https://youtu.be/n3ecJJ7jiFI?si=ShHkXZQU4c5iQlW2"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           style={{ width: "100%", height: "100%" }}
-        ></iframe>
+        ></iframe> */}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n3ecJJ7jiFI?si=ivwsVdWxG23xS7km" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
       </div>
     </div>
   </div>

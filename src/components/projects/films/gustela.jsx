@@ -35,20 +35,14 @@ const Gustella = () => {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <div style={{ width: "100%" }}>
             <div className="ratio ratio-16x9">
-              {/* <iframe
-                    src="https://www.youtube.com/"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe> */}
-              <video
-                controls
-                title="Local Video Player"
-                allowFullScreen
-              >
-                <source src={gustellaVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/1LAN_RWFCV4?si=X-Pr7lclFjppE0NL" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
             </div>
           </div>
           <div style={{ textAlign: "center", width: "100%", display: "flex", flexDirection: "column", alignContent: "center", marginTop: "20px" }}>

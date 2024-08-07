@@ -136,7 +136,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="mt-5 pb-5 w-100 margin-main" >
+      <section className="w-100 margin-main" >
             <div className="contact-box" >
               <iframe
                 className="google-map"

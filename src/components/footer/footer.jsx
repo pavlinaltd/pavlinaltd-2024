@@ -98,6 +98,10 @@ const Footer = () => {
     <a href="https://kewalkishangokuldas.com"  target="_blank" rel="noreferrer" style={{ textDecoration : "none", color: "inherit", fontStyle :"italic"}}>
     Kewal Kishan Gokuldas
     </a>
+    <span> and </span>
+    <a href="https://www.linkedin.com/in/teodora-krstevska-3475611b9/"  target="_blank" rel="noreferrer" style={{ textDecoration : "none", color: "inherit", fontStyle :"italic"}}>
+    Teodora Krstevska
+    </a>
    </div>
 
 
