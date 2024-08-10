@@ -264,12 +264,13 @@ const Home = () => {
           style={{ marginTop: "40px", marginBottom : "20px" }}
         >
           <div className="intro col-12 p-0 py-md-4 pt-xl-0 px-xl-0 m-0">
-            <h2 className="p-0">
-              <span className="fst-italic">Pavlina Ltd.</span> is a New York
+            <h2 className="p-0" style={{textAlign:"center"}}>
+              <span className="fst-italic" style={{fontWeight:"bold"}}>PAVLINA Ltd.</span> is a New York
               based independent production company engaged in the development
               and production of feature films and documentaries.{" "}
-              <span className="fst-italic">FilmsZaNas d.o.o.e.l.</span> is the
-              co-producing partner in the Republic of Macedonia.
+              <br></br>
+              <span className="fst-italic" style={{fontWeight:"bold"}}>FilmsZaNas d.o.o.e.l.</span> is the
+              company's co-producing partner in Macedonia.
             </h2>
           </div>
         </section>
