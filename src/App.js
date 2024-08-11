@@ -23,33 +23,11 @@ import MagicSnowman from './components/projects/films/snowman';
 import SnowmanBook from './components/projects/films/snowman-book';
 import Hell from './components/projects/films/hell';
 import Between from './components/projects/films/between';
-// import Location from './components/projects/films/location';
 
-//import web icons
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 
 function App() {
-
-  // const [mobile, setMobile] = useState(false)
-
-  // const showMobileMenu = () => {
-  //     if (window.innerWidth <= 960) {
-  //         setMobile(true)
-  //     } else {
-  //         setMobile(false)
-  //     }
-  // }
-
-  // useEffect(() => {
-  //     showMobileMenu()
-  //     window.addEventListener('resize', showMobileMenu);
-  //     // return window.removeEventListener('resize', showMobileMenu)     
-  // }, [])
-
-
   return (
     <div className="app-outer-div">
         

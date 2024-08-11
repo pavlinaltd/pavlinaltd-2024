@@ -44,7 +44,7 @@ import TMS2 from "../../assets/gallery/magic2.webp";
 import TMS3 from "../../assets/gallery/magic3.webp";
 import TMS4 from "../../assets/gallery/magic4.webp";
 import TMS5 from "../../assets/gallery/magic5.webp";
-import TMS6 from "../../assets/gallery/magic6.jpeg";
+import TMS6 from "../../assets/gallery/magic6.jpg";
 import { defer } from "react-router-dom";
 
 const Gallery = () => {
@@ -160,7 +160,7 @@ const Gallery = () => {
           </div>
         </div>
       }
-      <h1 className="movieTitle">{activeTab === 'orphan' ? "My Heart Is No Longer An Orphan Gallery" :
+      <h1 className="movieTitle">{activeTab === 'orphan' ? "My Heart Is Nolonger An Orphan" :
              activeTab === 'perfume' ? "The Promise Of Perfume" :
              activeTab === 'pilgrimage' ? "My American Pilgrimage" :
              activeTab === 'hellNight' ? "Happy Hell Night" : 
