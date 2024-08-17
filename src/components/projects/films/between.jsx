@@ -123,9 +123,9 @@ const Between = () => {
 
                   <div className="fw-75 orphan-desc" >
                     <div >
-                      <span style={{ fontStyle: "italic" }}>Between Two Worlds </span> is a collection of poems written by the
+                      <span style={{ fontStyle: "italic", fontWeight:"Bold"}}>Between Two Worlds</span> is a collection of poems written by the
                       Montenegrin-born poet Miodrag Milošević, whose life is
-                      the inspiration for a short docu/drama,  <span style={{ fontStyle: "italic" }}>My Heart Is No Longer An
+                      the inspiration for a short docu/drama, <span style={{ fontStyle: "italic" }}>My Heart Is No Longer An
                         Orphan</span>.
                     </div>
                     <br></br>
@@ -166,7 +166,7 @@ const Between = () => {
 
 
                 <div className="" style={{ position: "relative" }}>
-                  <img src={Poem} alt="Poem" className="img-fluid" />
+                  <img src={Poem} alt="Poem" className="img-fluid fluidImg" />
                   <div className="between-overlay-sonce">
 
                   

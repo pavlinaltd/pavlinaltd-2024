@@ -126,8 +126,8 @@ const Home = () => {
             >
               <h2 className="book-title">MEDIA PROJECTS</h2>
             </div>
-            <div className="two-book-boxes">
-              <Link className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6", textDecoration : "none", color: "inherit" }} to="/between-two-worlds" >
+            <div className="two-book-boxes" style={{width:"100%"}}>
+              <Link className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6", textDecoration : "none", color: "inherit"}} to="/between-two-worlds" >
 
 
                 <div style={{ flex: 1 }}>
@@ -169,26 +169,20 @@ const Home = () => {
                       src={TheMagicSnowmanAudiobook}
 
                       alt="TheMagic Snowman Audiobook"
-                      width="100%"
+                      width="104%"
+                      style={{ marginLeft:'-10px'}}
 
                     />
 
                   {/* </Link> */}
-                  <div className="snowman-dist">
-                  <div style={{}}> 
-                      {/* <a href="www.google.com" target="_blank"> 
-                      </a>*/}
-                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none', height : '25px' }}>
-  <source src={magicAudio} type="audio/wav" />
-  Your browser does not support the audio element.
-</audio>
-{/* <AudioPlayer magicAudio={magicAudio}></AudioPlayer> */}
-                    {/* <img
-                      src={AudioImg}
-                      alt="audio button"
-                      width="18px"
-                      height="18px"
-                    /> */}
+                  <div className="snowman-dist" style={{ marginLeft:'-10px',width:'104%'}}>
+                  <div> 
+                     
+                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none', height : '25px'}}>
+                          <source src={magicAudio} type="audio/wav" />
+                          Your browser does not support the audio element.
+                      </audio>
+
                      </div>
                     <div style={{}}>Distributed by : <span style={{ fontStyle: "italic" }}> Authors' Republic</span></div>
                   
@@ -264,7 +258,7 @@ const Home = () => {
           style={{ marginTop: "40px", marginBottom : "20px" }}
         >
           <div className="intro col-12 p-0 py-md-4 pt-xl-0 px-xl-0 m-0">
-            <h2 className="p-0" style={{textAlign:"center"}}>
+            <h2 className="p-0" style={{textAlign:"center", fontSize:"18px"}}>
               <span className="fst-italic" style={{fontWeight:"bold"}}>PAVLINA Ltd.</span> is a New York
               based independent production company engaged in the development
               and production of feature films and documentaries.{" "}

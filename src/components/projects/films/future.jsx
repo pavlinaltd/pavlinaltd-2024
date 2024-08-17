@@ -215,7 +215,7 @@ const Future = () => {
           style={{ width : "85%", margin: '0px auto' }}
         >
           <div className="w-100 p-0 p-xl-5 py-xl-3 " >
-            <div className="row p-0 pb-4 px-0 px-sm-3 p-xl-5 py-xl-3">
+            <div className="row p-0 pb-4 px-0 px-sm-3 p-xl-5 py-xl-3 mb-5">
               <div className="col-12 col-md-6" >
                 <h1 style={{ overflow : "visible"}}>Borders in Heaven</h1>
               </div>

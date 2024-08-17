@@ -84,19 +84,11 @@ the Republic of Macedonia.                </p>
                   style={{ objectFit : "fill", borderRadius : "12px", width : "100%"}}
                 />
               </div>
-             <div className="orphan-desc" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
+             <div className="orphan-desc mb-5" style={{  lineHeight : "1.2em", textAlign :"justify"}}>
                 <p>
                 One of the show's components was a short live drama about the last five minutes in the life of Goce Delchev (ГОЦЕ ДЕЛЧЕВ), a national hero who is considered the father of modern Macedonia. The ten-minute short preceded the live segment.
                 </p>
               </div>
-              {/* <div>
-                <img
-                  src={GotseBanner}
-                  alt="Gotse"
-                  style={{ objectFit : "fill", borderRadius : "12px"}}
-                  className="img-fluid"
-                />
-              </div> */}
             </div>
           </section>
         </div>

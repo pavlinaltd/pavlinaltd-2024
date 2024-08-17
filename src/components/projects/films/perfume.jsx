@@ -61,7 +61,7 @@ const Perfume = () => {
 
           <section className="mt-4 mb-4 margin-main">
             <div className="image-desc-flex" style={{ gap : '40px'}}>
-              <div className="fw-30" style={{ borderRadius : "12px"}}>
+              <div className="fw-30 mb-5" style={{ borderRadius : "12px"}}>
                 <img
                   src={Poster}
                   alt="The Promise of Perfume"
@@ -69,9 +69,9 @@ const Perfume = () => {
                   onClick={() => setIsMRS(true)}
                 />
               </div>
-              <div className="fw-70 orphan-desc">
+              <div className="fw-70 mb-5 orphan-desc">
                 <p className="mb-3 mb-lg-4">
-                  <span style={{ fontWeight : "bold",  color : "#94211d"}}>The Promise of Perfume </span>is a one-hour documentary shot in
+                  <span style={{ fontWeight : "bold"}}>The Promise of Perfume </span>is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New
                   York. Featuring perfume industry notables, including Jacques
                   Polge of Chanel, the five-time FIFI award-winning bottle

@@ -20,7 +20,7 @@ const Macedonia = () => {
           </div>
           <div className="orphan-desc" style={{textAlign : "justify" }}>
                 <p className="mb-3 mb-lg-4 mt-3">
-                  <span style={{ fontWeight : "bold", color : "#94211d"}}>The Colors of Macedonia</span> is a half-hour documentary film that explores the cultural and spiritual riches of Macedonia spanning two thousand years.  
+                  <span style={{ fontWeight : "bold"}}>The Colors of Macedonia</span> is a half-hour documentary film that explores the cultural and spiritual riches of Macedonia spanning two thousand years.  
 It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE-TV, a PBS member television station in Huntington Beach, California who retained all creative control in the making of this film. It premiered on June 4th, 2004.  
                 </p>
                 </div>
@@ -41,7 +41,7 @@ It was commissioned from The Macedonian Arts Council in February of 2004 by KOCE
 
         <section className="mt-4 mb-4">
           <div className="">
-            <div className="image-desc-flex">
+            <div className="image-desc-flex mb-5">
           
               <div className="fw-50">
                 <div className="ratio ratio-16x9">

@@ -131,7 +131,7 @@ const Hell = () => {
             </div>
           </div>
         </section>
-        <section className="margin-main" style={{  marginTop: "40px", marginBottom: "40px"}}>
+        <section className="margin-main mb-5" style={{  marginTop: "40px"}}>
   <div className="hnn-trailer">
     <div className="fw-30" >
       <img

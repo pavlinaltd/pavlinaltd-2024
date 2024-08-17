@@ -25,21 +25,23 @@
 
 }
 .headshot img{
-  width: 300px;
-  height: 300px;
+  /* width: 400px;
+  height: 400px; */
+  width: 330px;
+  height: 330px;
 }
 
 .pavlina-desc, .production-desc{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size : 15px;
+  font-size: 18px;
   text-align : justify;
-  line-height : 1.2em;
+  line-height: 1.1em;
   
 }
 .production-desc{
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .author {
@@ -78,8 +80,10 @@
   
 }
 .carousel img{
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
+  /* width: 300px;
+  height: 300px; */
   
 }
 
