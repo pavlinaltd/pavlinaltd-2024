@@ -21,10 +21,10 @@ import TPOP2 from "../../assets/gallery/perfume2.webp";
 import TPOP3 from "../../assets/gallery/perfume3.webp";
 import TPOP4 from "../../assets/gallery/perfume4.webp";
 import TPOP5 from "../../assets/gallery/perfume5.webp";
-import TPOP6 from "../../assets/gallery/perfume6.webp";
+import TPOP6 from "../../assets/gallery/perfume6.jpg";
 
 //My American Pilgrimage
-import MAP1 from "../../assets/gallery/american1.webp";
+import MAP1 from "../../assets/gallery/american1.jpg";
 import MAP2 from "../../assets/gallery/american2.webp";
 import MAP3 from "../../assets/gallery/american3.webp";
 import MAP4 from "../../assets/gallery/american4.webp";
@@ -40,7 +40,7 @@ import HHN5 from "../../assets/gallery/hell5.webp";
 import HHN6 from "../../assets/gallery/hell6.webp";
 
 //The Magic Snowman
-import TMS1 from "../../assets/gallery/magic1.webp";
+import TMS1 from "../../assets/gallery/magic1.jpg";
 import TMS2 from "../../assets/gallery/magic2.webp";
 import TMS3 from "../../assets/gallery/magic3.webp";
 import TMS4 from "../../assets/gallery/magic4.webp";

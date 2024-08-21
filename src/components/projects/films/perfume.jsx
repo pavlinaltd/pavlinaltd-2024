@@ -70,7 +70,7 @@ const Perfume = () => {
                 />
               </div>
               <div className="fw-70 mb-5 orphan-desc">
-                <p className="mb-3 mb-lg-4">
+                <p>
                   <span style={{ fontWeight : "bold"}}>The Promise of Perfume </span>is a one-hour documentary shot in
                   Provence, Tunisia, Bulgaria, French Guyana, Paris and New
                   York. Featuring perfume industry notables, including Jacques
@@ -81,22 +81,24 @@ const Perfume = () => {
                   reads: "Every perfume a woman wears is composed of two
                   ingredients: scent and passion."
                 </p>
-                <p className="mb-3 mb-lg-4">
+                <br/>
+                <p>
                   The film's story line incorporates numerous video clips and
                   perfume ad images that were made available to the producer by
                   Dior, Chanel, Elizabeth Arden, Coty, Victor and Rolf,
                   Givenchy, Guerlain, Gucci, Marc Jacobs, Thierry Mugler,
                   Lancome and much more.
                 </p>
-                <p className="mb-3 mb-lg-4">
+                <br/>
+                <p>
                   Written, directed and produced by Pavlina Proevska, under her
-                  production banner, Pavlina Ltd, the film is intended for TV
-                  distribution worldwide. The US distributor is PBS. La
-                  Cinquieme in France and sales companies such as From the Fence
-                  in the Netherlands, Beyond Distribution in the UK, RAI in
-                  Italy and Content Films in Canada are interested in
+                  production banner Pavlina Ltd, the film is intended for TV
+                  distribution worldwide. The US distributor is PBS. <span style={{fontStyle:"italic"}}>La Cinquième</span> in France and sales companies such as From The Fence
+                  in the Netherlands, <span style={{fontStyle:"italic"}}>Beyond Distribution</span> in the UK, <span style={{fontStyle:"italic"}}>RAI</span> in
+                  Italy and <span style={{fontStyle:"italic"}}>Content Films</span> in Canada are interested in
                   distribution.
                 </p>
+                <br/>
                 <p>
                   The Promise of Perfume brings the art and science of scent
                   closer to world audiences in a refreshing manner that

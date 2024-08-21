@@ -30,7 +30,7 @@ import footerLogo from "../../assets/brand/logo-banner-white.png";
 const Footer = () => {
   useEffect(() => window.scroll(0, 0));
   return (
-    <footer className="text-light custom-bg-color px-3 pt-5 pb-3 p-md-5 mt-auto ">
+    <footer className="text-light custom-bg-color px-3 pt-5 pb-2 p-md-4 mt-auto ">
 
       <div className="bottom-container">
         <div>
@@ -93,15 +93,20 @@ const Footer = () => {
           <FaImdb color='white' size={30} />
         </a>
       </div>
-   <div style={{ textAlign : "right", marginTop : "10px"}}>
+   <div style={{ textAlign : "center", paddingTop:'15px'}}>
+   
+    <p style={{fontSize:'13px', fontFamily:'serif'}}>
     Built by{" "} 
     <a href="https://kewalkishangokuldas.com"  target="_blank" rel="noreferrer" style={{ textDecoration : "none", color: "inherit", fontStyle :"italic"}}>
     Kewal Kishan Gokuldas
     </a>
-    <span> and </span>
+  
+    <span> & </span>
+
     <a href="https://www.linkedin.com/in/teodora-krstevska-3475611b9/"  target="_blank" rel="noreferrer" style={{ textDecoration : "none", color: "inherit", fontStyle :"italic"}}>
-    Teodora Krstevska
+    Tea Krstevska
     </a>
+    </p>
    </div>
 
 

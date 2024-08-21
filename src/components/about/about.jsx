@@ -126,11 +126,11 @@ const About = () => {
               </p>
               <br></br>
               <p>
-              The first feature film produced by Pavlina Ltd., <span style={{fontStyle : "italic"}}>The Magic Snowman </span>, is a live action children's fairy tale starring Sir Roger Moore as the voice of the magic snowman. In active distribution through Miramax/Buena Vista International for twelve years,  the film's gross receipts to date are ten times its original production cost.
+              The first feature film produced by Pavlina Ltd., <span style={{fontStyle : "italic"}}>The Magic Snowman</span>, is a live action children's fairy tale starring Sir Roger Moore as the voice of the magic snowman. In active distribution through Miramax/Buena Vista International for twelve years,  the film's gross receipts to date are ten times its original production cost.
               </p>
               <br></br>
               <p>
-              The second feature produced in 1992 was the supernatural thriller <span style={{fontStyle : "italic"}}>Happy Hell Night,</span> starring Darren McGavin with appearance by Jorja Fox and Sam Rockwell. Distributed worldwide by several international sales agents, it was released on DVD by <span style={{fontStyle : "italic"}}>Anchor Bay Entertainment</span>. More recently, the legendary  <span style={{fontStyle : "italic"}}>Samuel Goldwyn Films</span> acquired digital distribution for North America. The film negative is curated at <span style={{fontStyle : "italic"}}>The Archives of Moving Images</span> of the Unated States's Library of Congress.</p>
+              The second feature produced in 1992 was the supernatural thriller <span style={{fontStyle : "italic"}}>Happy Hell Night,</span> starring Darren McGavin with appearance by Jorja Fox and Sam Rockwell. Distributed worldwide by several international sales agents, it was released on DVD by <span style={{fontStyle : "italic"}}>Anchor Bay Entertainment</span>. More recently, the legendary  <span style={{fontStyle : "italic"}}>Samuel Goldwyn Films</span> acquired digital distribution for North America. The film negative is curated at <span style={{fontStyle : "italic"}}>The Archives of Moving Images</span> of the United States's Library of Congress.</p>
               
               <br></br>
               <p>

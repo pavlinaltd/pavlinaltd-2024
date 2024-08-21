@@ -141,7 +141,7 @@ main.film img.header {
   justify-content : space-between;
   text-align : justify;
   width : 65%; 
-  font-size : 1.2vw;
+  font-size : 18px;
   line-height : 1.2em;
   margin-left : 40px;
 }
@@ -213,11 +213,11 @@ main.film img.header {
 
 .pilgrim-desc {
   text-align : justify;
-  font-style: 18px;
-  line-height : 1.3em;
+  font-size: 18px;
+  line-height : 1.2em;
   display : flex;
   flex-direction: column;
-  justify-content : space-evenly;
+  justify-content : space-between;
   flex : 1;
 }
 
@@ -316,7 +316,7 @@ main.film img.header {
   }
 
   .pilgrim-desc{
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .image-desc-flex {
@@ -349,23 +349,24 @@ main.film img.header {
 }
 }
 @media (max-width: 1280px) {
+  .between-overlay-sonce {
+    position: relative;
+    top: -250px;
+    left: 450px;
+}
 
-  .between-overlay-sonce{
-    position: relative;
-    top: -100px;
-    left: 0px;
-   
-  }
+ 
   
-  .between-overlay-soleil{
-    position: relative;
-    left: 0;
-    top: -20px;
-  
-  }
+.between-overlay-soleil {
+  position: relative;
+  left: 350px;
+  top: -60px;
+}
+
+
   .between-overlay-sun{
     position: relative;
-    top: -70px;
+    top: -100px;
     left: 20px;
 
     
@@ -384,14 +385,6 @@ main.film img.header {
   .fw-45 {
     width: 100%;
   }
-/* 
-  .redux-desc {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 14px;
-   
-  } */
-
   .fw-30 {
     width: 100%;
   }
@@ -462,7 +455,7 @@ main.film img.header {
     width: 100%;
     margin-left : 0px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .hnn-trailer {
     flex-direction: column;
@@ -498,4 +491,55 @@ main.film img.header {
   .pilgrim-interview{
     margin-top: 20px;
   }
+}
+@media (max-width: 854px) {
+  .between-overlay-sonce {
+    position: relative;
+    top: -220px;
+    left: 270px;
+}
+  
+  .between-overlay-soleil {
+    position: relative;
+    left: 300px;
+    top: -60px;
+}
+
+  .between-overlay-sun{
+    position: relative;
+    top: -100px;
+    left: 20px;
+
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .between-overlay-sonce {
+    position: relative;
+    top: -140px;
+    left: 20px;
+}
+  
+  .between-overlay-soleil {
+    position: relative;
+    left: 15px;
+    top: -60px;
+}
+
+  .between-overlay-sun{
+    position: relative;
+    top: -100px;
+    left: 20px;
+
+    
+  }
+
+}
+
+@media (min-width: 1600px) {
+  .orphan-desc, .hnn-desc, .pilgrim-desc{
+    font-size: 1.2vw;
+  }
+  
 }
