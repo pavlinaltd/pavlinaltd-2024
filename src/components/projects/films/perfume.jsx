@@ -93,8 +93,7 @@ const Perfume = () => {
                 <p>
                   Written, directed and produced by Pavlina Proevska, under her
                   production banner Pavlina Ltd, the film is intended for TV
-                  distribution worldwide. The US distributor is PBS. <span style={{fontStyle:"italic"}}>La Cinquième</span> in France and sales companies such as From The Fence
-                  in the Netherlands, <span style={{fontStyle:"italic"}}>Beyond Distribution</span> in the UK, <span style={{fontStyle:"italic"}}>RAI</span> in
+                  distribution worldwide. The US distributor is PBS. <span style={{fontStyle:"italic"}}>La Cinquième</span> in France and sales companies such as <span style={{fontStyle:"italic"}}>From The Fence</span> in the Netherlands, <span style={{fontStyle:"italic"}}>Beyond Distribution</span> in the UK, <span style={{fontStyle:"italic"}}>RAI</span> in
                   Italy and <span style={{fontStyle:"italic"}}>Content Films</span> in Canada are interested in
                   distribution.
                 </p>

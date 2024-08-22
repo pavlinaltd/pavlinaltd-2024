@@ -538,7 +538,7 @@ main.film img.header {
 }
 
 @media (min-width: 1600px) {
-  .orphan-desc, .hnn-desc, .pilgrim-desc{
+  .orphan-desc, .hnn-desc, .pilgrim-desc, .snowman-details{
     font-size: 1.2vw;
   }
   

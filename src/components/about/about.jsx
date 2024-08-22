@@ -51,7 +51,7 @@ const About = () => {
             had taken her to the jungle of French Guyana, Bulgaria, France, Tunisia and Macedonia.</p>
             <br/>
             <p>She is especially proud of a special recognition she received recently as the second feature she produced in 1993, <span style={{fontStyle : "italic"}}>Happy Hell Night,</span> 
-            was admitted for permanent curating at  <span style={{fontStyle : "italic"}}> The Archives of Moving Images</span> of the United States <span style={{fontStyle : "italic"}}>Library of Congress</span>.</p>
+            was admitted for permanent curating at  <span style={{fontStyle : "italic"}}> The Archives of Moving Images</span> of the United States's <span style={{fontStyle : "italic"}}>Library of Congress</span>.</p>
             <br/>
             <p>Ms. Proevska is active in the promotion of Macedonia's cultural heritage as the founder and executive director of <a  style={{color : "#94211D"}} href="http://www.macedonianarts.org/">The Macedonian Arts Council</a>. 
               She is fluent in five languages and lives and works in New York City.</p>

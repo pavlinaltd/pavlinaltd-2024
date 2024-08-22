@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.00c621ad.css",
-    "main.js": "/static/js/main.a5c7e834.js",
+    "main.css": "/static/css/main.31770c09.css",
+    "main.js": "/static/js/main.092d7157.js",
     "static/js/787.36433f6a.chunk.js": "/static/js/787.36433f6a.chunk.js",
     "static/media/gustella.mov": "/static/media/gustella.62da3578d98e78dbeff3.mov",
     "static/media/The_Magic_Snowman.wav": "/static/media/The_Magic_Snowman.5e84cb6c2e7ad3d0fb9a.wav",
@@ -55,13 +55,16 @@
     "static/media/maestro.jpg": "/static/media/maestro.b0ddfad9e547cdb6f850.jpg",
     "static/media/ellis.jpg": "/static/media/ellis.9d9870bb6e0ee3a7f425.jpg",
     "static/media/dubai.jpg": "/static/media/dubai.2ced7afd1df4719de55d.jpg",
+    "static/media/perfume6.jpg": "/static/media/perfume6.abd34015d2db14303d84.jpg",
     "static/media/borders in heaven.jpg": "/static/media/borders in heaven.6ec1fa2c5241e11bbfee.jpg",
     "static/media/hhnposter.webp": "/static/media/hhnposter.6a181ecbcdbd33fb7c84.webp",
     "static/media/logo-banner-white.png": "/static/media/logo-banner-white.947163f29ca060ff89b0.png",
     "static/media/logo-banner.png": "/static/media/logo-banner.07e9242ee4bac1f004f7.png",
+    "static/media/american1.jpg": "/static/media/american1.f763de0f3b2b4f2ac797.jpg",
     "static/media/snowmanreturns.jpg": "/static/media/snowmanreturns.7d514cc8e312cf5ddda2.jpg",
     "static/media/The-Magic-Snowman-Returns.JPG": "/static/media/The-Magic-Snowman-Returns.f46e3659a50633bdb9fb.JPG",
     "static/media/imdbna.png": "/static/media/imdbna.6c607e49881299262729.png",
+    "static/media/magic1.jpg": "/static/media/magic1.9ea1efea9b5097275b5c.jpg",
     "static/media/orphan4.webp": "/static/media/orphan4.81d7d31b8129fe77c21b.webp",
     "static/media/keratza-poster.jpeg": "/static/media/keratza-poster.dd23e6f345b1b0d02602.jpeg",
     "static/media/hell2.webp": "/static/media/hell2.618b392fa48614e94573.webp",
@@ -88,17 +91,14 @@
     "static/media/perfume2.webp": "/static/media/perfume2.33e643ad74f28df76c54.webp",
     "static/media/perfume4.webp": "/static/media/perfume4.8f7b0a40930289c31a27.webp",
     "static/media/logo_desktop.png": "/static/media/logo_desktop.97178beda2a5e2c605fd.png",
-    "static/media/american1.webp": "/static/media/american1.b95f57a48a233d09684b.webp",
-    "static/media/perfume6.webp": "/static/media/perfume6.55da8cb7418c49f2279b.webp",
-    "static/media/magic1.webp": "/static/media/magic1.e9a4eb609490b9c64327.webp",
     "static/media/perfume3.webp": "/static/media/perfume3.38eccfd0fa33693a67e8.webp",
     "index.html": "/index.html",
-    "main.00c621ad.css.map": "/static/css/main.00c621ad.css.map",
-    "main.a5c7e834.js.map": "/static/js/main.a5c7e834.js.map",
+    "main.31770c09.css.map": "/static/css/main.31770c09.css.map",
+    "main.092d7157.js.map": "/static/js/main.092d7157.js.map",
     "787.36433f6a.chunk.js.map": "/static/js/787.36433f6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c621ad.css",
-    "static/js/main.a5c7e834.js"
+    "static/css/main.31770c09.css",
+    "static/js/main.092d7157.js"
   ]
 }
