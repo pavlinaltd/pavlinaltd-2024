@@ -293,9 +293,26 @@ main.film img.header {
     font-size: 0.9rem;
     line-height: 1.2rem;
   }
-@media (max-width: 768px) {
+@media (mix-width: 768px) {
   .orphan-info {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .orphan-info > .fw-35 img {
+    width: 35%;
+    height: auto;
+  }
+
+  .orphan-desc {
+    width: 65%;
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+}
+  @media (max-width: 767.98px) {
+  .orphan-info {
+    flex-direction: column; /* Stack image and text vertically on small screens */
     gap: 20px;
   }
 
