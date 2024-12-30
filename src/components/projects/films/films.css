@@ -293,7 +293,22 @@ main.film img.header {
     font-size: 0.9rem;
     line-height: 1.2rem;
   }
+@media (max-width: 768px) {
+  .orphan-info {
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .orphan-info > .fw-35 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .orphan-desc {
+    font-size: 16px;
+  }
+}
   .bissellFund{
     font-size: 11px;
   }
