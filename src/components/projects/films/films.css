@@ -172,18 +172,31 @@ main.film img.header {
   width : 100%;
 }
 
-.orphan-info{
+.orphan-info {
   display: flex;
   gap: 30px;
+  flex-direction: row; /* Align horizontally on larger screens */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
+
+.orphan-info img {
+  width: 100%; /* Make the poster image take up full width of its container */
+  max-width: 500px; /* Limit the maximum size of the poster image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
 .orphan-desc {
   line-height: 1.2em;
-  display : flex;
-  flex-direction : column;
-  justify-content : space-between;
-  text-align : justify; 
-  font-size : 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  font-size: 18px;
+  flex: 1; /* Allow the description to take up the remaining space */
+  margin-top: 20px;
 }
+
 
 .pilgrim-section{
   text-align : justify;
@@ -293,7 +306,41 @@ main.film img.header {
     font-size: 0.9rem;
     line-height: 1.2rem;
   }
+  
+@media (min-width: 768px) {
+  .orphan-info {
+    flex-direction: row;
+    gap: 30px;
+  }
 
+  .orphan-info > .fw-35 img {
+    width: 35%;
+    height: auto;
+  }
+
+  .orphan-desc {
+    width: 65%;
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+}
+  @media (max-width: 767.98px) {
+  .orphan-info {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    gap: 20px;
+  }
+
+  .orphan-info > .fw-35 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .orphan-desc {
+    font-size: 16px;
+  }
+}
+  
   .bissellFund{
     font-size: 11px;
   }
@@ -541,5 +588,11 @@ main.film img.header {
   .orphan-desc, .hnn-desc, .pilgrim-desc, .snowman-details{
     font-size: 1.2vw;
   }
+
+@media (max-width: 480px) {
+  .orphan-desc {
+    font-size: 14px; /* Further reduce text size for very small screens */
+  }
+}
   
 }
