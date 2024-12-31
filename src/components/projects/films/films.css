@@ -311,17 +311,21 @@ main.film img.header {
   .orphan-info {
     flex-direction: row;
     gap: 30px;
+    justify-content: center;
+    
   }
 
   .orphan-info > .fw-35 img {
     width: 35%;
     height: auto;
+    object-fit: contain;
   }
 
   .orphan-desc {
     width: 65%;
     font-size: 18px;
     line-height: 1.5rem;
+    text-align: justify;
   }
 }
   @media (max-width: 767.98px) {
