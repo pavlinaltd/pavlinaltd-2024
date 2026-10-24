@@ -8,8 +8,9 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 const SnowmanBook = () => {
-  useEffect(() => window.scrollTo(0, 0));
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className="film">
       <div className="container p-0">

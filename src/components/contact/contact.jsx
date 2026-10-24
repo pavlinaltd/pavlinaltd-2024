@@ -1,40 +1,41 @@
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FaSkype, FaViber } from "react-icons/fa";
 import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
-  useEffect(() => window.scroll(0, 0), []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    
     console.log("Service ID: ", process.env.REACT_APP_EMAILJS_SERVICE_ID);
     console.log("Template ID: ", process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
     console.log("Public API Key: ", process.env.REACT_APP_EMAILJS_PUBLIC_API);
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID, 
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_API
+        process.env.REACT_APP_EMAILJS_PUBLIC_API,
       )
       .then(
         (result) => {
-          console.log('SUCCESS!', result.text);
-          alert('Email sent successfully!');
+          console.log("SUCCESS!", result.text);
+          alert("Email sent successfully!");
         },
         (error) => {
-          console.error('FAILED...', error);
-          alert('Failed to send email, please try again later.');
-        }
+          console.error("FAILED...", error);
+          alert("Failed to send email, please try again later.");
+        },
       );
 
     e.target.reset();
@@ -47,10 +48,21 @@ const Contact = () => {
           <div className="row">
             <div className="contact-box col col-xs-12">
               <div className="pavlina-contact">
-                <h3><FontAwesomeIcon icon={faLocationDot} /> 380 Rector Pl., New York, NY 10280</h3>
-                <h3><FaViber /> <FontAwesomeIcon icon={faSquareWhatsapp} />  +1 (212)799-0009</h3>
-                <h3><FaSkype />Resen51</h3>
-                <h3><FontAwesomeIcon icon={faEnvelope} /> pavlinaltd@gmail.com</h3>
+                <h3>
+                  <FontAwesomeIcon icon={faLocationDot} /> 380 Rector Pl., New
+                  York, NY 10280
+                </h3>
+                <h3>
+                  <FaViber /> <FontAwesomeIcon icon={faSquareWhatsapp} /> +1
+                  (212)799-0009
+                </h3>
+                <h3>
+                  <FaSkype />
+                  Resen51
+                </h3>
+                <h3>
+                  <FontAwesomeIcon icon={faEnvelope} /> pavlinaltd@gmail.com
+                </h3>
               </div>
 
               <div className="row sub-heading">
@@ -74,13 +86,27 @@ const Contact = () => {
                 className="h-100"
               >
                 <div className="ml-5 mb-1">
-                  <input name="from_name" placeholder="Name" type="text" required />
+                  <input
+                    name="from_name"
+                    placeholder="Name"
+                    type="text"
+                    required
+                  />
                 </div>
                 <div className="mb-1">
-                  <input name="from_email" placeholder="Email" type="email" required />
+                  <input
+                    name="from_email"
+                    placeholder="Email"
+                    type="email"
+                    required
+                  />
                 </div>
                 <div className="mb-1">
-                  <input name="contactNumber" placeholder="Contact No." type="text" />
+                  <input
+                    name="contactNumber"
+                    placeholder="Contact No."
+                    type="text"
+                  />
                 </div>
 
                 <div className="mb-1 textarea">

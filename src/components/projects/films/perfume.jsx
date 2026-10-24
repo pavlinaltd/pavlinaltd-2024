@@ -6,20 +6,31 @@ import ImdbIcon from "../../../assets/common/imdbna.png";
 import Modal from "react-bootstrap/Modal";
 
 const Perfume = () => {
-  useEffect(() => window.scroll(0, 0));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isMRS, setIsMRS] = useState(false);
-
 
   const FutureFilmRiceModal = ({ isOpen, closeModal }) => {
     return (
-      <Modal show={isOpen} onHide={closeModal} centered  dialogClassName="modal-lg">
+      <Modal
+        show={isOpen}
+        onHide={closeModal}
+        centered
+        dialogClassName="modal-lg"
+      >
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <section className="d-flex align-items-center modal-flex">
-            <div style={{ flex: "1", textAlign : "center" }}>
-              <img src={Poster} alt="The Magic Snowman Returns" className="future-film-img" style={{ width : "80%"}} />
+            <div style={{ flex: "1", textAlign: "center" }}>
+              <img
+                src={Poster}
+                alt="The Magic Snowman Returns"
+                className="future-film-img"
+                style={{ width: "80%" }}
+              />
             </div>
           </section>
         </Modal.Body>
@@ -31,9 +42,9 @@ const Perfume = () => {
     <main className="main-margin">
       <div className="">
         <section className="">
-          <div >
-            <div >
-              <div >
+          <div>
+            <div>
+              <div>
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/FTYZccfLaZY"
@@ -46,77 +57,114 @@ const Perfume = () => {
             </div>
           </div>
         </section>
-        <div style={{ textAlign : "center" , width : "100%" , display : "flex", flexDirection : "column", alignContent : "center",  marginTop : "20px"}}>
-              <div style={{ display : "flex" , justifyContent: "center", alignItems : "center", textAlign :"center",fontSize : "24px" , fontWeight : "600" , borderRadius : "12px" }}>
-                <div style={{ marginRight :"10px", color : "black"}}>
-                Visit
-                </div>
-                <a href="https://www.imdb.com/title/tt0368133/?ref_=nm_knf_t_1" target="_blank"  rel="noreferrer">
-                <img src={ImdbIcon}  alt="" className="img hoverable-img" style={{objectFit : "fill", maxHeight : "50px"}}/>
-                </a>
-                
-              </div>
-           
-            </div>
-
-          <section className="mt-4 mb-4 margin-main">
-            <div className="image-desc-flex" style={{ gap : '40px'}}>
-              <div className="fw-30 mb-5" style={{ borderRadius : "12px"}}>
-                <img
-                  src={Poster}
-                  alt="The Promise of Perfume"
-                  style={{ objectFit : "fill", borderRadius : "12px", width : "100%", height : "100%", cursor : "pointer"}}
-                  onClick={() => setIsMRS(true)}
-                />
-              </div>
-              <div className="fw-70 mb-5 orphan-desc">
-                <p>
-                  <span style={{ fontWeight : "bold"}}>The Promise of Perfume </span>is a one-hour documentary shot in
-                  Provence, Tunisia, Bulgaria, French Guyana, Paris and New
-                  York. Featuring perfume industry notables, including Jacques
-                  Polge of Chanel, the five-time FIFI award-winning bottle
-                  designer, Marc Rosen, and the perfume critic of the New York
-                  Times, Chandler Burr. This is a film about women's love affair
-                  with perfume and the lasting power of scent. The tagline
-                  reads: "Every perfume a woman wears is composed of two
-                  ingredients: scent and passion."
-                </p>
-                <br/>
-                <p>
-                  The film's story line incorporates numerous video clips and
-                  perfume ad images that were made available to the producer by
-                  Dior, Chanel, Elizabeth Arden, Coty, Victor and Rolf,
-                  Givenchy, Guerlain, Gucci, Marc Jacobs, Thierry Mugler,
-                  Lancome and much more.
-                </p>
-                <br/>
-                <p>
-                  Written, directed and produced by Pavlina Proevska, under her
-                  production banner Pavlina Ltd, the film is intended for TV
-                  distribution worldwide. The US distributor is PBS. <span style={{fontStyle:"italic"}}>La Cinquième</span> in France and sales companies such as <span style={{fontStyle:"italic"}}>From The Fence</span> in the Netherlands, <span style={{fontStyle:"italic"}}>Beyond Distribution</span> in the UK, <span style={{fontStyle:"italic"}}>RAI</span> in
-                  Italy and <span style={{fontStyle:"italic"}}>Content Films</span> in Canada are interested in
-                  distribution.
-                </p>
-                <br/>
-                <p>
-                  The Promise of Perfume brings the art and science of scent
-                  closer to world audiences in a refreshing manner that
-                  combines the "how to" of perfume with the poetry of this
-                  liquid that has often been called the essence of illusion.
-                </p>
-              </div>
-            </div>
-          </section>
-          {isMRS && (
-        
-        <div>
-   
-             <FutureFilmRiceModal
-       isOpen={isMRS}
-       closeModal={() => setIsMRS(false)}
-     />
+        <div
+          style={{
+            textAlign: "center",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              fontSize: "24px",
+              fontWeight: "600",
+              borderRadius: "12px",
+            }}
+          >
+            <div style={{ marginRight: "10px", color: "black" }}>Visit</div>
+            <a
+              href="https://www.imdb.com/title/tt0368133/?ref_=nm_knf_t_1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={ImdbIcon}
+                alt=""
+                className="img hoverable-img"
+                style={{ objectFit: "fill", maxHeight: "50px" }}
+              />
+            </a>
+          </div>
         </div>
-     )}
+
+        <section className="mt-4 mb-4 margin-main">
+          <div className="image-desc-flex" style={{ gap: "40px" }}>
+            <div className="fw-30 mb-5" style={{ borderRadius: "12px" }}>
+              <img
+                src={Poster}
+                alt="The Promise of Perfume"
+                style={{
+                  objectFit: "fill",
+                  borderRadius: "12px",
+                  width: "100%",
+                  height: "100%",
+                  cursor: "pointer",
+                }}
+                onClick={() => setIsMRS(true)}
+              />
+            </div>
+            <div className="fw-70 mb-5 orphan-desc">
+              <p>
+                <span style={{ fontWeight: "bold" }}>
+                  The Promise of Perfume{" "}
+                </span>
+                is a one-hour documentary shot in Provence, Tunisia, Bulgaria,
+                French Guyana, Paris and New York. Featuring perfume industry
+                notables, including Jacques Polge of Chanel, the five-time FIFI
+                award-winning bottle designer, Marc Rosen, and the perfume
+                critic of the New York Times, Chandler Burr. This is a film
+                about women's love affair with perfume and the lasting power of
+                scent. The tagline reads: "Every perfume a woman wears is
+                composed of two ingredients: scent and passion."
+              </p>
+              <br />
+              <p>
+                The film's story line incorporates numerous video clips and
+                perfume ad images that were made available to the producer by
+                Dior, Chanel, Elizabeth Arden, Coty, Victor and Rolf, Givenchy,
+                Guerlain, Gucci, Marc Jacobs, Thierry Mugler, Lancome and much
+                more.
+              </p>
+              <br />
+              <p>
+                Written, directed and produced by Pavlina Proevska, under her
+                production banner Pavlina Ltd, the film is intended for TV
+                distribution worldwide. The US distributor is PBS.{" "}
+                <span style={{ fontStyle: "italic" }}>La Cinquième</span> in
+                France and sales companies such as{" "}
+                <span style={{ fontStyle: "italic" }}>From The Fence</span> in
+                the Netherlands,{" "}
+                <span style={{ fontStyle: "italic" }}>Beyond Distribution</span>{" "}
+                in the UK, <span style={{ fontStyle: "italic" }}>RAI</span> in
+                Italy and{" "}
+                <span style={{ fontStyle: "italic" }}>Content Films</span> in
+                Canada are interested in distribution.
+              </p>
+              <br />
+              <p>
+                The Promise of Perfume brings the art and science of scent
+                closer to world audiences in a refreshing manner that combines
+                the "how to" of perfume with the poetry of this liquid that has
+                often been called the essence of illusion.
+              </p>
+            </div>
+          </div>
+        </section>
+        {isMRS && (
+          <div>
+            <FutureFilmRiceModal
+              isOpen={isMRS}
+              closeModal={() => setIsMRS(false)}
+            />
+          </div>
+        )}
       </div>
     </main>
   );

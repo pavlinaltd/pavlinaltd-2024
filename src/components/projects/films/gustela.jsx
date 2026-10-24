@@ -8,10 +8,12 @@ import gustellaVideo from "../../../assets/films/gustella.mov";
 import gustellaScript from "../../../assets/films/gustella_script.jpg";
 
 const Gustella = () => {
-  useEffect(() => window.scrollTo(0, 0));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className="main-margin">
-      <div >
+      <div>
         {/* <section
           id="previous-films"
           className="container p-3 py-4 py-md-0 pb-md-3 px-md-5 m-0"
@@ -32,46 +34,91 @@ const Gustella = () => {
             </div>
           </div>
         </section> */}
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <div style={{ width: "100%" }}>
             <div className="ratio ratio-16x9">
-            
-                <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/1LAN_RWFCV4?si=X-Pr7lclFjppE0NL" 
-                title="YouTube video player" frameborder="0" 
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/1LAN_RWFCV4?si=X-Pr7lclFjppE0NL"
+                title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-          <div style={{ textAlign: "center", width: "100%", display: "flex", flexDirection: "column", alignContent: "center", marginTop: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", fontSize: "24px", fontWeight: "600", borderRadius: "12px" }}>
-              <div style={{ marginRight: "10px", color: "black" }}>
-                Visit
-              </div>
-              <a href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd" target="_blank" rel="noreferrer">
-                <img src={ImdbIcon} alt="" className="img hoverable-img" style={{ objectFit: "fill", maxWidth: "100px", maxHeight: "50px" }} />
+          <div
+            style={{
+              textAlign: "center",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignContent: "center",
+              marginTop: "20px",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+                fontSize: "24px",
+                fontWeight: "600",
+                borderRadius: "12px",
+              }}
+            >
+              <div style={{ marginRight: "10px", color: "black" }}>Visit</div>
+              <a
+                href="https://www.imdb.com/title/tt0093473/?ref_=nm_flmg_c_7_prd"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={ImdbIcon}
+                  alt=""
+                  className="img hoverable-img"
+                  style={{
+                    objectFit: "fill",
+                    maxWidth: "100px",
+                    maxHeight: "50px",
+                  }}
+                />
               </a>
-
             </div>
-
           </div>
-
         </div>
         <br></br>
         <br></br>
 
-
-          <section className="bg-light margin-main">
-            <div className="orphan-info">
-              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
-                <img src={Poster} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%" }} />
-              </div>
-              <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center fw-60">
-                <img src={gustellaScript} alt="" className="img-fluid rounded-4" style={{ objectFit: "fill", height : "100%"}} />
-              </div>
-              {/* <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
+        <section className="bg-light margin-main">
+          <div className="orphan-info">
+            <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center">
+              <img
+                src={Poster}
+                alt=""
+                className="img-fluid rounded-4"
+                style={{ objectFit: "fill", height: "100%" }}
+              />
+            </div>
+            <div className="col-12 col-md-5 ps-0 pe-0 pe-lg-5 mb-4 mb-md-0 d-flex align-items-center fw-60">
+              <img
+                src={gustellaScript}
+                alt=""
+                className="img-fluid rounded-4"
+                style={{ objectFit: "fill", height: "100%" }}
+              />
+            </div>
+            {/* <div className="orphan-desc" style={{ display: "flex", flexDirection: "column" }}>
                 <p className="mb-3 mb-lg-4">
                   A snowed 15th century castle where only the spirits of knights dead long ago reign. Them, and TWO MAGICAL CREATURES made of ice and snow, a gift of planet Earth to all living creatures.  They are LUMIUKO AND GUSTELLA.
                 </p>
@@ -110,9 +157,9 @@ const Gustella = () => {
                 </p>
                 <p>This gets a reaction from Lumi.  He is startled awake.</p>
               </div> */}
-            </div>
-          </section>
-    
+          </div>
+        </section>
+
         <div className="p-0 px-3 px-xl-5 pb-md-5 mt-4">
           <section className="synopsis container p-3 py-4 py-md-0 px-md-5 m-0">
             <div className="row m-0 py-4 py-md-0 px-md-5 px-md-0 px-xl-5 m-0 mx-auto">

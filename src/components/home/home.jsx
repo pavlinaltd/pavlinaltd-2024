@@ -45,10 +45,10 @@ import header from "../../assets/brand/banner-new.jpg";
 //   );
 // }
 
-
 const Home = () => {
-  useEffect(() => window.scrollTo(0, 0));
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       <div className="container-fluid">
@@ -73,84 +73,85 @@ const Home = () => {
         </section>
 
         <section className="home-section-padding">
-          <div
-            className="book-centered-div"
-          >
+          <div className="book-centered-div">
             <h2 className="book-title">ACTIVE PRODUCTIONS</h2>
           </div>
 
-
           <div className="book-image-row">
-          <div style={{display : "flex" , flex : 2,  gap: "20px"}}>
-            <div className="book-image">
-              <Link to="/the-magic-snowman-redux">
-                <img
-                  src={TheMagicSnowmanRedux}
-                  className="img-fluid rounded-3"
-                  alt="The Magic Snowman Redux"
-
-                />
-              </Link>
+            <div style={{ display: "flex", flex: 2, gap: "20px" }}>
+              <div className="book-image">
+                <Link to="/the-magic-snowman-redux">
+                  <img
+                    src={TheMagicSnowmanRedux}
+                    className="img-fluid rounded-3"
+                    alt="The Magic Snowman Redux"
+                  />
+                </Link>
+              </div>
+              <div className="book-image">
+                <Link to="/my-heart-is-no-longer-an-orphan">
+                  <img
+                    src={MyHeartIsNoLongerAnOrphan}
+                    className="img-fluid rounded-3"
+                    alt="My Heart Is No Longer An Orphan"
+                  />
+                </Link>
+              </div>
             </div>
-            <div className="book-image">
-              <Link to="/my-heart-is-no-longer-an-orphan">
-                <img
-                  src={MyHeartIsNoLongerAnOrphan}
-                  className="img-fluid rounded-3"
-                  alt="My Heart Is No Longer An Orphan"
-
-                />
-              </Link>
-            </div>
-            </div>
-            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
-            <div className="book-image">
-              <Link to="/gustella-dances">
-                <img
-                  src={GustellaDances}
-                  className="img-fluid rounded-3"
-                  alt="Gustella Dances"
-
-                />
-              </Link>
-            </div>
+            <div style={{ display: "flex", flex: 1, gap: "20px" }}>
+              <div className="book-image">
+                <Link to="/gustella-dances">
+                  <img
+                    src={GustellaDances}
+                    className="img-fluid rounded-3"
+                    alt="Gustella Dances"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="home-section-padding">
-
           <div className="home-media">
-            <div
-              className="book-centered-div home-media-wid"
-            >
+            <div className="book-centered-div home-media-wid">
               <h2 className="book-title">MEDIA PROJECTS</h2>
             </div>
-            <div className="two-book-boxes" style={{width:"100%"}}>
-              <Link className="two-book-boxes-item-left" style={{ backgroundColor: "#ADD8E6", textDecoration : "none", color: "inherit"}} to="/between-two-worlds" >
-
-
+            <div className="two-book-boxes" style={{ width: "100%" }}>
+              <Link
+                className="two-book-boxes-item-left"
+                style={{
+                  backgroundColor: "#ADD8E6",
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
+                to="/between-two-worlds"
+              >
                 <div style={{ flex: 1 }}>
                   {/* <Link to="/between-two-worlds"> */}
 
-                    <img
-                      src={BetweenTwoWorlds}
-                      alt="Between Two Worlds"
-                      width="120%"
-                      style={{}}
-                    />
+                  <img
+                    src={BetweenTwoWorlds}
+                    alt="Between Two Worlds"
+                    width="120%"
+                    style={{}}
+                  />
 
                   {/* </Link> */}
-
-
                 </div>
-                <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "end", marginTop: "50%", marginBottom: "30px" }}>
+                <div
+                  style={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "end",
+                    marginTop: "50%",
+                    marginBottom: "30px",
+                  }}
+                >
                   {/* <div>
                     <h3 className="pb-md-2 pb-2 mt-lg-2" style={{ fontWeight : "bold"}}>Between Two Worlds</h3>
                     </div> */}
-
-
-
 
                   <div>
                     <p className="text-center my-2">Poetry read by</p>
@@ -161,110 +162,119 @@ const Home = () => {
                 </div>
               </Link>
               <div className="two-book-boxes-item ">
-
-                <div >
+                <div>
                   {/* <Link to="/the-magic-snowman-book"> */}
 
-                    <img
-                      src={TheMagicSnowmanAudiobook}
-
-                      alt="TheMagic Snowman Audiobook"
-                      width="104%"
-                      style={{ marginLeft:'-10px'}}
-
-                    />
+                  <img
+                    src={TheMagicSnowmanAudiobook}
+                    alt="TheMagic Snowman Audiobook"
+                    width="104%"
+                    style={{ marginLeft: "-10px" }}
+                  />
 
                   {/* </Link> */}
-                  <div className="snowman-dist" style={{ marginLeft:'-10px',width:'104%'}}>
-                  <div> 
-                     
-                      <audio controls controlsList="nodownload noplaybackrate" style={{ padding: 0, margin: 0, border: 'none', height : '25px'}}>
-                          <source src={magicAudio} type="audio/wav" />
-                          Your browser does not support the audio element.
+                  <div
+                    className="snowman-dist"
+                    style={{ marginLeft: "-10px", width: "104%" }}
+                  >
+                    <div>
+                      <audio
+                        controls
+                        controlsList="nodownload noplaybackrate"
+                        style={{
+                          padding: 0,
+                          margin: 0,
+                          border: "none",
+                          height: "25px",
+                        }}
+                      >
+                        <source src={magicAudio} type="audio/wav" />
+                        Your browser does not support the audio element.
                       </audio>
-
-                     </div>
-                    <div style={{}}>Distributed by : <span style={{ fontStyle: "italic" }}> Authors' Republic</span></div>
-                  
+                    </div>
+                    <div style={{}}>
+                      Distributed by :{" "}
+                      <span style={{ fontStyle: "italic" }}>
+                        {" "}
+                        Authors' Republic
+                      </span>
+                    </div>
                   </div>
-
                 </div>
-
               </div>
-
-
-
             </div>
           </div>
         </section>
 
         <section className="home-section-padding">
-
           <div style={{ marginTop: "60px" }}>
-
-            <div
-              className="book-centered-div"
-            >
+            <div className="book-centered-div">
               <h2 className="book-title">IN DEVELOPMENT</h2>
             </div>
           </div>
 
           <div className="book-image-row">
-            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
-            <div className="book-image">
-              <Link to="/in-development#borders-in-heaven">
-                <img
-                  src={BordersInHeaven}
-                  className="img-fluid rounded-3"
-                  alt="In Development"
-                />
-              </Link>
+            <div style={{ display: "flex", flex: 1, gap: "20px" }}>
+              <div className="book-image">
+                <Link to="/in-development#borders-in-heaven">
+                  <img
+                    src={BordersInHeaven}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+              </div>
+              <div className="book-image">
+                <Link to="/in-development#keratza">
+                  <img
+                    src={Keratza}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+              </div>
             </div>
-            <div className="book-image">
-              <Link to="/in-development#keratza">
-                <img
-                  src={Keratza}
-                  className="img-fluid rounded-3"
-                  alt="In Development"
-                />
-              </Link>
-            </div>
-            </div>
-            <div style={{display : "flex", flex : 1,  gap: "20px"}}>
-            <div className="book-image">
-              <Link to="/in-development#the-magic-snowman-returns">
-                <img
-                  src={TheMagicSnowmanReturns}
-                  className="img-fluid rounded-3"
-                  alt="In Development"
-                />
-              </Link>
-            </div>
-            <div className="book-image">
-              <Link to="/in-development#rice">
-                <img
-                  src={RiceMilk}
-                  className="img-fluid rounded-3"
-                  alt="In Development"
-                />
-              </Link>
-            </div>
+            <div style={{ display: "flex", flex: 1, gap: "20px" }}>
+              <div className="book-image">
+                <Link to="/in-development#the-magic-snowman-returns">
+                  <img
+                    src={TheMagicSnowmanReturns}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+              </div>
+              <div className="book-image">
+                <Link to="/in-development#rice">
+                  <img
+                    src={RiceMilk}
+                    className="img-fluid rounded-3"
+                    alt="In Development"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
-
         </section>
         <section
           className="home-section-padding"
-          style={{ marginTop: "40px", marginBottom : "20px" }}
+          style={{ marginTop: "40px", marginBottom: "20px" }}
         >
           <div className="intro col-12 p-0 py-md-4 pt-xl-0 px-xl-0 m-0">
-            <h2 className="p-0" style={{textAlign:"center", fontSize:"18px"}}>
-              <span className="fst-italic" style={{fontWeight:"bold"}}>PAVLINA Ltd.</span> is a New York
-              based independent production company engaged in the development
-              and production of feature films and documentaries.{" "}
+            <h2
+              className="p-0"
+              style={{ textAlign: "center", fontSize: "18px" }}
+            >
+              <span className="fst-italic" style={{ fontWeight: "bold" }}>
+                PAVLINA Ltd.
+              </span>{" "}
+              is a New York based independent production company engaged in the
+              development and production of feature films and documentaries.{" "}
               <br></br>
-              <span className="fst-italic" style={{fontWeight:"bold"}}>FilmsZaNas d.o.o.e.l.</span> is the
-              company's co-producing partner in Macedonia.
+              <span className="fst-italic" style={{ fontWeight: "bold" }}>
+                FilmsZaNas d.o.o.e.l.
+              </span>{" "}
+              is the company's co-producing partner in Macedonia.
             </h2>
           </div>
         </section>

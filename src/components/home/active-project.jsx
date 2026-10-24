@@ -4,7 +4,9 @@ import React, { useEffect } from "react";
 import "./active-project.css";
 
 const ActiveProject = (props) => {
-  useEffect(() => window.scroll(0, 0));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="active-project col-12 col-lg-9 col-xl-8 row mx-auto py-5 py-sm-0 mt-sm-5 justify-content-center">
       <div className={`col-9 col-sm p-0 ${props.order}`}>

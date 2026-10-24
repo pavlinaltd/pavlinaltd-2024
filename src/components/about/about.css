@@ -20,9 +20,7 @@
 .headshot{
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  
-
+  justify-content: center;
 }
 .headshot img{
   width: 330px;

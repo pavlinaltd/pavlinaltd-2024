@@ -10,22 +10,24 @@ import TheColorsOfMacedonia from "../../assets/films/posters/the-colors-of-maced
 import Gotse from "../../assets/films/posters/gotse.png";
 
 const Projects = () => {
-  useEffect(() => window.scroll(0, 0));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main id="projects" className="text-uppercase main-margin">
       {/* <div className="container p-0"> */}
-        <section
-          id="previous-films"
-          className="margin-main projects-section"
-          style={{ marginBottom: "60px" }}
-        >
-          <div className="col-12 p-xl-0 pb-xl-0 m-0">
-            <h2 className="p-0">Features</h2>
-          </div>
+      <section
+        id="previous-films"
+        className="margin-main projects-section"
+        style={{ marginBottom: "60px" }}
+      >
+        <div className="col-12 p-xl-0 pb-xl-0 m-0">
+          <h2 className="p-0">Features</h2>
+        </div>
 
-          <div className="book-image-row">
-          <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+        <div className="book-image-row">
+          <div style={{ display: "flex", flex: 1, gap: "20px" }}>
             <div className="book-image book-image-partial">
               <Link to="/the-magic-snowman">
                 <img
@@ -35,7 +37,7 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            <div className="book-image book-image-partial" >
+            <div className="book-image book-image-partial">
               <Link to="/happy-hell-night">
                 <img
                   src={HappyHellNight}
@@ -44,20 +46,17 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            </div>
           </div>
+        </div>
+      </section>
 
-
-        </section>
-
-
-        <hr className="hr-sep" />
-        <section className="margin-main projects-section">
-          <div className="col-12 p-xl-0 pb-xl-0 m-0" >
-            <h2 className="p-0">Documentaries</h2>
-          </div>
-          <div className="book-image-row">
-          <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+      <hr className="hr-sep" />
+      <section className="margin-main projects-section">
+        <div className="col-12 p-xl-0 pb-xl-0 m-0">
+          <h2 className="p-0">Documentaries</h2>
+        </div>
+        <div className="book-image-row">
+          <div style={{ display: "flex", flex: 1, gap: "20px" }}>
             <div className="book-image book-image-partial">
               <Link to="/promise-of-perfume">
                 <img
@@ -76,8 +75,8 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            </div>
-            {/* <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+          </div>
+          {/* <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
             <div className="book-image">
               <Link to="/colors-of-macedonia">
                 <img
@@ -97,16 +96,15 @@ const Projects = () => {
               </Link>
             </div>
             </div> */}
-          </div>
-
-        </section>
-        <hr className="hr-sep" />
-        <section className="margin-main projects-section">
-          <div className="col-12 p-xl-0 pb-xl-0 m-0" >
-            <h2 className="p-0">Short Films</h2>
-          </div>
-          <div className="book-image-row">
-            <div style={{display : "flex" , flex : 1,  gap: "20px"}}>
+        </div>
+      </section>
+      <hr className="hr-sep" />
+      <section className="margin-main projects-section">
+        <div className="col-12 p-xl-0 pb-xl-0 m-0">
+          <h2 className="p-0">Short Films</h2>
+        </div>
+        <div className="book-image-row">
+          <div style={{ display: "flex", flex: 1, gap: "20px" }}>
             <div className="book-image book-image-partial">
               <Link to="/colors-of-macedonia">
                 <img
@@ -125,10 +123,9 @@ const Projects = () => {
                 />
               </Link>
             </div>
-            </div>
           </div>
-
-        </section>
+        </div>
+      </section>
       {/* </div> */}
     </main>
   );
