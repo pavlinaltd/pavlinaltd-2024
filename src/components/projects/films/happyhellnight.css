@@ -1,0 +1,95 @@
+.hh-page {
+	--gutter: clamp(16px, 5vw, 64px);
+	max-width: 1280px;
+	margin-inline: auto;
+	padding: clamp(16px, 3vw, 40px) var(--gutter) clamp(32px, 5vw, 64px);
+	box-sizing: border-box;
+}
+
+.hh-banner {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.hh-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px 40px;
+	margin: 24px 0 40px;
+}
+.hh-action {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: clamp(16px, 2.2vw, 24px);
+	font-weight: 600;
+	text-align: center;
+}
+.hh-action img {
+	max-height: 50px;
+	width: auto;
+}
+
+.hh-row {
+	display: grid;
+	grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+	gap: clamp(20px, 4vw, 56px);
+	align-items: start;
+}
+.hh-row + .hh-row {
+	margin-top: clamp(32px, 5vw, 64px);
+}
+.hh-row > img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 12px;
+	object-fit: cover;
+}
+.hh-poster-img {
+	cursor: pointer;
+}
+
+.hh-desc {
+	font-size: clamp(16px, 0.9rem + 0.4vw, 20px);
+	line-height: 1.5;
+	text-align: left;
+}
+.hh-desc p {
+	margin: 0 0 1em;
+}
+
+.hh-video {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+.hh-video iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-radius: 12px;
+}
+
+.hh-modal-poster {
+	max-width: 100%;
+	max-height: 80vh;
+	width: auto;
+	height: auto;
+}
+
+@media (max-width: 991.98px) {
+	.hh-row {
+		grid-template-columns: 1fr;
+	}
+	.hh-row > img {
+		max-width: 360px;
+		margin-inline: auto;
+	}
+	.hh-row--trailer .hh-video {
+		order: -1;
+	}
+}

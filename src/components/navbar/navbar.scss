@@ -1,0 +1,33 @@
+// colors
+$red: #94211d;
+$white: #ffffff;
+$black: #000;
+$gray: #2e2e2e;
+
+nav {
+  font-size: 1.1rem !important;
+  transition: background 0.35s ease;
+  z-index: 100;
+  img {
+    height: 40px;
+    @media (max-width: 767.98px) {
+      height: 30px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
+      svg {
+        color: $red;
+      }
+    }
+    svg {
+      font-size: 2em;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+//!Colors
+$white: #fff;
+$darkGray: #0f0f0f;
+$lightGray: #5b5b5b;
+$red: #d30000;
+
+footer {
+  section:first-of-type {
+    div.about {
+      p {
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1rem;
+      }
+    }
+    div.address {
+      h6 {
+        height: 40px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 0.8rem;
+        font-weight: 300;
+      }
+    }
+    div.contact {
+      > form {
+        width: 15rem;
+        margin-top: 26px;
+        div {
+          width: 100%;
+          label {
+            width: 25%;
+            font-size: 0.8rem;
+            font-weight: 300;
+          }
+          input[type="text"],
+          input[type="email"] {
+            width: 75%;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: $white;
+            &:focus {
+              outline: none;
+            }
+          }
+          input[type="submit"] {
+            color: $white;
+            font-size: 0.8rem;
+            font-weight: 300;
+            background-color: transparent;
+            border: 0.5px solid $lightGray;
+            transition: all 0.25s ease;
+            &:hover {
+              background-color: $white;
+              color: $darkGray;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  section:last-of-type {
+    ul {
+      gap: 0.5rem;
+      svg {
+        font-size: 1.8rem;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+          color: $red;
+        }
+      }
+    }
+    span {
+      font-size: 0.8rem;
+      font-weight: 300;
+      a {
+        text-decoration: none;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+  .back-to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $red;
+    font-size: 2rem;
+    opacity: 0.6;
+    cursor: pointer;
+    animation: backToTopAni 1s infinite linear;
+  }
+}
+
+@keyframes backToTopAni {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  footer {
+    div.contact {
+      form {
+        width: 100% !important;
+      }
+    }
+    section:last-of-type {
+      span {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  footer {
+    div.about {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}

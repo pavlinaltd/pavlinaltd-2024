@@ -1,0 +1,187 @@
+/* ---------- Page padding ---------- */
+#about-us .container {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+/* ---------- Headings / quotes ---------- */
+.quote-block {
+	margin: 0 0 4.5rem;
+	text-align: center;
+}
+
+.quote-block-sm {
+	margin: 4.5rem 0 2rem;
+}
+
+.heading {
+	font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+	font-weight: bold;
+	color: #94211d;
+	font-family: serif !important;
+	text-align: center;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.author {
+	display: block;
+	margin: 0.75rem 0 0;
+	font-size: clamp(1.1rem, 2vw, 1.5rem);
+	font-weight: bold;
+	color: #94211d;
+	font-family: serif !important;
+	text-align: center;
+}
+
+/* ---------- Shared two-column layout (bio + production) ---------- */
+#about-us .container {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	container-type: inline-size; /* NEW: one shared size reference for both sections */
+}
+
+.pavlina-about,
+.carousel-aboutus {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); /* CHANGED */
+	gap: 1.5rem;
+	align-items: stretch; /* both containers always the same height */
+}
+
+.pavlina-desc,
+.production-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* text spread top to bottom */
+	gap: 0.9em; /* NEW: minimum space between paragraphs */
+	font-size: clamp(
+		0.8rem,
+		1.35cqw,
+		1.25rem
+	); /* was clamp(0.8rem, 1.2cqw, 1.05rem) */
+	line-height: 1.5;
+	min-height: 0;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	text-wrap: pretty;
+	overflow-wrap: break-word;
+	text-align: justify;
+}
+
+.pavlina-desc p,
+.production-desc p {
+	margin: 0;
+}
+
+/* ---------- Section 1: bio ---------- */
+.pavlina-section {
+	max-width: 100%;
+}
+
+.headshot {
+	width: 100%; /* NEW */
+	min-width: 0; /* NEW */
+	aspect-ratio: 4 / 5;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.headshot img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+
+/* ---------- Section 2: production ---------- */
+.pavlina-section-2 {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	max-width: 100%;
+}
+
+.carousel-col {
+	min-width: 0; /* stops the carousel from overflowing its grid column */
+}
+
+/* Same 4:5 shape as the headshot; this sets the row height */
+.carouselImg {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	object-position: center top;
+	border-radius: 6px;
+}
+
+/* Captions: readable over any photo, clear of the indicators */
+.carousel-caption {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2.5rem 12% 2.4rem;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	border-radius: 0 0 6px 6px;
+}
+
+.carousel-caption p {
+	margin: 0;
+	color: #fff;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.carousel-indicators [data-bs-target] {
+	background-color: #fff !important;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 991px) {
+	#about-us .container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.pavlina-about,
+	.carousel-aboutus {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 1.5rem;
+	}
+
+	.headshot,
+	.carousel-col {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.pavlina-desc,
+	.production-desc {
+		justify-content: flex-start;
+		gap: 1rem;
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 576px) {
+	#about-us .container {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.pavlina-desc,
+	.production-desc {
+		text-align: justify;
+		hyphens: none;
+		font-size: 0.95rem;
+	}
+
+	.carousel-caption {
+		padding: 2rem 10% 2.2rem;
+	}
+}

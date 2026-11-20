@@ -1,0 +1,192 @@
+.future-film-section-col
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.borders-desc{
+    flex : 1;
+    margin-left : 40px;
+}
+
+.main-margin {
+    margin-left : 10%;
+    margin-right : 10%;
+}
+
+.img-section  {
+    display : flex;
+    flex-direction : row;
+    gap : 40px;
+}
+  
+.future-film-section {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 30px;
+  } 
+
+
+.modal-flex{
+    display : flex;
+    flex-direction : row;
+}
+
+
+.future-film-desc {
+    /* font-size: 18px; */
+    line-height: 1.2em;
+    text-align: justify;
+}
+  
+
+.modal-flex-desc{
+    display: flex; 
+    align-self: flex-start;
+    justify-content : space-between;
+    flex-direction : column;
+}
+
+
+.future-film-section-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.fw-30 {
+    width : 30%;
+}
+
+.fw-70 {
+    width : 70%;
+}
+
+.fw-45 {
+    width : 45%;
+}
+
+
+.future-separator {
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 1024px) {
+    .future-film-desc {
+        font-size: 1.2vw;
+        line-height: 1.2em;
+    }
+    .fw-30 {
+        width : 100%;
+    }
+    
+    .fw-45 {
+        width : 100%;
+    }
+
+    .future-film-section-desc{
+        margin-right: 40px;
+    }
+  }
+
+
+  @media (max-width: 960px) {
+
+    .fw-30 {
+        width : 100%;
+    }
+    
+    .fw-45 {
+        width : 100%;
+    }
+
+    .fw-70 {
+        width : 100%;
+    }
+
+    .fw-60 {
+        width : 100%;
+    }
+
+    .fw-40 {
+        width : 100%;
+    }
+
+    
+}
+
+
+
+@media (max-width: 767.98px) {
+
+    .main-margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+.future-film-desc {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+  
+
+    .future-film-section-col
+    {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .borders-desc{
+        margin-top: 20px;
+        margin-left : 0;
+    }
+    .future-film-section {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    } 
+    
+    .future-film-section-desc{
+        margin-top: 20px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+
+    .modal-flex{
+        flex-direction : column-reverse;
+    }
+
+    .future-separator {
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+    .modal-flex-desc{
+        margin-top: 20px;
+        width: 100% !important; 
+    }
+
+    .img-section{
+        flex-direction: column;
+    }
+
+    .fw-30 {
+        width: 100%;
+    }
+
+    .fw-45 {
+        width : 100%;
+    }
+
+
+    .fw-70 {
+        width: 100%;
+    }
+}

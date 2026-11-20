@@ -1,0 +1,173 @@
+//!Colors
+$white: #fff;
+$black: #000;
+$red: #94211d;
+$gray: #eaeaea;
+
+.hidden {
+  overflow: hidden;
+}
+
+main {
+  div.header {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  div.intro {
+    h2 {
+      font-family: "Roboto", sans-serif !important;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  }
+  // section#active-films-container {
+  //   background-color: $gray;
+  //   div.active-project {
+  //     gap: 3rem;
+  //     img {
+  //       width: 100%;
+  //       height: 100%;
+  //       object-fit: contain;
+  //     }
+  //   }
+  //   h2 {
+  //     color: $red;
+  //     font-size: 2rem;
+  //     font-weight: 600;
+  //   }
+  // }
+  section.films {
+    h2 {
+      color: $red;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+    h3 {
+      color: $black;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: "Roboto", sans-serif !important;
+    }
+    div.film-poster {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      div.row {
+        background-color: #cdcdcd;
+      }
+    }
+  }
+  section#quote-container {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $red;
+    h3 {
+      line-height: 1.5;
+      text-align: justify;
+      text-justify: inter-word;
+      // &::before {
+      //   content: "“";
+      //   font-family: "Times New Roman", Times, serif;
+      //   font-size: 2.5rem;
+      //   font-weight: 800;
+      // }
+      // &::after {
+      //   content: "”";
+      //   font-family: "Times New Roman", Times, serif;
+      //   font-size: 2.5rem;
+      //   line-height: 2rem;
+      //   font-weight: 800;
+      // }
+      span {
+        font-weight: 400;
+        &::before {
+          content: "— ";
+          font-family: "times new roman", serif;
+          // font-size: 1.1rem;
+        }
+      }
+    }
+    p {
+      font-weight: 400;
+      // color: $black;
+      &::before {
+        content: "— ";
+        font-family: "times new roman", serif;
+        // font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  main {
+    section.films {
+      div.book-row {
+        padding-left: 1rem !important;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  main {
+    div.intro {
+        font-size: 1.5rem;
+    }
+    section.films {
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      div.film-poster {
+        div.row {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  main {
+    div.intro {
+      h2 {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+    }
+    section.films {
+      h2 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  main {
+    section#quote-container {
+      h3, p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

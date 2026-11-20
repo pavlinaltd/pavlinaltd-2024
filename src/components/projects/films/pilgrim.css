@@ -1,0 +1,229 @@
+/* ============ Page shell ============ */
+.pg-page {
+	--pg-max: 1100px;
+	--pg-gap: clamp(16px, 3vw, 32px);
+	--pg-radius: 12px;
+	--pg-text: #111;
+
+	width: 100%;
+	max-width: var(--pg-max);
+	margin: 0 auto;
+	padding: 10px clamp(12px, 4vw, 40px) 48px;
+	box-sizing: border-box;
+	color: var(--pg-text);
+}
+
+.pg-page *,
+.pg-page *::before,
+.pg-page *::after {
+	box-sizing: border-box;
+}
+
+.pg-page p {
+	margin: 0 0 0.5em;
+}
+
+/* ============ Video ============ */
+.pg-video {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: var(--pg-radius);
+	overflow: hidden;
+	background: #000;
+}
+
+.pg-video iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* ============ IMDb link ============ */
+.pg-imdb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	font-size: clamp(18px, 2.5vw, 24px);
+	font-weight: 600;
+}
+
+.pg-imdb a {
+	display: inline-flex;
+}
+
+.pg-imdb-icon {
+	height: 44px;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+	transition:
+		transform 0.2s ease,
+		opacity 0.2s ease;
+}
+
+.pg-imdb-icon:hover {
+	transform: scale(1.05);
+	opacity: 0.85;
+}
+
+/* ============ Credits ============ */
+.pg-credits {
+	margin-top: clamp(24px, 4vw, 48px);
+	text-align: center;
+}
+
+.pg-credits-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--pg-gap);
+	align-items: start;
+}
+
+.pg-credit-block--wide {
+	margin-top: clamp(24px, 4vw, 40px);
+}
+
+.pg-credit-title {
+	margin: 0 0 0.75em;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+.pg-credit-title--spaced {
+	margin-top: 2em;
+}
+
+/* ============ Support row ============ */
+.pg-support {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 12px 20px;
+}
+
+.pg-support-name {
+	font-weight: 500;
+}
+
+.pg-support-logo {
+	width: 80px;
+	height: auto;
+	object-fit: contain;
+}
+
+/* ============ Poster / Book / Bio ============ */
+.pg-feature {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.7fr);
+	gap: var(--pg-gap);
+	align-items: stretch;
+	margin-top: clamp(32px, 5vw, 64px);
+}
+
+.pg-card {
+	position: relative;
+	display: block;
+	padding: 0;
+	border: 0;
+	border-radius: var(--pg-radius);
+	overflow: hidden;
+	background: #eee;
+	cursor: pointer;
+	aspect-ratio: 2 / 3;
+	width: 100%;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.pg-card:hover,
+.pg-card:focus-visible {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.pg-card img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.pg-card-label {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 8px 0;
+	text-align: center;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.55);
+	font-size: 1rem;
+}
+
+.pg-bio {
+	align-self: center;
+	line-height: 1.6;
+	font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+}
+
+.pg-bio p + p {
+	margin-top: 1em;
+}
+
+/* ============ Modal ============ */
+.pg-modal-body {
+	display: flex;
+	justify-content: center;
+}
+
+.pg-modal-img {
+	display: block;
+	max-width: 100%;
+	max-height: 80vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+/* ============ Tablet ============ */
+@media (max-width: 991px) {
+	.pg-feature {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.pg-bio {
+		grid-column: 1 / -1;
+		align-self: start;
+	}
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 575px) {
+	.pg-credits-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.pg-credit-title--spaced {
+		margin-top: 1.5em;
+	}
+
+	.pg-feature {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.pg-card {
+		max-width: 320px;
+	}
+
+	.pg-imdb-icon {
+		height: 38px;
+	}
+}

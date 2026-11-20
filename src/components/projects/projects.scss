@@ -1,0 +1,45 @@
+//! Colors
+$white: #fff;
+$black: #000;
+$red: #94211d;
+$gray: #565656;
+
+main#projects {
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $red;
+  }
+  h2 {
+    color: $red;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .film-poster {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  main#projects {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  main#projects {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

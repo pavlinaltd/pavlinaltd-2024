@@ -1,0 +1,25 @@
+nav {
+  font-size: 1.1rem !important;
+  
+  z-index: 100;
+}
+nav img {
+  height: 40px;
+}
+@media (max-width: 767.98px) {
+  nav img {
+    height: 30px;
+  }
+}
+
+
+.navbar-nav .nav-link{ 
+  color: #94211d;
+  font-weight: bold;
+}
+
+.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li.active {
+  color: black;
+  font-weight: bold;
+}
+

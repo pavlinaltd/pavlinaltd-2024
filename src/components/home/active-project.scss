@@ -1,0 +1,23 @@
+div.active-project {
+    h3 {
+        font-family: "Roboto", sans-serif !important;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    p {
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+    button {
+        font-weight: 300;
+        background-color: transparent;
+        border: 0.5px solid black;
+        transition: all 0.25s ease;
+        &:hover {
+            background-color: #94211d;
+            border-color: #94211d;
+            color: white;
+        }
+    }
+}

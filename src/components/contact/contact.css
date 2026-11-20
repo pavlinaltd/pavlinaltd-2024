@@ -1,0 +1,126 @@
+/* .col-12{
+  float: right;
+} */
+
+main#contact {
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+}
+main#contact section.upper-section {
+	line-height: 1.5rem;
+}
+main#contact section.upper-section h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #94211d;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+main#contact section.upper-section div.contact-info h2 {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+main#contact section.upper-section div.contact-info h3 {
+	font-family: "Roboto", sans-serif;
+	color: #94211d;
+}
+main#contact section.upper-section form input[type="text"],
+main#contact section.upper-section form input[type="email"] {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	border: 0.5px solid #94211d;
+	padding: 5px;
+	background-color: transparent;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+main#contact section.upper-section form div.textarea {
+	/* height: 40.5%; */
+	width: 100%;
+}
+main#contact section.upper-section form div.textarea textarea {
+	border: 0.5px solid #94211d;
+	height: 8rem;
+	padding: 5px;
+	resize: none;
+	background-color: transparent;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+main#contact section.upper-section form div.textarea textarea:focus {
+	outline: none;
+}
+main#contact section.upper-section form input[type="submit"] {
+	color: #94211d;
+	font-size: 0.8rem;
+	font-weight: 400;
+	background-color: transparent;
+	border: 0.5px solid #94211d;
+	transition: all 0.25s ease;
+}
+
+main#contact section.upper-section form input[type="submit"]:hover {
+	background-color: #94211d;
+	color: #fff;
+	font-weight: 500;
+}
+
+@media (max-width: 600.98px) {
+	main#contact section.upper-section h1 {
+		font-size: 1.7rem;
+	}
+	main#contact section.upper-section div.contact-info h2 {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 767.98px) {
+	main#contact form {
+		/* min-height: 100vh; */
+	}
+	main#contact form div.textarea {
+		/* height: 65%; */
+	}
+
+	.contact-email {
+		font-size: 3.5vw;
+	}
+
+	main#contact form div.textarea textarea {
+		border: 0.5px solid #94211d;
+		height: 1rem;
+		padding: 5px;
+		resize: none;
+		background-color: transparent;
+		font-size: 0.8rem;
+		font-weight: 300;
+	}
+	main#contact form div.textarea textarea:focus {
+		outline: none;
+	}
+	main#contact .google-map {
+	}
+	.gm-style-moc {
+		margin-top: 10px;
+	}
+}
+.pavlina-contact {
+	color: #94211d;
+	line-height: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.sub-heading {
+	color: #94211d;
+	line-height: 2rem;
+	text-align: center;
+}
+.contact-box iframe {
+	position: relative;
+	height: 350px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* margin-left:  45px; */
+}
