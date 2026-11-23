@@ -1,0 +1,104 @@
+:root {
+	--gustella-content-width: 960px; /* resize video, gallery and castle image together */
+	--gustella-poster-ratio: 0.667; /* poster width / height (2:3) */
+	--gustella-script-ratio: 0.86; /* script image width / height */
+}
+
+/* ---------- Page side padding ---------- */
+@media (max-width: 991.98px) {
+	.main-margin {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	.main-margin {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+/* ---------- Video ---------- */
+.gustella-video {
+	width: 100%;
+	max-width: var(--gustella-content-width);
+	margin: 0 auto;
+}
+
+/* ---------- Poster + script (always equal height) ---------- */
+.gustella-gallery {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+	width: 100%;
+	max-width: var(--gustella-content-width);
+	margin: 2.5rem auto 0;
+}
+
+/* flex-grow matches each image's aspect ratio, so heights come out identical */
+.gustella-gallery-poster {
+	flex: var(--gustella-poster-ratio) 1 0;
+	min-width: 0;
+}
+
+.gustella-gallery-script {
+	flex: var(--gustella-script-ratio) 1 0;
+	min-width: 0;
+}
+
+.gustella-gallery img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.gustella-gallery-poster img {
+	aspect-ratio: var(--gustella-poster-ratio);
+}
+
+.gustella-gallery-script img {
+	aspect-ratio: var(--gustella-script-ratio);
+}
+
+/* ---------- Castle image ---------- */
+.gustella-castle {
+	width: 100%;
+	max-width: var(--gustella-content-width);
+	margin: 2rem auto 2.5rem;
+}
+
+.gustella-castle img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+/* ---------- Tablet / phones: stack ---------- */
+@media (max-width: 767.98px) {
+	.gustella-gallery {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.gustella-gallery-poster {
+		flex: none;
+		width: 70%;
+		max-width: 400px;
+	}
+
+	.gustella-gallery-script {
+		flex: none;
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.gustella-gallery-poster {
+		width: 85%;
+	}
+}

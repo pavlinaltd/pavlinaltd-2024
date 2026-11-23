@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c580696d.css",
-    "main.js": "/static/js/main.bb748922.js",
+    "main.css": "/static/css/main.eeaa01e2.css",
+    "main.js": "/static/js/main.d5c830ce.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e919f649.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.9d4a6e27.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.84bc6439.chunk.js",
@@ -18,7 +18,6 @@
     "static/js/668.efe68151.chunk.js": "/static/js/668.efe68151.chunk.js",
     "static/media/short_film_1.mp4": "/static/media/short_film_1.d320c6d4ca3db296d4ef.mp4",
     "static/media/nade-film.mp4": "/static/media/nade-film.10292cd05f11cc24ddfe.mp4",
-    "static/media/gustella.mov": "/static/media/gustella.62da3578d98e78dbeff3.mov",
     "static/media/The_Magic_Snowman.wav": "/static/media/The_Magic_Snowman.5e84cb6c2e7ad3d0fb9a.wav",
     "static/media/learning.mp4": "/static/media/learning.0303a85d20d90f773611.mp4",
     "static/media/the-magic-snowman-audiobook.png": "/static/media/the-magic-snowman-audiobook.99a86946514752da52d4.png",
@@ -109,8 +108,8 @@
     "static/media/logo_desktop.png": "/static/media/logo_desktop.97178beda2a5e2c605fd.png",
     "static/media/perfume3.webp": "/static/media/perfume3.38eccfd0fa33693a67e8.webp",
     "index.html": "/index.html",
-    "main.c580696d.css.map": "/static/css/main.c580696d.css.map",
-    "main.bb748922.js.map": "/static/js/main.bb748922.js.map",
+    "main.eeaa01e2.css.map": "/static/css/main.eeaa01e2.css.map",
+    "main.d5c830ce.js.map": "/static/js/main.d5c830ce.js.map",
     "reactPlayerHls.e919f649.chunk.js.map": "/static/js/reactPlayerHls.e919f649.chunk.js.map",
     "reactPlayerDash.9d4a6e27.chunk.js.map": "/static/js/reactPlayerDash.9d4a6e27.chunk.js.map",
     "reactPlayerMux.84bc6439.chunk.js.map": "/static/js/reactPlayerMux.84bc6439.chunk.js.map",
@@ -127,7 +126,7 @@
     "668.efe68151.chunk.js.map": "/static/js/668.efe68151.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c580696d.css",
-    "static/js/main.bb748922.js"
+    "static/css/main.eeaa01e2.css",
+    "static/js/main.d5c830ce.js"
   ]
 }

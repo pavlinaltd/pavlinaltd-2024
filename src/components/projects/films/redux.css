@@ -1,0 +1,115 @@
+:root {
+	--redux-content-width: 800px; /* change this one value to resize video + gallery together */
+}
+
+/* ---------- Description text ---------- */
+.redux-desc {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	line-height: 1.5;
+	width: 100%;
+	max-width: var(--redux-content-width);
+	margin: 0 auto;
+	padding: 0; /* no side padding, so text edges match the video and images */
+}
+
+.redux-desc p {
+	margin: 0 0 1.25rem;
+	text-align: justify;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	overflow-wrap: break-word;
+}
+
+.redux-desc p:last-child {
+	margin-bottom: 0;
+}
+
+/* ---------- Video ---------- */
+.redux-video {
+	width: 100%;
+	max-width: var(--redux-content-width);
+	margin: 0 auto;
+}
+
+/* ---------- Poster + face gallery ---------- */
+.redux-gallery {
+	display: flex;
+	align-items: stretch;
+	gap: 24px;
+	width: 100%;
+	max-width: var(--redux-content-width);
+	margin: 0 auto;
+}
+
+.redux-gallery-poster {
+	flex: 0 0 30%;
+	max-width: 30%;
+}
+
+.redux-gallery-faces {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	background: #2b2f2e; /* match the dark edge of your image; adjust if needed */
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.redux-gallery img {
+	display: block;
+	width: 100%;
+	height: auto; /* keeps the natural aspect ratio, no squeezing */
+	object-fit: contain;
+}
+
+.redux-gallery-faces img {
+	width: 100%;
+	height: auto;
+	object-fit: contain; /* change to cover to remove dark bands (slight cropping) */
+	border-radius: 0;
+}
+
+/* ---------- Tablet / small screens ---------- */
+@media (max-width: 991.98px) {
+	.redux-gallery {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.redux-gallery-poster {
+		flex: none;
+		width: 60%;
+		max-width: 360px;
+	}
+
+	.redux-gallery-faces {
+		flex: none;
+		width: 100%;
+		background: none;
+		border-radius: 0;
+	}
+
+	.main-margin {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 576px) {
+	.redux-gallery-poster {
+		width: 80%;
+	}
+
+	.redux-desc {
+		font-size: 16px;
+	}
+
+	.main-margin {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
