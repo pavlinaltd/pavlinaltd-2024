@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eeaa01e2.css",
-    "main.js": "/static/js/main.d5c830ce.js",
+    "main.css": "/static/css/main.711fff0e.css",
+    "main.js": "/static/js/main.cc3701bc.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e919f649.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.9d4a6e27.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.84bc6439.chunk.js",
@@ -108,8 +108,8 @@
     "static/media/logo_desktop.png": "/static/media/logo_desktop.97178beda2a5e2c605fd.png",
     "static/media/perfume3.webp": "/static/media/perfume3.38eccfd0fa33693a67e8.webp",
     "index.html": "/index.html",
-    "main.eeaa01e2.css.map": "/static/css/main.eeaa01e2.css.map",
-    "main.d5c830ce.js.map": "/static/js/main.d5c830ce.js.map",
+    "main.711fff0e.css.map": "/static/css/main.711fff0e.css.map",
+    "main.cc3701bc.js.map": "/static/js/main.cc3701bc.js.map",
     "reactPlayerHls.e919f649.chunk.js.map": "/static/js/reactPlayerHls.e919f649.chunk.js.map",
     "reactPlayerDash.9d4a6e27.chunk.js.map": "/static/js/reactPlayerDash.9d4a6e27.chunk.js.map",
     "reactPlayerMux.84bc6439.chunk.js.map": "/static/js/reactPlayerMux.84bc6439.chunk.js.map",
@@ -126,7 +126,7 @@
     "668.efe68151.chunk.js.map": "/static/js/668.efe68151.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeaa01e2.css",
-    "static/js/main.d5c830ce.js"
+    "static/css/main.711fff0e.css",
+    "static/js/main.cc3701bc.js"
   ]
 }

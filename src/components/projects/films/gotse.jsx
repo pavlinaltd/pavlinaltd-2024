@@ -25,45 +25,48 @@ const Gotse = () => {
 			</section>
 
 			{/* Row 2: title + credits */}
-			<section className="gotse-credits">
-				<h1 className="gotse-title">GOTSE (ГОЦЕ)</h1>
 
-				<div className="gotse-credit">
-					<h2>Produced by</h2>
-					<p>The Macedonian Arts Council</p>
+			<section className="pg-credits">
+				<h1 className="pg-credits-heading">GOTSE (ГОЦЕ)</h1>
+
+				<div className="pg-credits-grid">
+					<div className="pg-credit-block">
+						<h2 className="pg-credit-title">STARRING</h2>
+						<p>
+							Nenad Stojanovski as <em>Gotse</em>
+						</p>
+						<p>
+							His Eminence <em>Bishop Kiril</em>
+						</p>
+
+						<h2 className="pg-credit-title pg-credit-title--spaced">
+							DIRECTOR
+						</h2>
+						<p>Ivan Mitevski - Kopola</p>
+
+						<h2 className="pg-credit-title pg-credit-title--spaced">
+							WRITTEN BY
+						</h2>
+						<p>Goran Stefanovski</p>
+					</div>
+
+					<div className="pg-credit-block">
+						<h2 className="pg-credit-title">PRODUCERS</h2>
+						<p>Pavlina Proevska</p>
+						<p>Mile Arsovski</p>
+
+						<h2 className="pg-credit-title pg-credit-title--spaced">
+							SHOOTING LOCATIONS
+						</h2>
+						<p>Skopje, Ohrid, Vevchani</p>
+						<p>The Republic of Macedonia</p>
+						<p>© 2007</p>
+					</div>
 				</div>
 
-				<div className="gotse-credit">
-					<h2>Producers</h2>
-					<p>Pavlina Proevska</p>
-					<p>Mile Arsovski</p>
-				</div>
-
-				<div className="gotse-credit">
-					<h2>Director</h2>
-					<p>Ivan Mitevski - Kopola</p>
-				</div>
-
-				<div className="gotse-credit">
-					<h2>Written by</h2>
-					<p>Goran Stefanovski</p>
-				</div>
-
-				<div className="gotse-credit">
-					<h2>Starring</h2>
-					<p>
-						Nenad Stojanovski as <em>Gotse</em>
-					</p>
-					<p>
-						His Eminence <em>Bishop Kiril</em>
-					</p>
-				</div>
-
-				<div className="gotse-credit">
-					<h2>Shooting Locations</h2>
-					<p>Skopje, Ohrid, Vevchani</p>
-					<p>The Republic of Macedonia</p>
-					<p>© 2007</p>
+				<div className="pg-credit-block pg-credit-block--wide">
+					<h2 className="pg-credit-title">PRODUCED BY</h2>
+					<p>THE MACEDONIAN ARTS COUNCIL©</p>
 				</div>
 			</section>
 

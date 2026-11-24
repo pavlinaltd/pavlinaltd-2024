@@ -1,0 +1,95 @@
+/* ---------- Page ---------- */
+.perfume-page {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* ---------- Trailer (medium size, centered) ---------- */
+.perfume-video {
+	width: 100%;
+	max-width: 890px;
+	margin: 16px auto 0;
+}
+
+.perfume-video iframe {
+	border: 0;
+	border-radius: 12px;
+}
+
+/* ---------- IMDb link ---------- */
+.perfume-imdb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.perfume-imdb-label {
+	color: black;
+}
+
+.perfume-imdb-icon {
+	max-height: 50px;
+	width: auto;
+	object-fit: fill;
+}
+
+/* ---------- Poster + text: side by side, vertically centered ---------- */
+.perfume-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* stacks on its own when there isn't room */
+	align-items: center; /* same alignment as your screenshot */
+	gap: 40px;
+	margin-top: 24px;
+	margin-bottom: 3rem;
+}
+
+/* Poster: about 30% of the row, natural proportions, never stretched */
+.perfume-poster-col {
+	flex: 0 1 380px;
+	min-width: 0;
+}
+
+.perfume-poster {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+/* Text: takes the rest of the row */
+.perfume-desc-col {
+	flex: 1 1 420px;
+	min-width: 0;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.perfume-desc-col p {
+	margin: 0 0 1.25rem;
+	font-size: 16px !important;
+	line-height: 1.6;
+}
+
+.perfume-desc-col p:last-child {
+	margin-bottom: 0;
+}
+
+/* ---------- Modal ---------- */
+.perfume-modal-img-wrap {
+	text-align: center;
+}
+
+.perfume-modal-img {
+	width: 80%;
+	max-width: 100%;
+	height: auto;
+}

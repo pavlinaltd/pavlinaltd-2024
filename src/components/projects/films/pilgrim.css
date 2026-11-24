@@ -168,6 +168,7 @@
 }
 
 .pg-bio {
+	text-align: justify;
 	align-self: center;
 	line-height: 1.6;
 	font-size: clamp(0.95rem, 1.2vw, 1.05rem);

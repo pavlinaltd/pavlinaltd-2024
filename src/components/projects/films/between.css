@@ -1,0 +1,239 @@
+/* ============ Layout ============ */
+.film {
+	overflow-x: hidden;
+}
+
+.margin-main {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+@media (min-width: 576px) {
+	.margin-main {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+@media (min-width: 768px) {
+	.margin-main {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (min-width: 1200px) {
+	.margin-main {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+@media (min-width: 1600px) {
+	.margin-main {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+
+/* ============ Description section ============ */
+.between-desc-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.fw-25,
+.fw-75 {
+	width: 100%;
+}
+
+.book-cover-box {
+	width: 100%;
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.book-cover {
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+.orphan-desc {
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.orphan-desc p {
+	margin-bottom: 0.75rem;
+}
+.orphan-desc p:first-child {
+	margin-top: 0;
+}
+.orphan-desc p:last-child {
+	margin-bottom: 0;
+}
+
+.title-italic {
+	font-style: italic;
+}
+.title-bold {
+	font-style: italic;
+	font-weight: bold;
+}
+@media (min-width: 1024px) {
+	.between-desc-section {
+		max-width: 1200px;
+		margin: 0 auto;
+		flex-direction: row;
+		align-items: stretch;
+		gap: 40px;
+	}
+	.fw-25 {
+		flex: 0 0 320px;
+		max-width: 320px;
+	}
+	.fw-75 {
+		flex: 1 1 0;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.book-cover-box {
+		max-width: none;
+		margin: 0;
+	}
+	.orphan-desc {
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+	.orphan-desc p {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.orphan-desc {
+		font-size: 1rem;
+	}
+}
+
+/* ============ Poem + audio ============ */
+.between-poem-section {
+	margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+	.between-poem-section {
+		margin-top: 60px;
+	}
+}
+
+.poem-wrapper {
+	position: relative;
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+.poem-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* Icons: positioned by % of the image, so they follow it at any size.
+   Adjust top/left on the three rules below to match your artwork. */
+.audio-icon {
+	position: absolute;
+	transform: translateX(-50%);
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+	line-height: 0;
+}
+
+.audio-icon img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.audio-icon:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+	.audio-icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+@media (min-width: 1200px) {
+	.audio-icon {
+		width: 36px;
+		height: 36px;
+	}
+}
+
+.audio-icon--sonce {
+	top: 57%;
+	left: 78%;
+} /* Serbian: below the Serbian text, top right */
+.audio-icon--sun {
+	top: 95%;
+	left: 25%;
+} /* English: below "SUN" text, bottom left */
+.audio-icon--soleil {
+	top: 101%;
+	left: 65%;
+} /* French: below "SOLEIL" text, bottom right */
+
+/* Players share one grid cell, so only the visible one takes space */
+.poem-audio-bar {
+	display: grid;
+	justify-items: center;
+	margin-top: 16px;
+}
+
+.poem-audio {
+	grid-area: 1 / 1;
+	width: 100%;
+	max-width: 420px;
+}
+
+/* ============ Review image ============ */
+.review-wrap {
+	margin: 24px 0;
+	padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.review-wrap {
+		margin: 48px 0;
+	}
+}
+
+.review-wrap img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* ============ Modal ============ */
+.future-film-img {
+	width: 100%;
+	max-width: 520px;
+	height: auto;
+}
+
+@media (max-width: 575.98px) {
+	.modal-flex {
+		padding: 0;
+	}
+}

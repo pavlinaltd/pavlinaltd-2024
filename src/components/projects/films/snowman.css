@@ -1,0 +1,207 @@
+/* ---------- Page wrapper ---------- */
+#magic-snowman-page {
+	padding-left: 16px;
+	padding-right: 16px;
+	overflow-x: hidden; /* prevents sideways scroll */
+}
+
+/* ---------- Trailer section ---------- */
+.snowman-trailer-section {
+	width: 100%;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+/* Stack poster above video, both the same width */
+.hnn-trailer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px; /* 60px on desktop, see media queries */
+	width: 100%;
+	max-width: 900px; /* one value controls both sizes */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Poster box gets the same 16:9 shape as the video */
+.hnn-trailer .trailer-poster {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.hnn-trailer .trailer-poster img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* use "contain" if you don't want the poster cropped */
+}
+
+/* Video fills the same width (height comes from Bootstrap's .ratio-16x9) */
+.hnn-trailer .snowman-trailer-video {
+	width: 100%;
+}
+
+/* ---------- IMDb row ---------- */
+.imdb-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 24px;
+}
+
+.imdb-row img {
+	display: block;
+	max-width: 70px;
+	height: auto;
+}
+
+/* ---------- Feature section (poster + text) ---------- */
+.snowman-feature {
+	display: flex;
+	flex-direction: column; /* stacked on mobile */
+	align-items: center;
+	gap: 24px;
+	width: 100%;
+	max-width: 720px; /* controls the section width, lower = narrower */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.snowman-poster-col {
+	width: 100%;
+	max-width: 320px;
+}
+
+.snowman-poster-img {
+	display: block;
+	width: 100%;
+	height: auto; /* natural proportions, never stretched */
+	cursor: pointer;
+}
+
+.snowman-details {
+	width: 100%;
+	font-size: 16px; /* fixed on all screens */
+	line-height: 1.7;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+
+.snowman-details p {
+	font-size: 16px;
+	margin-bottom: 1rem;
+	text-align: justify;
+}
+
+/* ---------- Inline text emphasis ---------- */
+.snowman-bold {
+	font-weight: bold;
+}
+
+.snowman-italic {
+	font-style: italic;
+}
+
+/* ---------- Poster modal ---------- */
+.modal-poster {
+	display: block;
+	max-width: 100%;
+	max-height: 80vh;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+/* ---------- Future film modal (currently unused) ---------- */
+.future-film-col {
+	flex: 1;
+	text-align: center;
+}
+
+.future-film-col .future-film-img {
+	width: 80%;
+	max-width: 100%;
+	height: auto;
+}
+
+/* =========================================================
+   TABLET (768px and up)
+   ========================================================= */
+@media (min-width: 768px) {
+	#magic-snowman-page {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.snowman-trailer-section {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.hnn-trailer {
+		gap: 40px;
+	}
+
+	.snowman-feature {
+		flex-direction: row;
+		align-items: center; /* centers image and text against each other */
+		gap: 32px;
+		max-width: 800px;
+	}
+
+	.snowman-poster-col {
+		flex: 0 0 42%;
+		max-width: none;
+	}
+
+	.snowman-details {
+		flex: 1 1 0;
+		min-width: 0;
+		font-size: 15px;
+	}
+	.snowman-details p {
+		font-size: 15px;
+	}
+}
+
+/* =========================================================
+   DESKTOP (1200px and up)
+   ========================================================= */
+@media (min-width: 1200px) {
+	#magic-snowman-page {
+		max-width: 1320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hnn-trailer {
+		gap: 60px; /* your original value */
+	}
+
+	.snowman-feature {
+		gap: 40px;
+		max-width: 900px;
+	}
+}
+
+/* =========================================================
+   VERY SMALL PHONES (360px and below)
+   ========================================================= */
+@media (max-width: 360px) {
+	#magic-snowman-page {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.hnn-trailer {
+		gap: 16px;
+	}
+}
+
+.snowman-details p:last-child {
+	margin-bottom: 0;
+}
