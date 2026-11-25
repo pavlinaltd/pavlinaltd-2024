@@ -21,7 +21,7 @@
 
 /* ---------- Video ---------- */
 .gustella-video {
-	width: 100%;
+	width: 85%;
 	max-width: var(--gustella-content-width);
 	margin: 0 auto;
 }
@@ -31,7 +31,7 @@
 	display: flex;
 	align-items: flex-start;
 	gap: 24px;
-	width: 100%;
+	width: 85%;
 	max-width: var(--gustella-content-width);
 	margin: 2.5rem auto 0;
 }
@@ -65,7 +65,7 @@
 
 /* ---------- Castle image ---------- */
 .gustella-castle {
-	width: 100%;
+	width: 85%;
 	max-width: var(--gustella-content-width);
 	margin: 2rem auto 2.5rem;
 }

@@ -1,8 +1,8 @@
 .hh-page {
-	--gutter: clamp(16px, 5vw, 64px);
+	--gutter: 64px;
 	max-width: 1280px;
 	margin-inline: auto;
-	padding: clamp(16px, 3vw, 40px) var(--gutter) clamp(32px, 5vw, 64px);
+	padding: 40px var(--gutter) 64px;
 	box-sizing: border-box;
 }
 
@@ -25,7 +25,7 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	font-size: clamp(16px, 2.2vw, 24px);
+	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
 }
@@ -36,14 +36,14 @@
 
 .hh-row {
 	display: grid;
-	grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
-	gap: clamp(20px, 4vw, 56px);
+	grid-template-columns: 4fr 7fr;
+	gap: 56px;
 	align-items: start;
 }
 .hh-row + .hh-row {
-	margin-top: clamp(32px, 5vw, 64px);
+	margin-top: 64px;
 }
-.hh-row > img {
+.hh-poster-img {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -53,11 +53,18 @@
 .hh-poster-img {
 	cursor: pointer;
 }
+.vid-img {
+	width: 100%;
+	height: 85%;
+	display: block;
+	border-radius: 12px;
+	object-fit: cover;
+}
 
 .hh-desc {
-	font-size: clamp(16px, 0.9rem + 0.4vw, 20px);
-	line-height: 1.5;
-	text-align: left;
+	font-size: 17px;
+	line-height: 1.7;
+	text-align: justify;
 }
 .hh-desc p {
 	margin: 0 0 1em;
@@ -65,7 +72,8 @@
 
 .hh-video {
 	width: 100%;
-	aspect-ratio: 16 / 9;
+	height: 81%;
+	aspect-ratio: 16 / 10;
 }
 .hh-video iframe {
 	width: 100%;
@@ -76,7 +84,7 @@
 
 .hh-modal-poster {
 	max-width: 100%;
-	max-height: 80vh;
+	max-height: 600px;
 	width: auto;
 	height: auto;
 }
@@ -84,6 +92,10 @@
 @media (max-width: 991.98px) {
 	.hh-row {
 		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.hh-row + .hh-row {
+		margin-top: 32px;
 	}
 	.hh-row > img {
 		max-width: 360px;

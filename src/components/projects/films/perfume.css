@@ -1,95 +1,114 @@
-/* ---------- Page ---------- */
-.perfume-page {
-	width: 100%;
-	max-width: 1200px;
+:root {
+	--gustella-content-width: 960px;
+}
+
+/* ---------- Page side padding ---------- */
+@media (max-width: 991.98px) {
+	.main-margin {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	.main-margin {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+/* ---------- Video ---------- */
+.perfume-vid {
+	width: 85%;
+	max-width: var(--gustella-content-width);
 	margin: 0 auto;
-	padding: 0 16px;
-	box-sizing: border-box;
 }
 
-/* ---------- Trailer (medium size, centered) ---------- */
-.perfume-video {
-	width: 100%;
-	max-width: 890px;
-	margin: 16px auto 0;
-}
-
-.perfume-video iframe {
-	border: 0;
-	border-radius: 12px;
-}
-
-/* ---------- IMDb link ---------- */
-.perfume-imdb {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	margin-top: 20px;
-	font-size: 24px;
-	font-weight: 600;
-}
-
-.perfume-imdb-label {
-	color: black;
-}
-
-.perfume-imdb-icon {
-	max-height: 50px;
-	width: auto;
-	object-fit: fill;
-}
-
-/* ---------- Poster + text: side by side, vertically centered ---------- */
-.perfume-content {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap; /* stacks on its own when there isn't room */
-	align-items: center; /* same alignment as your screenshot */
-	gap: 40px;
-	margin-top: 24px;
-	margin-bottom: 3rem;
-}
-
-/* Poster: about 30% of the row, natural proportions, never stretched */
-.perfume-poster-col {
-	flex: 0 1 380px;
-	min-width: 0;
-}
-
-.perfume-poster {
+.perfume-vid iframe {
 	display: block;
 	width: 100%;
+}
+
+/* ---------- Promise of Perfume poster + text ---------- */
+/* ---------- Poster + text ---------- */
+
+.perfume-gallery {
+	display: flex;
+	align-items: flex-start;
+	gap: 28px;
+
+	width: 85%;
+	max-width: 960px;
+	margin: 50px auto;
+}
+
+/* Fixed poster size */
+.perfume-gallery-poster {
+	flex: 0 0 300px;
+	width: 300px;
+}
+
+.perfume-gallery-poster img {
+	display: block;
+	width: 300px;
 	height: auto;
-	border-radius: 12px;
-	cursor: pointer;
+	border-radius: 16px;
 }
 
-/* Text: takes the rest of the row */
-.perfume-desc-col {
-	flex: 1 1 420px;
+/* Fixed text size */
+.perfume-gallery-script {
+	flex: 1;
 	min-width: 0;
-	text-align: justify;
-	font-size: 16px;
 }
 
-.perfume-desc-col p {
-	margin: 0 0 1.25rem;
-	font-size: 16px !important;
+.perfume-gallery-script p {
+	font-size: 14px !important;
 	line-height: 1.6;
+	text-align: justify;
+	margin: 0 0 16px;
 }
 
-.perfume-desc-col p:last-child {
+.perfume-gallery-script p:last-child {
 	margin-bottom: 0;
 }
 
-/* ---------- Modal ---------- */
-.perfume-modal-img-wrap {
-	text-align: center;
+/* Stack only when screen is narrow */
+/* Stack sooner */
+@media (max-width: 1024px) {
+	.perfume-gallery {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.perfume-gallery-poster {
+		flex: none;
+		width: 300px;
+		max-width: 100%;
+	}
+
+	.perfume-gallery-poster img {
+		width: 300px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Stacked text size */
+	.perfume-gallery-script p {
+		font-size: 14px !important;
+	}
 }
 
-.perfume-modal-img {
-	width: 80%;
-	max-width: 100%;
-	height: auto;
+/* Laptop and iPad: 12px */
+@media (max-width: 1366px) and (min-width: 1025px) {
+	.perfume-gallery-script p {
+		font-size: 12px !important;
+	}
+}
+
+/* Stacked layout: 14px */
+@media (max-width: 1024px) {
+	.perfume-gallery-script p {
+		font-size: 14px !important;
+	}
 }

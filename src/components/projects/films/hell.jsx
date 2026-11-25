@@ -8,24 +8,36 @@ import ImdbIcon from "../../../assets/common/imdbna.png";
 import AudioImg from "../../../assets/common/podcasts.png";
 import Modal from "react-bootstrap/Modal";
 
-const PosterModal = ({ isOpen, onClose }) => (
-	<Modal show={isOpen} onHide={onClose} centered size="lg">
-		<Modal.Header closeButton />
-		<Modal.Body className="text-center">
-			<img
-				src={Poster}
-				alt="Happy Hell Night poster"
-				className="hh-modal-poster"
-			/>
-		</Modal.Body>
-	</Modal>
-);
+const MODAL_IMAGES = {
+	poster: { src: Poster, alt: "Happy Hell Night poster" },
+	reel: { src: Reel, alt: "Happy Hell Night still" },
+};
+
+const PosterModal = ({ imageId, onClose }) => {
+	const img = MODAL_IMAGES[imageId];
+
+	return (
+		<Modal show={Boolean(img)} onHide={onClose} centered size="lg">
+			<Modal.Header closeButton />
+			<Modal.Body className="text-center">
+				{img && (
+					<img
+						src={img.src}
+						alt={img.alt}
+						className="hh-modal-poster"
+					/>
+				)}
+			</Modal.Body>
+		</Modal>
+	);
+};
 
 const Hell = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	const [isMRS, setIsMRS] = useState(false);
+
+	const [activeImg, setActiveImg] = useState(null);
 
 	return (
 		<main className="hh-page">
@@ -34,7 +46,6 @@ const Hell = () => {
 				alt="Happy Hell Night banner"
 				className="hh-banner"
 			/>
-
 			<div className="hh-actions">
 				<div className="hh-action">
 					<span>Visit</span>
@@ -65,14 +76,14 @@ const Hell = () => {
 					</a>
 				</div>
 			</div>
-
 			<div className="hh-container">
 				<div className="hh-row">
 					<img
+						id="poster"
 						src={Poster}
 						alt="Happy Hell Night poster"
 						className="hh-poster-img"
-						onClick={() => setIsMRS(true)}
+						onClick={(e) => setActiveImg(e.currentTarget.id)}
 					/>
 					<div className="hh-desc">
 						<p>
@@ -113,12 +124,18 @@ const Hell = () => {
 				</div>
 
 				<div className="hh-row hh-row--trailer">
-					<img src={Reel} alt="Happy Hell Night still" />
+					<img
+						id="reel"
+						src={Reel}
+						alt="Happy Hell Night still"
+						className="vid-img"
+						onClick={(e) => setActiveImg(e.currentTarget.id)}
+					/>
+
 					<div className="hh-video">
 						<iframe
 							src="https://www.youtube.com/embed/n3ecJJ7jiFI?si=ivwsVdWxG23xS7km"
 							title="Happy Hell Night trailer"
-							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
@@ -126,8 +143,10 @@ const Hell = () => {
 					</div>
 				</div>
 			</div>
-
-			<PosterModal isOpen={isMRS} onClose={() => setIsMRS(false)} />
+			<PosterModal
+				imageId={activeImg}
+				onClose={() => setActiveImg(null)}
+			/>{" "}
 		</main>
 	);
 };
